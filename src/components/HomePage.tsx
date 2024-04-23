@@ -5,6 +5,7 @@ import { Dancing_Script } from "next/font/google";
 import { useEffect, useRef } from "react";
 import ParticlesBg from "./backgroundEffects/ParticlesBg";
 import { GITHUB_URL, LINKEDIN_URL } from "../constants";
+import Image from "next/image"; // Import the Image component from Next.js
 
 const dancing = Dancing_Script({
   weight: "400",
@@ -66,37 +67,54 @@ export default function HomePage(): JSX.Element {
   return (
     <div
       id="home-section"
-      className=" h-screen flex flex-col justify-center text-center "
+      className="h-screen flex flex-col justify-center text-center"
     >
       <ParticlesBg />
-      <h1
-        className={` ${dancing.className} name-title-ui text-[#ffffff] animate-fade-in`}
-      >
-        Mohammad Shahid Beigh
-      </h1>
-      <div className="text-lg md:text-xl lg:text-2xl  max-md:text-center text-[#ffffff] animate-fade-in my-1  ">
-        I am a{" "}
-        <span className="changing-text text-[#0563bb] italic" ref={el}>
-          {" "}
-        </span>
-        <span className="cursor blink text-[#0563bb] italic">|</span>
+
+      {/* Container for the image and name */}
+      <div className="relative">
+        {/* Image */}
+        <div className="flex justify-center">
+          <div className="w-60 h-60 rounded-full overflow-hidden border-4 border-white shadow-xl mb-12">
+            <Image
+              src="/Image.png"
+              alt="Your Name"
+              width={260}
+              height={260}
+              className="object-cover"
+            />
+          </div>
+        </div>
+
+        {/* Name */}
+        <h1
+          className={`absolute bottom-[-30px] left-1/2 transform -translate-x-1/2 ${dancing.className} name-title-ui text-white animate-fade-in`}
+        >
+          Mohammad Shahid Beigh
+        </h1>
       </div>
-      <div className="social-links flex  justify-center space-x-4    animate-fade-in border border-[#b4b4b4] dark:border-[#1e1e1e] outline-1 w-min mx-auto rounded-md p-2 ">
+
+      {/* Text and social links */}
+      <div className="text-lg md:text-xl lg:text-2xl max-md:text-center text-white animate-fade-in my-1 mt-8">
+        I am a{" "}
+        <span className="changing-text text-blue-500 italic" ref={el}></span>
+        <span className="cursor blink text-blue-500 italic">|</span>
+      </div>
+
+      <div className="social-links flex justify-center space-x-4 animate-fade-in border border-white dark:border-black outline-1 w-min mx-auto rounded-md p-2 mb-16">
         <a
           href={LINKEDIN_URL}
           target="_blank"
-          className=" project-icons hover:bg-sky-700"
+          className="project-icons hover:bg-sky-700"
         >
-          {" "}
-          <SiLinkedin className="text-2xl text-[#ffffff] " />{" "}
+          <SiLinkedin className="text-2xl text-white" />
         </a>
         <a
           href={GITHUB_URL}
           target="_blank"
-          className=" project-icons hover:bg-sky-700 "
+          className="project-icons hover:bg-sky-700"
         >
-          {" "}
-          <SiGithub className="text-2xl text-[#ffffff]" />{" "}
+          <SiGithub className="text-2xl text-white" />
         </a>
       </div>
     </div>
