@@ -1,5 +1,6 @@
 "use client";
 
+// Import necessary modules and components
 import { SiGithub, SiLinkedin } from "react-icons/si";
 import { Dancing_Script } from "next/font/google";
 import { useEffect, useRef } from "react";
@@ -7,23 +8,28 @@ import ParticlesBg from "./backgroundEffects/ParticlesBg";
 import { GITHUB_URL, LINKEDIN_URL } from "../constants";
 import Image from "next/image"; // Import the Image component from Next.js
 
+// Define the Dancing Script font
 const dancing = Dancing_Script({
   weight: "400",
   subsets: ["latin"],
   display: "swap",
 });
 
+// Define the HomePage component
 export default function HomePage(): JSX.Element {
+  // Define changing texts and typing delay
   const changingTexts = ["Front End Software Developer", "Problem Solver"];
   let typingDelay = 150;
   let delayAfterTyping = 2000; // 3 seconds delay
 
+  // Define useRef hooks for managing text animation
   const el: any = useRef("");
-  const currentIndexRef = useRef(0); // 0 | 1
-  const currentTextIndexRef = useRef(0); // string index
+  const currentIndexRef = useRef(0);
+  const currentTextIndexRef = useRef(0);
   const renderedTextRef = useRef("");
   let timerId: any = null;
 
+  // Function to change the text
   const changeText = () => {
     let curText = renderedTextRef.current;
 
@@ -52,10 +58,12 @@ export default function HomePage(): JSX.Element {
     }
   };
 
+  // Function to start text typing animation
   const startTyping = () => {
     timerId = setInterval(changeText, typingDelay);
   };
 
+  // useEffect hook to start text typing animation on component mount
   useEffect(() => {
     startTyping();
 
@@ -64,10 +72,11 @@ export default function HomePage(): JSX.Element {
     };
   }, []);
 
+  // Return the JSX for the HomePage component
   return (
     <div
       id="home-section"
-      className="h-screen flex flex-col justify-center text-center"
+      className="h-screen flex flex-col justify-center text-center relative"
     >
       <ParticlesBg />
 
@@ -75,10 +84,12 @@ export default function HomePage(): JSX.Element {
       <div className="relative">
         {/* Image */}
         <div className="flex justify-center">
-          <div className="w-60 h-60 rounded-full overflow-hidden border-4 border-white shadow-xl mb-12">
+          <div className="w-60 h-60 rounded-full overflow-hidden border-4 border-white shadow-xl mb-12 relative">
+            {/* Circular border animation */}
+            <div className="border-2 border-black rounded-full w-full h-full absolute animate-spin-fast"></div>
             <Image
               src="/Image.png"
-              alt="Your Name"
+              alt="My Profile Picture"
               width={260}
               height={260}
               className="object-cover"
