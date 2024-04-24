@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "Mohammad Shahid Beigh | Front End Software Engineer | Portfolio",
     description:
       "Mohammad Shahid Beigh | Front End Software Development Engineer | My personal portfolio website",
-    url: "https://shahid.cc",
+    url: "https://shahid-cc-portfolio.vercel.app",
     siteName: "Mohammad Shahid Beigh - Portfolio",
     images: "/opengraph-image.png",
     locale: "en-US",
