@@ -2,7 +2,6 @@ import HomePage from "@/components/HomePage";
 import AboutPage from "@/components/AboutPage";
 import ExperiencePage from "@/components/ExperiencePage";
 import ProjectsPages from "@/components/ProjectsPage";
-// import AchievementsPage from "@/components/AchievementsPage";
 import ContactPage from "@/components/ContactPage";
 import { Analytics } from "@vercel/analytics/react";
 
@@ -13,7 +12,6 @@ export default function Home(): JSX.Element {
       <AboutPage />
       <ExperiencePage />
       <ProjectsPages />
-      {/* <AchievementsPage /> */}
       <ContactPage />
       <Analytics />
     </main>
