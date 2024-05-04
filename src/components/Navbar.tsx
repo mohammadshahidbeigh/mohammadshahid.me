@@ -58,7 +58,7 @@ export default function Navbar(): JSX.Element {
         <Link
           className={`nav-btn hover:bg-blue-500 ${
             pathname === item.href || activeSection === item.href.substring(1)
-              ? "nav-btn-active "
+              ? "nav-btn-active bg-blue-500 "
               : ""
           }`}
           key={index}
