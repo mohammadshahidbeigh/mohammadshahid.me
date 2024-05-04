@@ -24,7 +24,7 @@ export default function ParticlesBg(): JSX.Element {
         },
         background: {
           color: {
-            value: "",
+            value: "#030018",
           },
         },
         fpsLimit: 120,

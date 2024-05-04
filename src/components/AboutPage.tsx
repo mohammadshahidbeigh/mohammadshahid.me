@@ -78,14 +78,14 @@ export default function AboutPage(): JSX.Element {
   ];
 
   return (
-    <div id="about" className=" main-div-ui ">
-      <div className="animate-fade-in max-w-screen-xl mx-auto max-[480px]:p-1   p-4 md:p-8 ">
+    <div id="about" className=" main-div-ui bg-[#030018]  ">
+      <div className="animate-fade-in max-w-screen-xl mx-auto max-[480px]:p-1  p-4 md:p-8 ">
         <h2 className="title-ui">About</h2>
 
-        <div className="sub-main-div-ui">
+        <div className="sub-main-div-ui  ">
           {/* Education and Coding Profile (Left) */}
-          <div className=" flex flex-col space-y-4">
-            <div className="card-ui p-4">
+          <div className=" flex flex-col space-y-4   ">
+            <div className="card-ui p-4 bg-[#030018] ">
               <p className="text-2xl max-[500px]:text-xl font-bold mb-0 text-center ">
                 Education
               </p>
@@ -96,23 +96,23 @@ export default function AboutPage(): JSX.Element {
                 <a
                   href={MIET_Jammu}
                   target="_blank"
-                  className=" p-1 hover:bg-[#c8c8c8] dark:hover:bg-[#181818] rounded-md "
+                  className=" p-1 hover:bg-blue-500 rounded-md "
                 >
                   Model Institute Of Engineering & Technology , Jammu
                 </a>{" "}
               </p>
               <p className="flex justify-between mb-1">
                 {" "}
-                <span className="bg-[#d7d7d7] dark:bg-[#181818] rounded-md px-1 py-1">
+                <span className=" bg-[#030018] rounded-md px-1 py-1 ">
                   B.E - Electronics and Communication Engineering
                 </span>{" "}
-                <span className="bg-[#d7d7d7] dark:bg-[#181818] rounded-md px-1 py-1">
+                <span className=" bg-[#030018] rounded-md px-1 py-1 hover:bg-blue-500">
                   July 20 - June 24
                 </span>{" "}
               </p>
               <p className="flex justify-end mb-1 max-[360px]:text-xs">
                 {" "}
-                <span className="text-center bg-[#d7d7d7] dark:bg-[#181818] rounded-md px-1 py-1">
+                <span className="text-center bg-[#030018] hover:bg-blue-500 rounded-md px-1 py-1">
                   {" "}
                   CGPA: 7.50 / 10{" "}
                 </span>{" "}
@@ -225,8 +225,8 @@ export default function AboutPage(): JSX.Element {
           </div>
 
           {/* Skills Portion (Right) */}
-          <div className=" p-4 card-ui ml-3 max-[950px]:ml-0 ">
-            <p className="text-2xl max-[500px]:text-xl font-bold mb-0 text-center">
+          <div className=" p-4 card-ui ml-3 max-[950px]:ml-0 bg-[#030018]  ">
+            <p className="text-2xl max-[500px]:text-xl  font-bold mb-0 text-center">
               Skills
             </p>
             <hr className="hr-ui " />
@@ -236,10 +236,13 @@ export default function AboutPage(): JSX.Element {
             </p>
             <hr className="hr-small-ui" />
 
-            <div className="flex flex-wrap px-4 max-[500px]:px-2">
+            <div className="flex flex-wrap px-4 max-[500px]:px-2 ">
               {programmingLanguages.map((skill, index) => (
-                <div key={index} className="skill-div-ui">
-                  <p className="-mt-1 font-sans max-[500px]:text-sm ">
+                <div
+                  key={index}
+                  className="skill-div-ui bg-[#030018] hover:bg-blue-500"
+                >
+                  <p className="-mt-1 font-sans max-[500px]:text-sm bg-[#030018] hover:bg-blue-500">
                     {skill}
                   </p>
                 </div>
@@ -251,8 +254,11 @@ export default function AboutPage(): JSX.Element {
 
             <div className="flex flex-wrap px-4 max-[500px]:px-2">
               {topics.map((skill, index) => (
-                <div key={index} className="skill-div-ui">
-                  <p className="-mt-1 font-sans max-[500px]:text-sm ">
+                <div
+                  key={index}
+                  className="skill-div-ui bg-[#030018] hover:bg-blue-500"
+                >
+                  <p className="-mt-1 font-sans max-[500px]:text-sm bg-[#030018] hover:bg-blue-500">
                     {skill}
                   </p>
                 </div>
@@ -266,8 +272,11 @@ export default function AboutPage(): JSX.Element {
 
             <div className="flex flex-wrap px-4 max-[500px]:px-2">
               {softwares.map((skill, index) => (
-                <div key={index} className="skill-div-ui">
-                  <p className="-mt-1 font-sans max-[500px]:text-sm ">
+                <div
+                  key={index}
+                  className="skill-div-ui bg-[#030018] hover:bg-blue-500"
+                >
+                  <p className="-mt-1 font-sans max-[500px]:text-sm bg-[#030018] hover:bg-blue-500 ">
                     {skill}
                   </p>
                 </div>

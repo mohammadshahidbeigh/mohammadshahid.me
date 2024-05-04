@@ -3,19 +3,23 @@ import ListTick from "./ListTick";
 
 export default function ExperiencePage(): JSX.Element {
   return (
-    <div id="experience" className=" main-div-ui ">
-      <div className="animate-fade-in max-w-screen-xl mx-auto p-4 md:p-8">
+    <div id="experience" className=" main-div-ui bg-[#030018]">
+      <div className="animate-fade-in max-w-screen-xl mx-auto p-4 md:p-8 ">
         <h2 className="title-ui">Experience</h2>
 
         <div className="sub-main-div-ui">
           {/* card 1 */}
-          <div className="card-ui p-6 pl-3  mx-auto ">
+          <div className="card-ui p-6 pl-3  mx-auto bg-[#030018]">
             <p className=" font-bold">Web Developer-Freelance</p>
             <p className="flex justify-between mt-2	">
-              <a href={UPWORK_URL} target="_blank" className="exp-url-ui">
+              <a
+                href={UPWORK_URL}
+                target="_blank"
+                className="exp-url-ui bg-[#030018] hover:bg-blue-500"
+              >
                 Upwork
               </a>{" "}
-              <span className="bg-[#d7d7d7] dark:bg-[#141414] rounded-md px-2 py-1 ">
+              <span className=" hover:bg-blue-500 rounded-md px-2 py-1 ">
                 {" "}
                 Oct 23 - Present{" "}
               </span>{" "}
@@ -24,29 +28,31 @@ export default function ExperiencePage(): JSX.Element {
               <li className="flex  space-x-1 my-2">
                 <ListTick />
                 <span className="text-justify">
-                  I worked as a backend developer in the consultation team,
-                  mainly working with Node.js and Databases. I worked to build
-                  an ideal online consultation flow to improve the customer
-                  experience.
+                  Led the end-to-end development of a full portfolio website for
+                  a client using Next.js, Tailwind CSS, and TypeScript.
                 </span>
               </li>
               <li className="flex  space-x-1 my-2">
                 <ListTick />
                 <span className="text-justify">
-                  My responsibilities also included optimizing APIs and reducing
-                  API latency. I reduced the number of database queries by 50%
-                  and decrease API response time by over 70%, bringing it from
-                  seconds to milliseconds. Additionally, I consistently worked
-                  to improve product quality by addressing bugs and conducting
-                  code refactoring.
+                  Enhanced frontend design and user experience, resulting in a
+                  more engaging interface and improved usability.
                 </span>
               </li>
               <li className="flex  space-x-1 my-2">
                 <ListTick />
                 <span className="text-justify">
-                  I developed an automated system that maintains 100% uptime and
-                  raises payment claims for over 10,000 consultations daily,
-                  resulting in a significant boost in revenue.
+                  Collaborated closely with the client to understand
+                  requirements, ensuring the final product aligned with their
+                  vision.
+                </span>
+              </li>
+              <li className="flex  space-x-1 my-2">
+                <ListTick />
+                <span className="text-justify">
+                  Demonstrated proficiency in modern web development
+                  technologies, delivering a high-quality, responsive website
+                  tailored to the clients specifications.
                 </span>
               </li>
             </ul>
@@ -54,13 +60,17 @@ export default function ExperiencePage(): JSX.Element {
 
           {/* card 2 */}
 
-          <div className="card-ui p-6 pl-3  mx-auto ">
+          <div className="card-ui p-6 pl-3  mx-auto bg-[#030018]">
             <p className=" font-bold">Machine Learning Trainee</p>
             <p className="flex justify-between mt-2">
-              <a href={ThinkNext_UTL} target="_blank" className="exp-url-ui">
+              <a
+                href={ThinkNext_UTL}
+                target="_blank"
+                className="exp-url-ui bg-[#030018] hover:bg-blue-500"
+              >
                 ThinkNEXT Technologies Private Limited · Apprenticeship
               </a>{" "}
-              <span className="bg-[#d7d7d7] dark:bg-[#141414] rounded-md px-2 py-1 ">
+              <span className="hover:bg-blue-500 rounded-md px-2 py-1 ">
                 {" "}
                 July 22 - Aug 22{" "}
               </span>{" "}

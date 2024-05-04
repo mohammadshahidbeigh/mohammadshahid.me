@@ -116,14 +116,14 @@ export default function HomePage(): JSX.Element {
         <a
           href={LINKEDIN_URL}
           target="_blank"
-          className="project-icons hover:bg-sky-700"
+          className="project-icons hover:bg-blue-500"
         >
           <SiLinkedin className="text-2xl text-white" />
         </a>
         <a
           href={GITHUB_URL}
           target="_blank"
-          className="project-icons hover:bg-sky-700"
+          className="project-icons hover:bg-blue-500"
         >
           <SiGithub className="text-2xl text-white" />
         </a>
