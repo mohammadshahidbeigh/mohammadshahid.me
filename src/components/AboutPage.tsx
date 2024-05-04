@@ -11,25 +11,33 @@ import {
   HACKERRANK_URL,
   LEETCODE_URL,
   MIET_Jammu,
-  SUPERBEINGS_UTL,
+  ThinkNext_UTL,
 } from "@/constants";
+import ListTick from "./ListTick";
 
 export default function AboutPage(): JSX.Element {
   const programmingLanguages = [
     // "C",
     // "Python",
     "HTML",
-    "CSS",
+    "CSS3",
+    "SASS",
     "JavaScript",
     "TypeScript",
+    "Python",
   ];
   const topics = [
     "Front End Development",
     "Data Structures",
     // "Algorithms and Optimization",
     "Object Oriented Programming",
+    "Test Driven Development",
     // "Operating Systems",
-    // "Machine Learning",
+    "Machine Learning",
+    "Prompt Engineering",
+    "Fine-tuning LLM",
+    "RAG-Retrieval Augmented Generation",
+    // "Distributed Systems",
     // "Bckend Development",
     // "Serverless Architecture",
     // "Blockchains",
@@ -37,15 +45,24 @@ export default function AboutPage(): JSX.Element {
   const softwares = [
     // "Linux",
     // "Git",
-    "Tailwid Css",
-    "SASS",
+
     "React.js",
-    "React Redux",
-    "React Query",
     "Next.js",
+    "Remix.js",
+    "React Redux",
+    "Redux Toolkit",
+    "React Query",
+    "RxJS",
+    "RTX Query",
+    "Gatsby",
+    "Tailwid Css",
+
     // "Vue.js",
-    "Node.js",
+    // "Node.js",
     "Git",
+    "OpenAI API",
+    "Web Sockets",
+    "Web RTC",
     "Netlify",
     "Vercel",
     // "Socket.io",
@@ -87,17 +104,14 @@ export default function AboutPage(): JSX.Element {
               <p className="flex justify-between mb-1">
                 {" "}
                 <span className="bg-[#d7d7d7] dark:bg-[#181818] rounded-md px-1 py-1">
-                  B.E
+                  B.E - Electronics and Communication Engineering
                 </span>{" "}
-                <span className="text-center bg-[#d7d7d7] dark:bg-[#181818] rounded-md px-1 py-1">
-                  Electronics and Communication Engineering
-                </span>{" "}
-              </p>
-              <p className="flex justify-between mb-1 max-[360px]:text-xs">
-                {" "}
                 <span className="bg-[#d7d7d7] dark:bg-[#181818] rounded-md px-1 py-1">
                   July 20 - June 24
                 </span>{" "}
+              </p>
+              <p className="flex justify-end mb-1 max-[360px]:text-xs">
+                {" "}
                 <span className="text-center bg-[#d7d7d7] dark:bg-[#181818] rounded-md px-1 py-1">
                   {" "}
                   CGPA: 7.50 / 10{" "}
@@ -105,22 +119,44 @@ export default function AboutPage(): JSX.Element {
               </p>
 
               <ul>
-                <li className="text-justify">
-                  Studied all the necessary Computer Science Subjects under
-                  BTech Program which included Data Structures and Algorithms,
-                  Operating Systems, Computer Networks, Database Management
-                  System, Network Security, Cloud Computing, Compiler Design,
-                  Discrete Mathematics, Machine Learning
+                <li className="flex  space-x-1 my-2">
+                  <ListTick />
+                  <span className="text-justify">
+                    👋 Hi there! I&apos;m a self-taught Front-End Software
+                    Developer currently pursuing my bachelor&apos;s degree in
+                    Electronics and Communication Engineering. Although my
+                    formal education lies in a different field, my insatiable
+                    curiosity and relentless pursuit of knowledge have driven me
+                    to explore and master the world of software engineering.
+                  </span>
+                </li>
+                <li className="flex  space-x-1 my-2">
+                  <ListTick />
+                  <span className="text-justify">
+                    I have a genuine passion for software development and enjoy
+                    creating innovative solutions using various tech stacks,
+                    languages, and technologies. If you&apos;re looking for a
+                    passionate Front-End Software Developer who thrives in
+                    challenging environments, loves JavaScript and React, and is
+                    dedicated to continuous learning and innovation. I would
+                    love to connect with you.
+                  </span>
+                </li>
+                <li className="flex  space-x-1 my-2">
+                  <ListTick />
+                  <span className="text-justify">
+                    Let&apos;s create something amazing together! ✉️😊
+                  </span>
                 </li>
               </ul>
             </div>
-            <div className="card-ui p-4 ">
+            {/* <div className="card-ui p-4 ">
               <p className="text-2xl max-[500px]:text-xl font-bold mb-0 text-center">
                 Coding Profile
               </p>
-              <hr className="hr-ui" />
+              <hr className="hr-ui" /> */}
 
-              <div className="my-2 flex  justify-center space-x-4">
+            {/* <div className="my-2 flex  justify-center space-x-4">
                 <a
                   href={LEETCODE_URL}
                   target="_blank"
@@ -128,8 +164,8 @@ export default function AboutPage(): JSX.Element {
                 >
                   {" "}
                   <SiLeetcode className="text-3xl max-[500px]:text-xl" />{" "}
-                </a>
-                {/* <a
+                </a> */}
+            {/* <a
                   href={HACKERRANK_URL}
                   target="_blank"
                   className=" project-icons "
@@ -141,19 +177,19 @@ export default function AboutPage(): JSX.Element {
                   {" "}
                   <SiGeeksforgeeks className="text-3xl max-[500px]:text-xl" />{" "}
                 </a> */}
-                <a
+            {/* <a
                   href={GITHUB_URL}
                   target="_blank"
                   className=" project-icons "
                 >
                   {" "}
                   <SiGithub className="text-3xl max-[500px]:text-xl" />{" "}
-                </a>
-              </div>
+                </a> */}
+            {/* </div> */}
 
-              <p className="text-justify">
-                I love solving coding problems and I have solved hundreds pf
-                problems across various coding platforms.
+            {/* <p className="text-justify">
+                I love solving coding problems and I have solved several problems
+                at Leetcode.
               </p>
               <p className="flex my-2 mr-4">
                 {" "}
@@ -164,8 +200,8 @@ export default function AboutPage(): JSX.Element {
                   </a>{" "}
                 </span>{" "}
                 <span>: 3-Star, Solved 400+ Problems</span>{" "}
-              </p>
-              <p className=" flex my-2 mr-4">
+              </p> */}
+            {/* <p className=" flex my-2 mr-4">
                 {" "}
                 <span className="mt-1">
                   <a href={GFG_URL} target="_blank">
@@ -184,8 +220,8 @@ export default function AboutPage(): JSX.Element {
                   </a>
                 </span>{" "}
                 <span>: 5-Star in C++ and SQL</span>{" "}
-              </p>
-            </div>
+              </p> */}
+            {/* </div> */}
           </div>
 
           {/* Skills Portion (Right) */}

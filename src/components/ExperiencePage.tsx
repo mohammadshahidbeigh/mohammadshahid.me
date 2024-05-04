@@ -1,4 +1,4 @@
-import { MEDIBUDDY_URL, SUPERBEINGS_UTL } from "@/constants";
+import { UPWORK_URL, ThinkNext_UTL } from "@/constants";
 import ListTick from "./ListTick";
 
 export default function ExperiencePage(): JSX.Element {
@@ -10,14 +10,14 @@ export default function ExperiencePage(): JSX.Element {
         <div className="sub-main-div-ui">
           {/* card 1 */}
           <div className="card-ui p-6 pl-3  mx-auto ">
-            <p className=" font-bold">Software Engineer Intern</p>
-            <p className="flex justify-evenly	">
-              <a href={MEDIBUDDY_URL} target="_blank" className="exp-url-ui">
-                MediBuddy
+            <p className=" font-bold">Web Developer-Freelance</p>
+            <p className="flex justify-between mt-2	">
+              <a href={UPWORK_URL} target="_blank" className="exp-url-ui">
+                Upwork
               </a>{" "}
               <span className="bg-[#d7d7d7] dark:bg-[#141414] rounded-md px-2 py-1 ">
                 {" "}
-                Jan 23 - May 23{" "}
+                Oct 23 - Present{" "}
               </span>{" "}
             </p>
             <ul className="  list-disc list-outside md:list-inside">
@@ -55,38 +55,41 @@ export default function ExperiencePage(): JSX.Element {
           {/* card 2 */}
 
           <div className="card-ui p-6 pl-3  mx-auto ">
-            <p className=" font-bold">Software Engineer Intern</p>
-            <p className="flex justify-evenly	">
-              <a href={SUPERBEINGS_UTL} target="_blank" className="exp-url-ui">
-                SuperBeings
+            <p className=" font-bold">Machine Learning Trainee</p>
+            <p className="flex justify-between mt-2">
+              <a href={ThinkNext_UTL} target="_blank" className="exp-url-ui">
+                ThinkNEXT Technologies Private Limited · Apprenticeship
               </a>{" "}
               <span className="bg-[#d7d7d7] dark:bg-[#141414] rounded-md px-2 py-1 ">
                 {" "}
-                Jan 22 - Mar 22{" "}
+                July 22 - Aug 22{" "}
               </span>{" "}
             </p>
             <ul className="  list-disc list-outside md:list-inside">
               <li className="flex  space-x-1 my-2">
                 <ListTick />
                 <span className="text-justify">
-                  Developed scalable and responsive web pages.
+                  Employed advanced Machine Learning algorithms to predict
+                  automobile prices based on crucial factors such as engine
+                  size, make, model, year, mileage, condition, and other
+                  pertinent features.
                 </span>
               </li>
               <li className="flex  space-x-1 my-2">
                 <ListTick />
                 <span className="text-justify">
-                  I worked on the development of a Performance Management System
-                  from scratch. I worked side-by- side with designers to
-                  implement their masterpieces in HTML, CSS, JavaScript, and
-                  Vue.js, making sure the pipeline of experiments never runs
-                  dry.
+                  Trained a robust Linear Regression model on the prepared
+                  dataset using scikit-learn, capturing intricate relationships
+                  between engine size and price.
                 </span>
               </li>
               <li className="flex  space-x-1 my-2">
                 <ListTick />
                 <span className="text-justify">
-                  Constantly improving the quality of website by fixing the bugs
-                  and refactoring the code base.
+                  Planned future enhancements to refine the model and explore
+                  additional features, aiming to deploy it in real-world
+                  scenarios and empower users with actionable insights into
+                  automobile pricing dynamics.
                 </span>
               </li>
             </ul>
