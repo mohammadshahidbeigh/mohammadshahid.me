@@ -10,7 +10,7 @@ export default function ExperiencePage(): JSX.Element {
         <div className="sub-main-div-ui">
           {/* card 1 */}
           <div className="card-ui p-6 pl-3  mx-auto bg-[#030018]">
-            <p className=" font-bold">Web Developer-Freelance</p>
+            <p className=" font-bold">Web Developer- Freelance</p>
             <p className="flex justify-between mt-2	">
               <a
                 href={UPWORK_URL}

@@ -123,7 +123,7 @@ export default function AboutPage(): JSX.Element {
                   <ListTick />
                   <span className="text-justify">
                     👋 Hi there! I&apos;m a self-taught Front-End Software
-                    Developer currently pursuing my bachelor&apos;s degree in
+                    Engineer currently pursuing my bachelor&apos;s degree in
                     Electronics and Communication Engineering. Although my
                     formal education lies in a different field, my insatiable
                     curiosity and relentless pursuit of knowledge have driven me
