@@ -12,7 +12,7 @@ const raleway = Raleway({
 export const metadata: Metadata = {
   title: {
     template: "%s | Mohammad Shahid Beigh",
-    default: "Mohammad Shahid Beigh |Front End Software Developer",
+    default: "Mohammad Shahid Beigh |Front End Software Engineer",
   },
   description:
     "Mohammad Shahid Beigh - Front End Software Development Engineer - My personal portfolio website",
