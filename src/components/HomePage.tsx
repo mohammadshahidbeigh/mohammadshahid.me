@@ -18,7 +18,7 @@ const dancing = Dancing_Script({
 // Define the HomePage component
 export default function HomePage(): JSX.Element {
   // Define changing texts and typing delay
-  const changingTexts = ["Front End Software Developer", "Problem Solver"];
+  const changingTexts = ["Front End Software Engineer", "Problem Solver"];
   let typingDelay = 150;
   let delayAfterTyping = 2000; // 3 seconds delay
 
