@@ -11,14 +11,18 @@ export const UPWORK_URL: string =
   "https://www.upwork.com/freelancers/~01667608f00cd4224b";
 export const ThinkNext_UTL: string =
   "https://www.thinknexttraining.com/free-industrial-training-in-chandigarh.aspx";
-export const CHAT_APP_URL: string =
+export const MIET_BOT_URL: string =
   "https://github.com/mohammadshahidbeigh/mietbot--retrieval-augmented-generation";
-export const PATIENT_PORTAL_URL: string =
+export const OWAIS_YAQOOB_URL: string =
   "https://github.com/mohammadshahidbeigh/owaisyaqoob--client";
-//   export const CHAT_APP_URL: string =
-//   "https://github.com/mohammadshahidbeigh/mietbot--retrieval-augmented-generation";
-// export const PATIENT_PORTAL_URL: string =
-//   "https://github.com/mohammadshahidbeigh/owaisyaqoob--client";
+export const TEXT_WIZARD_URL: string =
+  "https://github.com/mohammadshahidbeigh/textwizard";
+export const MOHAMMAD_SHAHID_URL: string =
+  "https://github.com/mohammadshahidbeigh/mohammadshahid.me";
+export const KNOWIT_ALL_URL: string =
+  "https://github.com/mohammadshahidbeigh/knowitall-chatbot";
+export const AUTOMOBILES_PRICE_URL: string =
+  "https://github.com/mohammadshahidbeigh/automobiles-price-esstimation";
 
 // export const Achievements: string[] = [
 //   "Google Venkat Scholar 2022 - Selected as one of the 14 recipients of the Google Venkat Scholarship among 20,000 applicants across India.",

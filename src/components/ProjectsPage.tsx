@@ -1,10 +1,4 @@
-import {
-  SiGithub,
-  SiMongodb,
-  SiMysql,
-  SiRedis,
-  SiSequelize,
-} from "react-icons/si";
+import { SiGithub, SiMongodb, SiMysql } from "react-icons/si";
 import { BsGlobe } from "react-icons/bs";
 import { FaNodeJs } from "react-icons/fa";
 import {
@@ -15,8 +9,18 @@ import {
   BiLogoCss3,
   BiLogoFirebase,
   BiLogoTypescript,
+  BiLogoPython,
+  BiLogoFirefox,
+  BiLogoFlask,
 } from "react-icons/bi";
-import { CHAT_APP_URL, PATIENT_PORTAL_URL } from "@/constants";
+import {
+  MIET_BOT_URL,
+  OWAIS_YAQOOB_URL,
+  TEXT_WIZARD_URL,
+  MOHAMMAD_SHAHID_URL,
+  KNOWIT_ALL_URL,
+  AUTOMOBILES_PRICE_URL,
+} from "@/constants";
 
 export default function ProjectsPage(): JSX.Element {
   return (
@@ -44,7 +48,7 @@ export default function ProjectsPage(): JSX.Element {
             <div className="bottom-part rounded-b-lg  bg-[#030018]  flex justify-between border-t border-[#b4b4b4] px-6 py-3 dark:border-neutral-700  ">
               <div className=" flex  ">
                 <a
-                  href={CHAT_APP_URL}
+                  href={MIET_BOT_URL}
                   target="_blank"
                   className=" project-icons hover:bg-blue-500 "
                 >
@@ -111,7 +115,7 @@ export default function ProjectsPage(): JSX.Element {
             <div className="bottom-part rounded-b-lg bg-[#030018] flex justify-between border-t border-[#b4b4b4] px-6 py-3 dark:border-neutral-700  ">
               <div className=" flex ">
                 <a
-                  href={PATIENT_PORTAL_URL}
+                  href={OWAIS_YAQOOB_URL}
                   target="_blank"
                   className=" project-icons hover:bg-blue-500 "
                 >
@@ -170,7 +174,7 @@ export default function ProjectsPage(): JSX.Element {
             <div className="bottom-part rounded-b-lg bg-[#030018] flex justify-between border-t border-[#b4b4b4] px-6 py-3 dark:border-neutral-700  ">
               <div className=" flex ">
                 <a
-                  href={PATIENT_PORTAL_URL}
+                  href={TEXT_WIZARD_URL}
                   target="_blank"
                   className=" project-icons hover:bg-blue-500 "
                 >
@@ -178,7 +182,7 @@ export default function ProjectsPage(): JSX.Element {
                   <SiGithub className="text-xl max-[500px]:text-lg" />{" "}
                 </a>
                 <a
-                  href="https://owaisyaqoob.vercel.app"
+                  href="https://textwizard.netlify.app"
                   className=" project-icons pointer-events hover:bg-blue-500 "
                 >
                   {" "}
@@ -196,12 +200,12 @@ export default function ProjectsPage(): JSX.Element {
                 </p>
                 <p className=" project-icons hover:bg-blue-500 ">
                   {" "}
-                  <BiLogoTypescript className="text-xl max-[500px]:text-lg" />{" "}
+                  <BiLogoJavascript className="text-xl max-[500px]:text-lg" />{" "}
                 </p>
-                <p className=" project-icons hover:bg-blue-500 ">
+                {/* <p className=" project-icons hover:bg-blue-500 ">
                   {" "}
                   <SiMongodb className="text-xl max-[500px]:text-lg" />{" "}
-                </p>
+                </p> */}
                 {/* <p className=" project-icons hover:bg-blue-500 ">
                   {" "}
                   <SiSequelize className="text-xl max-[500px]:text-lg" />{" "}
@@ -232,7 +236,7 @@ export default function ProjectsPage(): JSX.Element {
             <div className="bottom-part rounded-b-lg bg-[#030018] flex justify-between border-t border-[#b4b4b4] px-6 py-3 dark:border-neutral-700  ">
               <div className=" flex ">
                 <a
-                  href={PATIENT_PORTAL_URL}
+                  href={MOHAMMAD_SHAHID_URL}
                   target="_blank"
                   className=" project-icons hover:bg-blue-500 "
                 >
@@ -240,7 +244,7 @@ export default function ProjectsPage(): JSX.Element {
                   <SiGithub className="text-xl max-[500px]:text-lg" />{" "}
                 </a>
                 <a
-                  href="https://owaisyaqoob.vercel.app"
+                  href="https://www.mohammadshahid.me"
                   className=" project-icons pointer-events hover:bg-blue-500 "
                 >
                   {" "}
@@ -260,10 +264,10 @@ export default function ProjectsPage(): JSX.Element {
                   {" "}
                   <BiLogoTypescript className="text-xl max-[500px]:text-lg" />{" "}
                 </p>
-                <p className=" project-icons hover:bg-blue-500 ">
+                {/* <p className=" project-icons hover:bg-blue-500 ">
                   {" "}
                   <SiMongodb className="text-xl max-[500px]:text-lg" />{" "}
-                </p>
+                </p> */}
                 {/* <p className=" project-icons hover:bg-blue-500 ">
                   {" "}
                   <SiSequelize className="text-xl max-[500px]:text-lg" />{" "}
@@ -292,7 +296,7 @@ export default function ProjectsPage(): JSX.Element {
             <div className="bottom-part rounded-b-lg bg-[#030018] flex justify-between border-t border-[#b4b4b4] px-6 py-3 dark:border-neutral-700  ">
               <div className=" flex ">
                 <a
-                  href={PATIENT_PORTAL_URL}
+                  href={KNOWIT_ALL_URL}
                   target="_blank"
                   className=" project-icons hover:bg-blue-500 "
                 >
@@ -300,7 +304,7 @@ export default function ProjectsPage(): JSX.Element {
                   <SiGithub className="text-xl max-[500px]:text-lg" />{" "}
                 </a>
                 <a
-                  href="https://owaisyaqoob.vercel.app"
+                  href="https://knowitall-chatbot.vercel.app"
                   className=" project-icons pointer-events hover:bg-blue-500 "
                 >
                   {" "}
@@ -308,26 +312,32 @@ export default function ProjectsPage(): JSX.Element {
                 </a>
               </div>
               <div className=" flex ">
-                <p className=" project-icons hover:bg-blue-500 ">
+                {/* <p className=" project-icons hover:bg-blue-500 ">
                   {" "}
                   <FaNodeJs className="text-xl max-[500px]:text-lg" />{" "}
-                </p>
-                <p className=" project-icons hover:bg-blue-500">
-                  {" "}
-                  <BiLogoReact className="text-xl max-[500px]:text-lg" />{" "}
-                </p>
+                </p> */}
                 <p className=" project-icons hover:bg-blue-500 ">
                   {" "}
-                  <BiLogoTypescript className="text-xl max-[500px]:text-lg" />{" "}
+                  <BiLogoHtml5 className="text-xl max-[500px]:text-lg " />{" "}
                 </p>
+
                 <p className=" project-icons hover:bg-blue-500 ">
                   {" "}
-                  <SiMongodb className="text-xl max-[500px]:text-lg" />{" "}
+                  <BiLogoCss3 className="text-xl max-[500px]:text-lg" />{" "}
+                </p>
+
+                <p className=" project-icons hover:bg-blue-500 ">
+                  {" "}
+                  <BiLogoJavascript className="text-xl max-[500px]:text-lg" />{" "}
                 </p>
                 {/* <p className=" project-icons hover:bg-blue-500 ">
                   {" "}
-                  <SiSequelize className="text-xl max-[500px]:text-lg" />{" "}
+                  <BiLogoReact className="text-xl max-[500px]:text-lg" />{" "}
                 </p> */}
+                <p className=" project-icons hover:bg-blue-500">
+                  {" "}
+                  <BiLogoFirebase className="text-xl max-[500px]:text-lg" />{" "}
+                </p>
               </div>
             </div>
           </div>
@@ -355,7 +365,7 @@ export default function ProjectsPage(): JSX.Element {
             <div className="bottom-part rounded-b-lg bg-[#030018] flex justify-between border-t border-[#b4b4b4] px-6 py-3 dark:border-neutral-700  ">
               <div className=" flex ">
                 <a
-                  href={PATIENT_PORTAL_URL}
+                  href={AUTOMOBILES_PRICE_URL}
                   target="_blank"
                   className=" project-icons hover:bg-blue-500 "
                 >
@@ -363,8 +373,8 @@ export default function ProjectsPage(): JSX.Element {
                   <SiGithub className="text-xl max-[500px]:text-lg" />{" "}
                 </a>
                 <a
-                  href="https://owaisyaqoob.vercel.app"
-                  className=" project-icons pointer-events hover:bg-blue-500 "
+                  href=""
+                  className=" project-icons pointer-events-none hover:bg-blue-500 "
                 >
                   {" "}
                   <BsGlobe className="text-xl max-[500px]:text-lg" />{" "}
@@ -373,24 +383,28 @@ export default function ProjectsPage(): JSX.Element {
               <div className=" flex ">
                 <p className=" project-icons hover:bg-blue-500 ">
                   {" "}
-                  <FaNodeJs className="text-xl max-[500px]:text-lg" />{" "}
+                  <BiLogoJavascript className="text-xl max-[500px]:text-lg" />{" "}
                 </p>
                 <p className=" project-icons hover:bg-blue-500">
                   {" "}
-                  <BiLogoReact className="text-xl max-[500px]:text-lg" />{" "}
+                  <BiLogoHtml5 className="text-xl max-[500px]:text-lg" />{" "}
                 </p>
                 <p className=" project-icons hover:bg-blue-500 ">
                   {" "}
-                  <BiLogoTypescript className="text-xl max-[500px]:text-lg" />{" "}
+                  <BiLogoCss3 className="text-xl max-[500px]:text-lg" />{" "}
                 </p>
                 <p className=" project-icons hover:bg-blue-500 ">
                   {" "}
-                  <SiMongodb className="text-xl max-[500px]:text-lg" />{" "}
+                  <BiLogoPython className="text-xl max-[500px]:text-lg" />{" "}
                 </p>
-                {/* <p className=" project-icons hover:bg-blue-500 ">
+                <p className=" project-icons hover:bg-blue-500 ">
                   {" "}
-                  <SiSequelize className="text-xl max-[500px]:text-lg" />{" "}
-                </p> */}
+                  <SiMysql className="text-xl max-[500px]:text-lg" />{" "}
+                </p>
+                <p className=" project-icons hover:bg-blue-500 ">
+                  {" "}
+                  <BiLogoFlask className="text-xl max-[500px]:text-lg" />{" "}
+                </p>
               </div>
             </div>
           </div>
