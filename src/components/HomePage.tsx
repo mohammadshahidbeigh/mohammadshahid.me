@@ -112,7 +112,7 @@ export default function HomePage(): JSX.Element {
         <span className="cursor blink text-blue-500 italic">|</span>
       </div>
 
-      <div className="social-links flex justify-center space-x-4 animate-fade-in border border-white dark:border-black outline-1 w-min mx-auto rounded-md p-2 mb-16">
+      <div className="social-links flex justify-center space-x-4 animate-fade-in border border-white dark:border-black outline-1 w-min mx-auto rounded-md p-2 ">
         <a
           href={LINKEDIN_URL}
           target="_blank"
@@ -126,6 +126,24 @@ export default function HomePage(): JSX.Element {
           className="project-icons hover:bg-blue-500"
         >
           <SiGithub className="text-2xl text-white" />
+        </a>
+      </div>
+      {/* View and Download Resume Buttons */}
+      <div className="flex justify-center space-x-4 mx-auto p-2">
+        {/* View Resume Button */}
+        <button
+          onClick={() => window.open("/Resumee.pdf", "_blank", "noopener")}
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4"
+        >
+          View Resume
+        </button>
+        {/* Download Resume Button */}
+        <a
+          href="/Resumee.pdf" // Replace with the path to your PDF resume
+          download="resume.pdf"
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4"
+        >
+          Download Resume
         </a>
       </div>
     </div>
