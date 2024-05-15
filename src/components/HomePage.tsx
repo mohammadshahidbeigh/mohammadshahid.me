@@ -133,7 +133,7 @@ export default function HomePage(): JSX.Element {
         {/* View Resume Button */}
         <button
           onClick={() => window.open("/Resumee.pdf", "_blank", "noopener")}
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded mt-4"
+          className="bg-blue-500 font-bold py-1 px-4 rounded mt-4 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500"
         >
           View Resume
         </button>
@@ -141,7 +141,7 @@ export default function HomePage(): JSX.Element {
         <a
           href="/Resumee.pdf" // Replace with the path to your PDF resume
           download="resume.pdf"
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded mt-4"
+          className="bg-white-500 font-bold py-1 px-4 rounded mt-4 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500"
         >
           Download Resume
         </a>

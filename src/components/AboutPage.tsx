@@ -80,13 +80,13 @@ export default function AboutPage(): JSX.Element {
   return (
     <div id="about" className=" main-div-ui bg-[#030018]  ">
       <div className="animate-fade-in max-w-screen-xl mx-auto max-[480px]:p-1  p-4 md:p-8 ">
-        <h2 className="title-ui">About</h2>
+        <h2 className="title-ui ">About</h2>
 
         <div className="sub-main-div-ui  ">
           {/* Education and Coding Profile (Left) */}
           <div className=" flex flex-col space-y-4   ">
             <div className="card-ui p-4 bg-[#030018] ">
-              <p className="text-2xl max-[500px]:text-xl font-bold mb-0 text-center ">
+              <p className="text-2xl max-[500px]:text-xl font-bold mb-0 text-center">
                 Education
               </p>
               <hr className="hr-ui " />
@@ -96,23 +96,23 @@ export default function AboutPage(): JSX.Element {
                 <a
                   href={MIET_Jammu}
                   target="_blank"
-                  className=" p-1 hover:bg-blue-500 rounded-md "
+                  className=" p-1 hover:bg-blue-500 rounded-md  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500"
                 >
                   Model Institute Of Engineering & Technology , Jammu
                 </a>{" "}
               </p>
               <p className="flex justify-between mb-1">
                 {" "}
-                <span className=" bg-[#030018] rounded-md px-1 py-1 ">
+                <span className=" bg-[#030018] rounded-md px-1 py-1  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
                   B.E - Electronics and Communication Engineering
                 </span>{" "}
-                <span className=" bg-[#030018] rounded-md px-1 py-1 hover:bg-blue-500">
+                <span className=" bg-[#030018] rounded-md px-1 py-1 hover:bg-blue-500  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
                   July 20 - June 24
                 </span>{" "}
               </p>
               <p className="flex justify-end mb-1 max-[360px]:text-xs">
                 {" "}
-                <span className="text-center bg-[#030018] hover:bg-blue-500 rounded-md px-1 py-1">
+                <span className="text-center bg-[#030018] hover:bg-blue-500 rounded-md px-1 py-1  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
                   {" "}
                   CGPA: 7.50 / 10{" "}
                 </span>{" "}
@@ -231,7 +231,7 @@ export default function AboutPage(): JSX.Element {
             </p>
             <hr className="hr-ui " />
 
-            <p className="text-xl font-bold mb-0 text-center">
+            <p className="text-xl font-bold mb-0 text-center  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               Programming Languages
             </p>
             <hr className="hr-small-ui" />
@@ -249,7 +249,9 @@ export default function AboutPage(): JSX.Element {
               ))}
             </div>
 
-            <p className="text-xl font-bold mb-0 text-center">Topics</p>
+            <p className="text-xl font-bold mb-0 text-center  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+              Topics
+            </p>
             <hr className="hr-small-ui" />
 
             <div className="flex flex-wrap px-4 max-[500px]:px-2">
@@ -265,7 +267,7 @@ export default function AboutPage(): JSX.Element {
               ))}
             </div>
 
-            <p className="text-xl font-bold mb-0 text-center">
+            <p className="text-xl font-bold mb-0 text-center  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               Softwares and Libraries
             </p>
             <hr className="hr-small-ui" />

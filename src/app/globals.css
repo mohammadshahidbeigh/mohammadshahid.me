@@ -109,7 +109,7 @@ body {
   }
 
   .title-ui {
-    @apply text-3xl max-[500px]:text-2xl font-semibold mb-6 text-center;
+    @apply text-4xl max-[500px]:text-2xl font-bold mb-6 text-center;
   }
 
   .exp-url-ui {
