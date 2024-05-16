@@ -151,7 +151,7 @@ export default function HomePage(): JSX.Element {
         </button>
         {/* Download Resume Button */}
         <a
-          href="/Resumee.pdf" // Replace with the path to your PDF resume
+          href="/resume.pdf" // Replace with the path to your PDF resume
           download="resume.pdf"
           className="bg-white-500 font-bold py-1 px-4 rounded mt-4 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500"
         >
