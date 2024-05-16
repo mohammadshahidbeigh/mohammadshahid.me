@@ -144,7 +144,7 @@ export default function HomePage(): JSX.Element {
       <div className="flex justify-center space-x-4 mx-auto p-2">
         {/* View Resume Button */}
         <button
-          onClick={() => window.open("/resumee.pdf", "_blank", "noopener")}
+          onClick={() => window.open("/resume.pdf", "_blank", "noopener")}
           className="bg-blue-500 font-bold py-1 px-4 rounded mt-4 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500"
         >
           View Resume
