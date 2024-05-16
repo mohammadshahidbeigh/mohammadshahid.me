@@ -1,9 +1,8 @@
 "use client";
 
-// Import necessary modules and components
+import { useEffect, useRef, useState } from "react";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 import { Dancing_Script } from "next/font/google";
-import { useEffect, useRef } from "react";
 import ParticlesBg from "./backgroundEffects/ParticlesBg";
 import { GITHUB_URL, LINKEDIN_URL } from "../constants";
 import Image from "next/image"; // Import the Image component from Next.js
@@ -17,17 +16,17 @@ const dancing = Dancing_Script({
 
 // Define the HomePage component
 export default function HomePage(): JSX.Element {
-  // Define changing texts and typing delay
   const changingTexts = ["Front End Software Engineer", "Problem Solver"];
-  let typingDelay = 150;
-  let delayAfterTyping = 2000; // 3 seconds delay
+  const typingDelay = 150;
+  const delayAfterTyping = 2000; // 3 seconds delay
 
-  // Define useRef hooks for managing text animation
   const el: any = useRef("");
   const currentIndexRef = useRef(0);
   const currentTextIndexRef = useRef(0);
   const renderedTextRef = useRef("");
   let timerId: any = null;
+
+  const [profileViews, setProfileViews] = useState<number | null>(null);
 
   // Function to change the text
   const changeText = () => {
@@ -63,16 +62,29 @@ export default function HomePage(): JSX.Element {
     timerId = setInterval(changeText, typingDelay);
   };
 
-  // useEffect hook to start text typing animation on component mount
+  // Fetch profile views from an API endpoint
+  const fetchProfileViews = async () => {
+    try {
+      const response = await fetch("/api/profile-views");
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const data = await response.json();
+      setProfileViews(data.views);
+    } catch (error) {
+      console.error("Error fetching profile views:", error);
+    }
+  };
+
   useEffect(() => {
     startTyping();
+    fetchProfileViews();
 
     return () => {
       clearInterval(timerId);
     };
   }, []);
 
-  // Return the JSX for the HomePage component
   return (
     <div
       id="home-section"
@@ -146,6 +158,13 @@ export default function HomePage(): JSX.Element {
           Download Resume
         </a>
       </div>
+
+      {/* Profile Views Button */}
+      {profileViews !== null && (
+        <button className="bg-blue-500 font-bold py-1 px-4 rounded mt-4 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+          Profile Views: {profileViews}
+        </button>
+      )}
     </div>
   );
 }

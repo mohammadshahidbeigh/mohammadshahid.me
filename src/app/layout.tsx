@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Raleway } from "next/font/google";
 import Navbar from "@/components/Navbar";
+import Script from "next/script";
 
 const raleway = Raleway({
   weight: "400",
@@ -12,7 +13,7 @@ const raleway = Raleway({
 export const metadata: Metadata = {
   title: {
     template: "%s | Mohammad Shahid Beigh",
-    default: "Mohammad Shahid Beigh |Front End Software Engineer",
+    default: "Mohammad Shahid Beigh | Front End Software Engineer",
   },
   description:
     "Mohammad Shahid Beigh - Front End Software Development Engineer - My personal portfolio website",
@@ -56,6 +57,21 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=G-7E1RFT6HD3`}
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-7E1RFT6HD3');
+          `}
+        </Script>
+      </head>
       <body>
         <Navbar />
         {children}
