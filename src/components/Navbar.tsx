@@ -9,39 +9,6 @@ export default function Navbar(): JSX.Element {
   const pathname = usePathname();
   const [activeSection, setActiveSection] = useState<string | null>(null);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const sectionOffsets: { [key: string]: number } = {};
-      NavList.forEach((item) => {
-        const section = document.getElementById(item.href.substring(1));
-        if (section) {
-          sectionOffsets[item.href.substring(1)] = section.offsetTop;
-        }
-      });
-
-      const scrollPosition = window.scrollY;
-
-      let activeSectionId = null;
-      for (const [id, offset] of Object.entries(sectionOffsets)) {
-        if (scrollPosition >= offset) {
-          activeSectionId = id;
-        } else {
-          break;
-        }
-      }
-
-      setActiveSection(activeSectionId);
-    };
-
-    // Attach scroll event listener
-    window.addEventListener("scroll", handleScroll);
-
-    // Remove scroll event listener on component unmount
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
     <div
       className="dark:text-white fixed flex rounded-2xl max-[950px]: mb-2 ml-2 
