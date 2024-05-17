@@ -89,7 +89,7 @@ export default function HomePage(): JSX.Element {
       <ParticlesBg />
       <div className="relative">
         <div className="flex justify-center">
-          <div className="w-60 h-60 rounded-full overflow-hidden border-4 border-white shadow-xl mb-12 relative">
+          <div className="w-60 h-60 rounded-full overflow-hidden border-4 border-white shadow-xl mb-8 relative">
             <div className="border-2 border-black rounded-full w-full h-full absolute animate-spin-fast"></div>
             <Image
               src="/Image.png"
