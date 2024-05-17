@@ -130,20 +130,20 @@ export default function HomePage(): JSX.Element {
       <div className="flex justify-center space-x-4 mx-auto p-2">
         <button
           onClick={() => window.open("/resume.pdf", "_blank", "noopener")}
-          className="font-bold py-1 px-4 rounded mt-4 font-semibold bg-gradient-to-r from-purple-500 to-cyan-500"
+          className="font-bold py-1 px-4 rounded mt-4 font-semibold bg-gradient-to-r from-purple-500 to-cyan-500 hover:from-purple-700 hover:to-cyan-700"
         >
           View Resume
         </button>
         <a
           href="/resume.pdf"
           download="resume.pdf"
-          className="font-bold py-1 px-4 rounded mt-4 font-semibold bg-gradient-to-r from-purple-500 to-cyan-500"
+          className="font-bold py-1 px-4 rounded mt-4 font-semibold bg-gradient-to-r from-purple-500 to-cyan-500 hover:from-purple-700 hover:to-cyan-700"
         >
           Download Resume
         </a>
       </div>
       {profileViews !== null && (
-        <button className="font-bold py-1 px-4 space-x-4 mx-auto p-2 rounded mt-4 font-semibold bg-gradient-to-r from-purple-500 to-cyan-500 cursor-text">
+        <button className="font-bold py-1 px-4 space-x-4 mx-auto p-2 rounded mt-4 font-semibold bg-gradient-to-r from-purple-500 to-cyan-500 cursor-text hover:from-purple-700 hover:to-cyan-700">
           Profile Views: {profileViews}
         </button>
       )}
