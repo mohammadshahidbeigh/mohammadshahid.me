@@ -97,6 +97,7 @@ export default function HomePage(): JSX.Element {
               width={260}
               height={260}
               className="object-cover"
+              priority // Add the priority attribute
             />
           </div>
         </div>
