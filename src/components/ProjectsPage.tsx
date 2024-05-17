@@ -30,7 +30,7 @@ export default function ProjectsPage(): JSX.Element {
         <div className="sub-main-div-ui">
           {/* First project card */}
           <div className="flex flex-col card-ui text-center bg-[#030018]">
-            <div className="border-b font border-[#b4b4b4] px-6 py-3 dark:border-neutral-700 bg-[#030018]  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+            <div className="text-lg border-b font border-[#b4b4b4] px-6 py-3 dark:border-neutral-700 bg-[#030018]  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               MietBot
             </div>
             <div className="p-5 m-0 flex-grow">
@@ -109,7 +109,7 @@ export default function ProjectsPage(): JSX.Element {
 
           {/* Second project card */}
           <div className="flex flex-col card-ui text-center bg-[#030018]">
-            <div className="border-b font border-[#b4b4b4] px-6 py-3 dark:border-neutral-700 bg-[#030018]  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+            <div className="text-lg border-b font border-[#b4b4b4] px-6 py-3 dark:border-neutral-700 bg-[#030018]  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               Owais Yaqoob -- Freelance Client
             </div>
             <div className="p-5 m-0 flex-grow">
@@ -173,7 +173,7 @@ export default function ProjectsPage(): JSX.Element {
 
           {/* Third project card */}
           <div className="flex flex-col card-ui text-center bg-[#030018]">
-            <div className="border-b font border-[#b4b4b4] px-6 py-3 dark:border-neutral-700 bg-[#030018]  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+            <div className="text-lg border-b font border-[#b4b4b4] px-6 py-3 dark:border-neutral-700 bg-[#030018]  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               Text-Wizard
             </div>
             <div className="p-5 m-0 flex-grow">
@@ -234,7 +234,7 @@ export default function ProjectsPage(): JSX.Element {
 
           {/* Fourth project card */}
           <div className="flex flex-col card-ui text-center bg-[#030018]">
-            <div className="border-b font border-[#b4b4b4] px-6 py-3 dark:border-neutral-700 bg-[#030018]  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+            <div className="text-lg border-b font border-[#b4b4b4] px-6 py-3 dark:border-neutral-700 bg-[#030018]  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               mohammadshahid.me
             </div>
             <div className="p-5 m-0 flex-grow">
@@ -297,7 +297,7 @@ export default function ProjectsPage(): JSX.Element {
 
           {/* Fifth project card */}
           <div className="flex flex-col card-ui text-center bg-[#030018]">
-            <div className="border-b font border-[#b4b4b4] px-6 py-3 dark:border-neutral-700 bg-[#030018]  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+            <div className="text-lg border-b font border-[#b4b4b4] px-6 py-3 dark:border-neutral-700 bg-[#030018]  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               KnowItAll - ChatBot
             </div>
             <div className="p-5 m-0 flex-grow">
@@ -363,7 +363,7 @@ export default function ProjectsPage(): JSX.Element {
           </div>
 
           {/* Sixth project card */}
-          <div className="flex flex-col card-ui text-center bg-[#030018]">
+          <div className="text-lg flex flex-col card-ui text-center bg-[#030018]">
             <div className="border-b font border-[#b4b4b4] px-6 py-3 dark:border-neutral-700 bg-[#030018]  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               Automobiles-Price-Estimation
             </div>

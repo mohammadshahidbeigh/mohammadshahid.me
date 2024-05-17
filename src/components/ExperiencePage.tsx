@@ -10,14 +10,14 @@ export default function ExperiencePage(): JSX.Element {
         <div className="sub-main-div-ui">
           {/* card 1 */}
           <div className="card-ui p-6 pl-3  mx-auto bg-[#030018]">
-            <p className=" font-bold  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 ">
+            <p className=" font-bold text-lg text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 ">
               Web Developer- Freelance
             </p>
             <p className="flex justify-between mt-2	">
               <a
                 href={UPWORK_URL}
                 target="_blank"
-                className="exp-url-ui   p-1 hover:bg-blue-500 rounded-md  font-semibold bg-gradient-to-r from-purple-500 to-cyan-500 hover:from-purple-700 hover:to-cyan-700"
+                className="exp-url-ui text-base p-1 h rounded-md  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 hover:from-purple-700 hover:to-cyan-700 "
               >
                 Upwork
               </a>{" "}
@@ -63,14 +63,14 @@ export default function ExperiencePage(): JSX.Element {
           {/* card 2 */}
 
           <div className="card-ui p-6 pl-3  mx-auto bg-[#030018]">
-            <p className=" font-bold  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+            <p className=" text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               Machine Learning Trainee
             </p>
             <p className="flex justify-between mt-2">
               <a
                 href={ThinkNext_UTL}
                 target="_blank"
-                className="exp-url-ui  p-1 hover:bg-blue-500 rounded-md  font-semibold bg-gradient-to-r from-purple-500 to-cyan-500 hover:from-purple-700 hover:to-cyan-700"
+                className="exp-url-ui text-base p-1 h rounded-md  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 hover:from-purple-700 hover:to-cyan-700 "
               >
                 ThinkNEXT Technologies Private Limited · Apprenticeship
               </a>{" "}

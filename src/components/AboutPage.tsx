@@ -96,23 +96,23 @@ export default function AboutPage(): JSX.Element {
                 <a
                   href={MIET_Jammu}
                   target="_blank"
-                  className=" p-1 hover:bg-blue-500 rounded-md font-semibold bg-gradient-to-r from-purple-500 to-cyan-500 hover:from-purple-700 hover:to-cyan-700"
+                  className="text-lg p-1 rounded-md  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 hover:from-purple-700 hover:to-cyan-700 "
                 >
                   Model Institute Of Engineering & Technology , Jammu
                 </a>{" "}
               </p>
               <p className="flex justify-between mb-1">
                 {" "}
-                <span className=" bg-[#030018] rounded-md px-1 py-1  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+                <span className=" rounded-md px-1 py-1  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
                   B.E - Electronics and Communication Engineering
                 </span>{" "}
-                <span className=" bg-[#030018] rounded-md px-1 py-1 hover:bg-blue-500  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+                <span className=" rounded-md px-1 py-1 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
                   July 20 - June 24
                 </span>{" "}
               </p>
               <p className="flex justify-end mb-1 max-[360px]:text-xs">
                 {" "}
-                <span className="text-center bg-[#030018] hover:bg-blue-500 rounded-md px-1 py-1  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+                <span className="text-center hover:bg-blue-500 rounded-md px-1 py-1  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
                   {" "}
                   CGPA: 7.50 / 10{" "}
                 </span>{" "}
