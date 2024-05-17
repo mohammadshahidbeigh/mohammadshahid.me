@@ -17,7 +17,7 @@ export default function ExperiencePage(): JSX.Element {
               <a
                 href={UPWORK_URL}
                 target="_blank"
-                className="exp-url-ui  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500"
+                className="exp-url-ui   p-1 hover:bg-blue-500 rounded-md  font-semibold bg-gradient-to-r from-purple-500 to-cyan-500 hover:from-purple-700 hover:to-cyan-700"
               >
                 Upwork
               </a>{" "}
@@ -70,7 +70,7 @@ export default function ExperiencePage(): JSX.Element {
               <a
                 href={ThinkNext_UTL}
                 target="_blank"
-                className="exp-url-ui  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500"
+                className="exp-url-ui  p-1 hover:bg-blue-500 rounded-md  font-semibold bg-gradient-to-r from-purple-500 to-cyan-500 hover:from-purple-700 hover:to-cyan-700"
               >
                 ThinkNEXT Technologies Private Limited · Apprenticeship
               </a>{" "}

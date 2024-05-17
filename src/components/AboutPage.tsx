@@ -96,7 +96,7 @@ export default function AboutPage(): JSX.Element {
                 <a
                   href={MIET_Jammu}
                   target="_blank"
-                  className=" p-1 hover:bg-blue-500 rounded-md  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500"
+                  className=" p-1 hover:bg-blue-500 rounded-md font-semibold bg-gradient-to-r from-purple-500 to-cyan-500 hover:from-purple-700 hover:to-cyan-700"
                 >
                   Model Institute Of Engineering & Technology , Jammu
                 </a>{" "}
@@ -242,7 +242,7 @@ export default function AboutPage(): JSX.Element {
                   key={index}
                   className="skill-div-ui bg-[#030018] hover:bg-blue-500"
                 >
-                  <p className="-mt-1 font-sans max-[500px]:text-sm bg-[#030018] hover:bg-blue-500">
+                  <p className="-mt-1 font-sans max-[500px]:text-sm  ">
                     {skill}
                   </p>
                 </div>
@@ -260,7 +260,7 @@ export default function AboutPage(): JSX.Element {
                   key={index}
                   className="skill-div-ui bg-[#030018] hover:bg-blue-500"
                 >
-                  <p className="-mt-1 font-sans max-[500px]:text-sm bg-[#030018] hover:bg-blue-500">
+                  <p className="-mt-1 font-sans max-[500px]:text-sm ">
                     {skill}
                   </p>
                 </div>
@@ -278,9 +278,7 @@ export default function AboutPage(): JSX.Element {
                   key={index}
                   className="skill-div-ui bg-[#030018] hover:bg-blue-500"
                 >
-                  <p className="-mt-1 font-sans max-[500px]:text-sm bg-[#030018] hover:bg-blue-500 ">
-                    {skill}
-                  </p>
+                  <p className="-mt-1 font-sans max-[500px]:text-sm">{skill}</p>
                 </div>
               ))}
             </div>
