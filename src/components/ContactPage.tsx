@@ -24,7 +24,7 @@ export default function ContactPage(): JSX.Element {
       <div className="container mx-auto animate-fade-in">
         <h2 className="title-ui mb-8">Get in touch</h2>
         <div className="my-2 flex justify-center space-x-4 mb-6 rounded-md w-min mx-auto border border-[#b4b4b4] dark:border-[#1e1e1e] outline-1 p-2">
-          <a href={EMAIL} className="project-icons hover:bg-blue-500">
+          <a href={EMAIL} className="project-icons hover:bg-red-500">
             <SiGmail className="text-3xl max-[500px]:text-xl" />
           </a>
           <a
@@ -37,7 +37,7 @@ export default function ContactPage(): JSX.Element {
           <a
             href={GITHUB_URL}
             target="_blank"
-            className="project-icons hover:bg-blue-500"
+            className="project-icons hover:bg-black-500"
           >
             <SiGithub className="text-3xl max-[500px]:text-xl" />
           </a>
@@ -46,7 +46,7 @@ export default function ContactPage(): JSX.Element {
           <a
             href={INSTAGRAM_URL}
             target="_blank"
-            className="project-icons hover:bg-red-500"
+            className="project-icons hover:bg-pink-500"
           >
             <SiInstagram className="text-3xl max-[500px]:text-xl" />
           </a>
