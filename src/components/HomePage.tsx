@@ -143,7 +143,7 @@ export default function HomePage(): JSX.Element {
         </a>
       </div>
       {profileViews !== null && (
-        <button className="bg-blue-500 font-bold py-1 px-4 rounded mt-4 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+        <button className="bg-blue-500 font-bold py-1 px-4 rounded mt-4 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 cursor-text">
           Profile Views: {profileViews}
         </button>
       )}
