@@ -7,18 +7,16 @@ import ParticlesBg from "./backgroundEffects/ParticlesBg";
 import { GITHUB_URL, LINKEDIN_URL } from "../constants";
 import Image from "next/image"; // Import the Image component from Next.js
 
-// Define the Dancing Script font
 const dancing = Dancing_Script({
   weight: "400",
   subsets: ["latin"],
   display: "swap",
 });
 
-// Define the HomePage component
 export default function HomePage(): JSX.Element {
   const changingTexts = ["Front End Software Engineer", "Problem Solver"];
   const typingDelay = 150;
-  const delayAfterTyping = 2000; // 3 seconds delay
+  const delayAfterTyping = 2000;
 
   const el: any = useRef("");
   const currentIndexRef = useRef(0);
@@ -26,12 +24,10 @@ export default function HomePage(): JSX.Element {
   const renderedTextRef = useRef("");
   let timerId: any = null;
 
-  const [profileViews, setProfileViews] = useState<number | null>(null);
+  const [profileViews, setProfileViews] = useState<string | null>(null);
 
-  // Function to change the text
   const changeText = () => {
     let curText = renderedTextRef.current;
-
     if (
       changingTexts[currentIndexRef.current].length >
       currentTextIndexRef.current
@@ -50,27 +46,27 @@ export default function HomePage(): JSX.Element {
         currentTextIndexRef.current = 0;
         renderedTextRef.current = "";
         if (el && el.current) {
-          el.current.innerText = ""; // Clear the text
+          el.current.innerText = "";
         }
         startTyping();
       }, delayAfterTyping);
     }
   };
 
-  // Function to start text typing animation
   const startTyping = () => {
     timerId = setInterval(changeText, typingDelay);
   };
 
-  // Fetch profile views from an API endpoint
   const fetchProfileViews = async () => {
     try {
+      console.log("Fetching profile views...");
       const response = await fetch("/api/profile-views");
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
       const data = await response.json();
-      setProfileViews(data.views);
+      console.log("Profile views data:", data);
+      setProfileViews(data.message);
     } catch (error) {
       console.error("Error fetching profile views:", error);
     }
@@ -91,13 +87,9 @@ export default function HomePage(): JSX.Element {
       className="h-screen flex flex-col justify-center text-center relative"
     >
       <ParticlesBg />
-
-      {/* Container for the image and name */}
       <div className="relative">
-        {/* Image */}
         <div className="flex justify-center">
           <div className="w-60 h-60 rounded-full overflow-hidden border-4 border-white shadow-xl mb-12 relative">
-            {/* Circular border animation */}
             <div className="border-2 border-black rounded-full w-full h-full absolute animate-spin-fast"></div>
             <Image
               src="/Image.png"
@@ -108,22 +100,17 @@ export default function HomePage(): JSX.Element {
             />
           </div>
         </div>
-
-        {/* Name */}
         <h1
           className={`absolute bottom-[-30px] left-1/2 transform -translate-x-1/2 ${dancing.className} name-title-ui text-white animate-fade-in`}
         >
           Mohammad Shahid Beigh
         </h1>
       </div>
-
-      {/* Text and social links */}
       <div className="text-lg md:text-xl lg:text-2xl max-md:text-center text-white animate-fade-in my-1 mt-8">
         I am a{" "}
         <span className="changing-text text-blue-500 italic" ref={el}></span>
         <span className="cursor blink text-blue-500 italic">|</span>
       </div>
-
       <div className="social-links flex justify-center space-x-4 animate-fade-in border border-white dark:border-black outline-1 w-min mx-auto rounded-md p-2 ">
         <a
           href={LINKEDIN_URL}
@@ -140,26 +127,21 @@ export default function HomePage(): JSX.Element {
           <SiGithub className="text-2xl text-white" />
         </a>
       </div>
-      {/* View and Download Resume Buttons */}
       <div className="flex justify-center space-x-4 mx-auto p-2">
-        {/* View Resume Button */}
         <button
           onClick={() => window.open("/resume.pdf", "_blank", "noopener")}
           className="bg-blue-500 font-bold py-1 px-4 rounded mt-4 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500"
         >
           View Resume
         </button>
-        {/* Download Resume Button */}
         <a
-          href="/resume.pdf" // Replace with the path to your PDF resume
+          href="/resume.pdf"
           download="resume.pdf"
           className="bg-white-500 font-bold py-1 px-4 rounded mt-4 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500"
         >
           Download Resume
         </a>
       </div>
-
-      {/* Profile Views Button */}
       {profileViews !== null && (
         <button className="bg-blue-500 font-bold py-1 px-4 rounded mt-4 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
           Profile Views: {profileViews}
