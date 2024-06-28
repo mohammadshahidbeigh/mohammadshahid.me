@@ -7,6 +7,7 @@ const testimonials = [
     author: "Owais Yaqoob",
     position: "Professional MMA Fighter",
     image: "/owaisyaqoob.png",
+    link: "https://owaisyaqoob.com", // Add the link property
   },
   // Add more testimonials here as needed
 ];
@@ -39,6 +40,16 @@ export default function TestimonialsPage(): JSX.Element {
                   <p className="text-black font-semibold mt-2">
                     — {testimonial.author}, {testimonial.position}
                   </p>
+                  {testimonial.link && (
+                    <a
+                      href={testimonial.link}
+                      className="text-blue-900 font-semibold mt-2 inline-block"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      www.owaisyaqoob.com
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
