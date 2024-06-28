@@ -31,15 +31,16 @@ export default function ProjectsPage(): JSX.Element {
           {/* First project card */}
           <div className="flex flex-col card-ui text-center bg-[#030018]">
             <div className="text-lg border-b font border-[#b4b4b4] px-6 py-3 dark:border-neutral-700 bg-[#030018]  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-              MietBot
+              Campus360
             </div>
             <div className="p-5 m-0 flex-grow">
               <p className="mb-0 text-base max-[500px]:text-sm text-justify">
                 <li className="flex space-x-1 my-2">
                   <ListTick />
                   <span className="text-justify">
-                    Developed MIETBOT, an AI-driven virtual assistant providing
-                    real-time support and personalized assistance to users.
+                    Developed Campus360, an AI-driven virtual assistant
+                    providing real-time support and personalized assistance to
+                    users.
                     <br />
                     - Enhanced communication and reduced language barriers by
                     40% using OpenAI API vector embeddings.
@@ -50,14 +51,14 @@ export default function ProjectsPage(): JSX.Element {
                 <li className="flex space-x-1 my-2">
                   <ListTick />
                   <span className="text-justify">
-                    Implemented a robust software stack: HTML, CSS, JavaScript,
-                    Python, Firebase, Supabase Vector Database for OpenAI
-                    embeddings.
+                    Implemented a robust software stack: ReactJs, TypeScript,
+                    Tailwind Css, Python, OpenAI API, Firebase, Supabase Vector
+                    Database for OpenAI embeddings.
                     <br />- Facilitated front-end development, web scraping,
                     database management, and embedding storage.
                     <br />- Optimized response generation and language modeling
-                    using RAG (Retrieval Augmented Generation) and Langchain JS
-                    Framework.
+                    using RAG (Retrieval Augmented Generation), Prompt
+                    Engineering and Langchain.js
                   </span>
                 </li>
                 <li className="flex space-x-1 my-2">
@@ -84,7 +85,7 @@ export default function ProjectsPage(): JSX.Element {
                   <SiGithub className="text-xl max-[500px]:text-lg" />
                 </a>
                 <a
-                  href="https://mietbot.vercel.app"
+                  href="https://www.owaisyaqoob.com"
                   className="project-icons pointer-events hover:bg-blue-500"
                 >
                   <BsGlobe className="text-xl max-[500px]:text-lg" />
@@ -165,7 +166,7 @@ export default function ProjectsPage(): JSX.Element {
                   <BiLogoTypescript className="text-xl max-[500px]:text-lg" />
                 </p>
                 <p className="project-icons hover:bg-blue-500">
-                  <SiMongodb className="text-xl max-[500px]:text-lg" />
+                  <BiLogoFirebase className="text-xl max-[500px]:text-lg" />
                 </p>
               </div>
             </div>
