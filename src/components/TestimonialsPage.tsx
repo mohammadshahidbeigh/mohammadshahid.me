@@ -34,7 +34,7 @@ export default function TestimonialsPage(): JSX.Element {
                   className="rounded-full mb-4 sm:mb-0 sm:mr-4"
                 />
                 <div className="text-center sm:text-left">
-                  <p className="text-lg sm:text-xl font-bold">
+                  <p className="text-sm sm:text-xl font-bold">
                     {testimonial.text}
                   </p>
                   <p className="text-black font-semibold mt-2">
