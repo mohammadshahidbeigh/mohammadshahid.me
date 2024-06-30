@@ -12,15 +12,19 @@ export const UPWORK_URL: string =
 export const ThinkNext_UTL: string =
   "https://www.thinknexttraining.com/free-industrial-training-in-chandigarh.aspx";
 export const MIET_BOT_URL: string =
-  "https://github.com/mohammadshahidbeigh/mietbot--retrieval-augmented-generation";
+  "https://github.com/mohammadshahidbeigh/Campus360";
 export const OWAIS_YAQOOB_URL: string =
   "https://github.com/mohammadshahidbeigh/owaisyaqoob--client";
 export const TEXT_WIZARD_URL: string =
-  "https://github.com/mohammadshahidbeigh/textwizard";
+  "https://github.com/mohammadshahidbeigh/textwizard--bootstrap";
 export const MOHAMMAD_SHAHID_URL: string =
   "https://github.com/mohammadshahidbeigh/mohammadshahid.me";
 export const KNOWIT_ALL_URL: string =
   "https://github.com/mohammadshahidbeigh/knowitall-chatbot";
+export const MIETBOT_FineTuned_URL: string =
+  "https://github.com/mohammadshahidbeigh/mietbot--fine-tuned";
+export const Web_Scraper_URL: string =
+  "https://github.com/mohammadshahidbeigh/web--scraper";
 export const AUTOMOBILES_PRICE_URL: string =
   "https://github.com/mohammadshahidbeigh/automobiles-price-esstimation";
 

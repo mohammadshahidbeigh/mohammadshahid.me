@@ -10,6 +10,12 @@ import {
   BiLogoTypescript,
   BiLogoPython,
   BiLogoFlask,
+  BiLogoTailwindCss,
+  BiLogoBootstrap,
+  BiLogoNetlify,
+  BiLogoGithub,
+  BiLogoGit,
+  BiLogoGmail,
 } from "react-icons/bi";
 import {
   MIET_BOT_URL,
@@ -17,6 +23,8 @@ import {
   TEXT_WIZARD_URL,
   MOHAMMAD_SHAHID_URL,
   KNOWIT_ALL_URL,
+  MIETBOT_FineTuned_URL,
+  Web_Scraper_URL,
   AUTOMOBILES_PRICE_URL,
 } from "@/constants";
 import ListTick from "./ListTick";
@@ -66,13 +74,27 @@ export default function ProjectsPage(): JSX.Element {
                   <span className="text-justify">
                     Achieved key advantages:
                     <br />
-                    - 24/7 availability and scalability, increasing user
-                    engagement by 50%.
-                    <br />- Instant and efficient responses, improving user
-                    experience and time efficiency by 60%.
+                    - 24/7 Availability
+                    <br />- Scalability
+                    <br />- Information Hub - Access to essential information
+                    about MIET Jammu.
+                    <br />- Time Efficiency
+                    <br />- Improved User Experience
+                    <br />- Instant Responses
+                    <br />- Language Support
                   </span>
                 </li>
               </p>
+              <div className="p-5 m-0">
+                <a
+                  href="https://www.researchgate.net/publication/381831628_AI-BASED_CHATBOT_FOR_EDUCATIONAL_INSTITUTES?channel=doi&linkId=66811d2c2aa57f3b8260ba91&showFulltext=true"
+                  target="_blank"
+                  className="text-blue-500 hover:underline"
+                >
+                  Research Paper: Campus360-[AI-BASED CHATBOT FOR EDUCATIONAL
+                  INSTITUTES]
+                </a>
+              </div>
             </div>
 
             <div className="bottom-part rounded-b-lg bg-[#030018] flex justify-between border-t border-[#b4b4b4] px-6 py-3 dark:border-neutral-700">
@@ -85,7 +107,7 @@ export default function ProjectsPage(): JSX.Element {
                   <SiGithub className="text-xl max-[500px]:text-lg" />
                 </a>
                 <a
-                  href="https://www.owaisyaqoob.com"
+                  href="https://campus360-flame.vercel.app"
                   className="project-icons pointer-events hover:bg-blue-500"
                 >
                   <BsGlobe className="text-xl max-[500px]:text-lg" />
@@ -93,13 +115,13 @@ export default function ProjectsPage(): JSX.Element {
               </div>
               <div className="flex">
                 <p className="project-icons hover:bg-blue-500">
-                  <BiLogoHtml5 className="text-xl max-[500px]:text-lg" />
+                  <BiLogoReact className="text-xl max-[500px]:text-lg" />
                 </p>
                 <p className="project-icons hover:bg-blue-500">
-                  <BiLogoCss3 className="text-xl max-[500px]:text-lg" />
+                  <BiLogoTypescript className="text-xl max-[500px]:text-lg" />
                 </p>
                 <p className="project-icons hover:bg-blue-500">
-                  <BiLogoJavascript className="text-xl max-[500px]:text-lg" />
+                  <BiLogoTailwindCss className="text-xl max-[500px]:text-lg" />
                 </p>
                 <p className="project-icons hover:bg-blue-500">
                   <BiLogoFirebase className="text-xl max-[500px]:text-lg" />
@@ -121,10 +143,25 @@ export default function ProjectsPage(): JSX.Element {
                     Led the full-stack development of a dynamic portfolio
                     website using Next.js, Tailwind CSS, and TypeScript.
                     <br />
-                    - Enhanced online presence and user engagement by 35%.
-                    <br />- Engineered a responsive and aesthetically pleasing
+                    - Enhanced online presence and user engagement by 65%.
+                    <br />
+                    - Engineered a responsive and aesthetically pleasing
                     front-end, emphasizing usability and modern design
                     principles.
+                    <br />- Implemented advanced animations and interactive
+                    elements to create a captivating user experience.
+                    {/* <br />
+                    - Developed a custom backend to manage content dynamically,
+                    allowing for seamless updates and scalability.
+                    <br /> */}
+                    - Optimized website performance through efficient code and
+                    best practices, achieving fast load times and smooth
+                    navigation.
+                    <br />
+                    - Integrated email.js for a robust contact section,
+                    facilitating easy and reliable communication.
+                    <br />- Conducted thorough testing and debugging to ensure a
+                    bug-free and high-quality final product.
                   </span>
                 </li>
                 <li className="flex space-x-1 my-2">
@@ -132,8 +169,11 @@ export default function ProjectsPage(): JSX.Element {
                   <span className="text-justify">
                     Collaborated closely with the client to define website
                     requirements.
-                    <br />- Ensured the final product aligned perfectly with
-                    personal branding and professional goals.
+                    <br />
+                    - Ensured the final product aligned perfectly with personal
+                    branding and professional goals.
+                    <br />- Provided ongoing support and maintenance, including
+                    regular updates and feature enhancements.
                   </span>
                 </li>
               </p>
@@ -149,7 +189,7 @@ export default function ProjectsPage(): JSX.Element {
                   <SiGithub className="text-xl max-[500px]:text-lg" />
                 </a>
                 <a
-                  href="https://owaisyaqoob.vercel.app"
+                  href="https://www.owaisyaqoob.com"
                   className="project-icons pointer-events hover:bg-blue-500"
                 >
                   <BsGlobe className="text-xl max-[500px]:text-lg" />
@@ -157,16 +197,16 @@ export default function ProjectsPage(): JSX.Element {
               </div>
               <div className="flex">
                 <p className="project-icons hover:bg-blue-500">
-                  <FaNodeJs className="text-xl max-[500px]:text-lg" />
-                </p>
-                <p className="project-icons hover:bg-blue-500">
                   <BiLogoReact className="text-xl max-[500px]:text-lg" />
                 </p>
                 <p className="project-icons hover:bg-blue-500">
                   <BiLogoTypescript className="text-xl max-[500px]:text-lg" />
                 </p>
                 <p className="project-icons hover:bg-blue-500">
-                  <BiLogoFirebase className="text-xl max-[500px]:text-lg" />
+                  <BiLogoTailwindCss className="text-xl max-[500px]:text-lg" />
+                </p>
+                <p className="project-icons hover:bg-blue-500">
+                  <BiLogoGmail className="text-xl max-[500px]:text-lg" />
                 </p>
               </div>
             </div>
@@ -221,13 +261,16 @@ export default function ProjectsPage(): JSX.Element {
               </div>
               <div className="flex">
                 <p className="project-icons hover:bg-blue-500">
-                  <FaNodeJs className="text-xl max-[500px]:text-lg" />
+                  <BiLogoBootstrap className="text-xl max-[500px]:text-lg" />
                 </p>
                 <p className="project-icons hover:bg-blue-500">
                   <BiLogoReact className="text-xl max-[500px]:text-lg" />
                 </p>
                 <p className="project-icons hover:bg-blue-500">
                   <BiLogoJavascript className="text-xl max-[500px]:text-lg" />
+                </p>
+                <p className="project-icons hover:bg-blue-500">
+                  <BiLogoNetlify className="text-xl max-[500px]:text-lg" />
                 </p>
               </div>
             </div>
@@ -283,14 +326,17 @@ export default function ProjectsPage(): JSX.Element {
                 </a>
               </div>
               <div className="flex">
-                <p className="project-icons hover:bg-blue-500">
+                {/* <p className="project-icons hover:bg-blue-500">
                   <FaNodeJs className="text-xl max-[500px]:text-lg" />
-                </p>
+                </p> */}
                 <p className="project-icons hover:bg-blue-500">
                   <BiLogoReact className="text-xl max-[500px]:text-lg" />
                 </p>
                 <p className="project-icons hover:bg-blue-500">
                   <BiLogoTypescript className="text-xl max-[500px]:text-lg" />
+                </p>
+                <p className="project-icons hover:bg-blue-500">
+                  <BiLogoTailwindCss className="text-xl max-[500px]:text-lg" />
                 </p>
               </div>
             </div>
@@ -363,6 +409,136 @@ export default function ProjectsPage(): JSX.Element {
             </div>
           </div>
 
+          {/* Fifth project card */}
+          <div className="flex flex-col card-ui text-center bg-[#030018]">
+            <div className="text-lg border-b font border-[#b4b4b4] px-6 py-3 dark:border-neutral-700 bg-[#030018]  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+              Mietbot- a fine-tuned version of Campus360
+            </div>
+            <div className="p-5 m-0 flex-grow">
+              <p className="mb-0 text-base max-[500px]:text-sm text-justify">
+                <li className="flex space-x-1 my-2">
+                  <ListTick />
+                  <span className="text-justify">
+                    Created a virtual assistant specifically for the Model
+                    Institute of Engineering and Technology (MIET), leveraging
+                    fine-tuning techniques with OpenAI&apos;s GPT-4 model.
+                    <br />
+                    - Utilized JavaScript and OpenAI API to enhance the
+                    chatbot&apos;s ability to comprehend user inputs and deliver
+                    precise, human-like responses.
+                    <br />- Leveraged a robust tech stack including Python,
+                    HTML5, CSS3, JavaScript, Firebase and Jupyter Notebook for
+                    development and fine-tuning processes.
+                  </span>
+                </li>
+                <li className="flex space-x-1 my-2">
+                  <ListTick />
+                  <span className="text-justify">
+                    Improved user interaction quality by fine-tuning the
+                    language model with institution-specific data.
+                    <br />- Operationalized Firebase Real time database for
+                    storing user conversations
+                    <br />- Deployed using Vercel for seamless integration and
+                    scalability.
+                  </span>
+                </li>
+              </p>
+            </div>
+
+            <div className="bottom-part rounded-b-lg bg-[#030018] flex justify-between border-t border-[#b4b4b4] px-6 py-3 dark:border-neutral-700">
+              <div className="flex">
+                <a
+                  href={MIETBOT_FineTuned_URL}
+                  target="_blank"
+                  className="project-icons hover:bg-blue-500"
+                >
+                  <SiGithub className="text-xl max-[500px]:text-lg" />
+                </a>
+                <a
+                  href="https://mietbot-fine-tuned.vercel.app"
+                  className="project-icons pointer-events hover:bg-blue-500"
+                >
+                  <BsGlobe className="text-xl max-[500px]:text-lg" />
+                </a>
+              </div>
+              <div className="flex">
+                <p className="project-icons hover:bg-blue-500">
+                  <BiLogoHtml5 className="text-xl max-[500px]:text-lg" />
+                </p>
+                <p className="project-icons hover:bg-blue-500">
+                  <BiLogoCss3 className="text-xl max-[500px]:text-lg" />
+                </p>
+                <p className="project-icons hover:bg-blue-500">
+                  <BiLogoJavascript className="text-xl max-[500px]:text-lg" />
+                </p>
+                <p className="project-icons hover:bg-blue-500">
+                  <BiLogoPython className="text-xl max-[500px]:text-lg" />
+                </p>
+                <p className="project-icons hover:bg-blue-500">
+                  <BiLogoFirebase className="text-xl max-[500px]:text-lg" />
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Fifth project card */}
+          <div className="flex flex-col card-ui text-center bg-[#030018]">
+            <div className="text-lg border-b font border-[#b4b4b4] px-6 py-3 dark:border-neutral-700 bg-[#030018]  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+              Web Scraper
+            </div>
+            <div className="p-5 m-0 flex-grow">
+              <p className="mb-0 text-base max-[500px]:text-sm text-justify">
+                <li className="flex space-x-1 my-2">
+                  <ListTick />
+                  <span className="text-justify">
+                    Created a script named Web Scraper to extract information
+                    such as page titles, URLs, and content from the Model
+                    Institute of Engineering and Technology (MIET) website.
+                    <br />- Utilized LangChain tools such as Recursive URL
+                    Loader with Beautifulsoup4 a Python library for pulling data
+                    out of HTML and XML files to facilitate efficient and
+                    structured web scraping.
+                  </span>
+                </li>
+                <li className="flex space-x-1 my-2">
+                  <ListTick />
+                  <span className="text-justify">
+                    Demonstrated capabilities in data extraction and content
+                    analysis.
+                    <br />- Applied Python to implement robust and scalable web
+                    scraping solutions.
+                  </span>
+                </li>
+              </p>
+            </div>
+
+            <div className="bottom-part rounded-b-lg bg-[#030018] flex justify-between border-t border-[#b4b4b4] px-6 py-3 dark:border-neutral-700">
+              <div className="flex">
+                <a
+                  href={Web_Scraper_URL}
+                  target="_blank"
+                  className="project-icons hover:bg-blue-500"
+                >
+                  <SiGithub className="text-xl max-[500px]:text-lg" />
+                </a>
+                <a
+                  href=""
+                  className="project-icons pointer-events hover:bg-blue-500"
+                >
+                  <BsGlobe className="text-xl max-[500px]:text-lg" />
+                </a>
+              </div>
+              <div className="flex">
+                <p className="project-icons hover:bg-blue-500">
+                  <BiLogoPython className="text-xl max-[500px]:text-lg" />
+                </p>
+                <p className="project-icons hover:bg-blue-500">
+                  <BiLogoGit className="text-xl max-[500px]:text-lg" />
+                </p>
+              </div>
+            </div>
+          </div>
+
           {/* Sixth project card */}
           <div className="text-lg flex flex-col card-ui text-center bg-[#030018]">
             <div className="border-b font border-[#b4b4b4] px-6 py-3 dark:border-neutral-700 bg-[#030018]  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
@@ -414,13 +590,13 @@ export default function ProjectsPage(): JSX.Element {
               </div>
               <div className="flex">
                 <p className="project-icons hover:bg-blue-500">
-                  <BiLogoJavascript className="text-xl max-[500px]:text-lg" />
-                </p>
-                <p className="project-icons hover:bg-blue-500">
                   <BiLogoHtml5 className="text-xl max-[500px]:text-lg" />
                 </p>
                 <p className="project-icons hover:bg-blue-500">
                   <BiLogoCss3 className="text-xl max-[500px]:text-lg" />
+                </p>
+                <p className="project-icons hover:bg-blue-500">
+                  <BiLogoJavascript className="text-xl max-[500px]:text-lg" />
                 </p>
                 <p className="project-icons hover:bg-blue-500">
                   <BiLogoPython className="text-xl max-[500px]:text-lg" />

@@ -37,6 +37,7 @@ export default function AboutPage(): JSX.Element {
     "Web Scraping",
     "Prompt Engineering",
     "Fine-Tuning",
+    "OpenAI API",
     "OpenAI-Embeddings",
     "RAG-Retrieval Augmented Generation",
     // "Distributed Systems",
@@ -57,14 +58,14 @@ export default function AboutPage(): JSX.Element {
     "RxJS",
     "RTX Query",
     // "Gatsby",
+    "Bootstrap",
     "Tailwid Css",
 
     // "Vue.js",
     // "Node.js",
     "Git",
-    "Google Colab",
+    "Jupyter Notebook",
     "Langchain.js",
-    "OpenAI API",
     "Supabase",
     "Firebase",
     // "Web Sockets",
@@ -143,9 +144,9 @@ export default function AboutPage(): JSX.Element {
                     creating innovative solutions using various tech stacks,
                     languages, and technologies. If you&apos;re looking for a
                     passionate Front-End Software Developer who thrives in
-                    challenging environments, loves JavaScript and React, and is
-                    dedicated to continuous learning and innovation. I would
-                    love to connect with you.
+                    challenging environments, loves JavaScript, React, Nextjs,
+                    and is dedicated to continuous learning and innovation. I
+                    would love to connect with you.
                   </span>
                 </li>
                 <li className="flex  space-x-1 my-2">
