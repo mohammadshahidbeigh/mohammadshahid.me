@@ -60,8 +60,8 @@ export default function ProjectsPage(): JSX.Element {
                   <ListTick />
                   <span className="text-justify">
                     Implemented a robust software stack: ReactJs, TypeScript,
-                    Tailwind Css, Python, OpenAI API, Firebase, Supabase Vector
-                    Database for OpenAI embeddings.
+                    Tailwind Css, OpenAI API, Firebase, Supabase Vector Database
+                    for OpenAI embeddings.
                     <br />- Facilitated front-end development, web scraping,
                     database management, and embedding storage.
                     <br />- Optimized response generation and language modeling
