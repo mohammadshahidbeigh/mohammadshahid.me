@@ -50,8 +50,8 @@ export default function ProjectsPage(): JSX.Element {
                     providing real-time support and personalized assistance to
                     users.
                     <br />
-                    - Enhanced communication and reduced language barriers by
-                    40% using OpenAI API vector embeddings.
+                    - Enhanced Communication: Reduced language barriers by using
+                    the advance OpenAI GPT Model like GPT4.
                     <br />- Provided comprehensive support for students,
                     faculty, and visitors.
                   </span>
