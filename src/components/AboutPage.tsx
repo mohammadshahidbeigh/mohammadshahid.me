@@ -4,7 +4,7 @@ import {
   SiHackerrank,
   SiLeetcode,
 } from "react-icons/si";
-import { LiaHackerrank } from "react-icons/lia";
+import {LiaHackerrank} from "react-icons/lia";
 import {
   GFG_URL,
   GITHUB_URL,
@@ -17,8 +17,6 @@ import ListTick from "./ListTick";
 
 export default function AboutPage(): JSX.Element {
   const programmingLanguages = [
-    // "C",
-    // "Python",
     "HTML",
     "CSS3",
     "SASS",
@@ -29,10 +27,8 @@ export default function AboutPage(): JSX.Element {
   const topics = [
     "Front End Development",
     "Data Structures",
-    // "Algorithms and Optimization",
     "Object Oriented Programming",
     "Test Driven Development",
-    // "Operating Systems",
     "Machine Learning",
     "Web Scraping",
     "Prompt Engineering",
@@ -40,254 +36,144 @@ export default function AboutPage(): JSX.Element {
     "OpenAI API",
     "OpenAI-Embeddings",
     "RAG-Retrieval Augmented Generation",
-    // "Distributed Systems",
-    // "Bckend Development",
-    // "Serverless Architecture",
-    // "Blockchains",
   ];
   const softwares = [
-    // "Linux",
-    // "Git",
-
     "React.js",
     "Next.js",
-    // "Remix.js",
     "React Redux",
     "Redux Toolkit",
     "React Query",
     "RxJS",
     "RTX Query",
-    // "Gatsby",
     "Bootstrap",
-    "Tailwid Css",
-
-    // "Vue.js",
-    // "Node.js",
+    "Tailwind CSS",
     "Git",
     "Jupyter Notebook",
     "Langchain.js",
     "Supabase",
     "Firebase",
-    // "Web Sockets",
-    // "Web RTC",
     "Netlify",
     "Vercel",
-    // "Socket.io",
-    // "Express.js",
-    // "Bootstrap",
-    // "MySQL",
-    // "Sequelize",
-    // "Git",
-    // "Redis",
-    // "Docker",
-    // "AWS SQS",
-    // "AWS Lambda",
   ];
 
   return (
-    <div id="about" className=" main-div-ui bg-[#030018]  ">
-      <div className="animate-fade-in max-w-screen-xl mx-auto max-[480px]:p-1  p-4 md:p-8 ">
-        <h2 className="title-ui ">About</h2>
+    <div
+      id="about"
+      className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-[#030018] to-[#0a0032] py-16"
+    >
+      <div className="container mx-auto animate-fade-in px-4">
+        <h2 className="title-ui mb-12 text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">
+          About
+        </h2>
 
-        <div className="sub-main-div-ui  ">
-          {/* Education and Coding Profile (Left) */}
-          <div className=" flex flex-col space-y-4   ">
-            <div className="card-ui p-4 bg-[#030018] ">
-              <p className="text-2xl max-[500px]:text-xl font-bold mb-0 text-center">
-                Education
-              </p>
-              <hr className="hr-ui " />
-
-              <p className="flex justify-between italic">
-                {" "}
-                <a
-                  href={MIET_Jammu}
-                  target="_blank"
-                  className="text-lg p-1 rounded-md  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 hover:from-purple-700 hover:to-cyan-700 "
-                >
-                  Model Institute Of Engineering & Technology , Jammu
-                </a>{" "}
-              </p>
-              <p className="flex justify-between mb-1">
-                {" "}
-                <span className=" rounded-md px-1 py-1  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-                  B.E - Electronics and Communication Engineering
-                </span>{" "}
-                <span className=" rounded-md px-1 py-1 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-                  July 20 - June 24
-                </span>{" "}
-              </p>
-              <p className="flex justify-end mb-1 max-[360px]:text-xs">
-                {" "}
-                <span className="text-center hover:bg-blue-500 rounded-md px-1 py-1  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-                  {" "}
-                  CGPA: 7.50 / 10{" "}
-                </span>{" "}
-              </p>
-
-              <ul>
-                <li className="flex  space-x-1 my-2">
-                  <ListTick />
-                  <span className="text-justify">
-                    👋 Hi there! I&apos;m a self-taught Front-End Software
-                    Engineer currently pursuing my bachelor&apos;s degree in
-                    Electronics and Communication Engineering. Although my
-                    formal education lies in a different field, my insatiable
-                    curiosity and relentless pursuit of knowledge have driven me
-                    to explore and master the world of software engineering.
-                  </span>
-                </li>
-                <li className="flex  space-x-1 my-2">
-                  <ListTick />
-                  <span className="text-justify">
-                    I have a genuine passion for software development and enjoy
-                    creating innovative solutions using various tech stacks,
-                    languages, and technologies. If you&apos;re looking for a
-                    passionate Front-End Software Developer who thrives in
-                    challenging environments, loves JavaScript, React, Nextjs,
-                    and is dedicated to continuous learning and innovation. I
-                    would love to connect with you.
-                  </span>
-                </li>
-                <li className="flex  space-x-1 my-2">
-                  <ListTick />
-                  <span className="text-justify">
-                    Let&apos;s create something amazing together! ✉️😊
-                  </span>
-                </li>
-              </ul>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          {/* Education Card */}
+          <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+            <h3 className="font-bold text-2xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+              Education
+            </h3>
+            <div className="flex justify-between items-center mb-4">
+              <a
+                href={MIET_Jammu}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-cyan-300 hover:text-cyan-100 transition-colors duration-200"
+              >
+                Model Institute Of Engineering & Technology, Jammu
+              </a>
+              <span className="text-cyan-200 bg-blue-500 bg-opacity-20 rounded-md px-3 py-1">
+                July 20 - June 24
+              </span>
             </div>
-            {/* <div className="card-ui p-4 ">
-              <p className="text-2xl max-[500px]:text-xl font-bold mb-0 text-center">
-                Coding Profile
-              </p>
-              <hr className="hr-ui" /> */}
-
-            {/* <div className="my-2 flex  justify-center space-x-4">
-                <a
-                  href={LEETCODE_URL}
-                  target="_blank"
-                  className=" project-icons "
-                >
-                  {" "}
-                  <SiLeetcode className="text-3xl max-[500px]:text-xl" />{" "}
-                </a> */}
-            {/* <a
-                  href={HACKERRANK_URL}
-                  target="_blank"
-                  className=" project-icons "
-                >
-                  {" "}
-                  <LiaHackerrank className="text-3xl max-[500px]:text-xl" />{" "}
-                </a>
-                <a href={GFG_URL} target="_blank" className=" project-icons ">
-                  {" "}
-                  <SiGeeksforgeeks className="text-3xl max-[500px]:text-xl" />{" "}
-                </a> */}
-            {/* <a
-                  href={GITHUB_URL}
-                  target="_blank"
-                  className=" project-icons "
-                >
-                  {" "}
-                  <SiGithub className="text-3xl max-[500px]:text-xl" />{" "}
-                </a> */}
-            {/* </div> */}
-
-            {/* <p className="text-justify">
-                I love solving coding problems and I have solved several problems
-                at Leetcode.
-              </p>
-              <p className="flex my-2 mr-4">
-                {" "}
-                <span className="mt-1">
-                  <a href={LEETCODE_URL} target="_blank">
-                    {" "}
-                    <SiLeetcode />{" "}
-                  </a>{" "}
-                </span>{" "}
-                <span>: 3-Star, Solved 400+ Problems</span>{" "}
-              </p> */}
-            {/* <p className=" flex my-2 mr-4">
-                {" "}
-                <span className="mt-1">
-                  <a href={GFG_URL} target="_blank">
-                    {" "}
-                    <SiGeeksforgeeks />{" "}
-                  </a>
-                </span>{" "}
-                <span>: Solved 210+ Problems</span>{" "}
-              </p>
-              <p className=" flex my-2 mr-4">
-                {" "}
-                <span className="mt-1">
-                  <a href={HACKERRANK_URL} target="_blank">
-                    {" "}
-                    <LiaHackerrank />{" "}
-                  </a>
-                </span>{" "}
-                <span>: 5-Star in C++ and SQL</span>{" "}
-              </p> */}
-            {/* </div> */}
+            <p className="text-gray-300 mb-2">
+              B.E - Electronics and Communication Engineering
+            </p>
+            <p className="text-gray-300 mb-4">CGPA: 7.50 / 10</p>
+            <ul className="space-y-3">
+              <li className="flex items-start space-x-2">
+                <ListTick />
+                <span className="text-gray-300">
+                  👋 Hi there! I&apos;m a self-taught Front-End Software
+                  Engineer currently pursuing my bachelor&apos;s degree in
+                  Electronics and Communication Engineering. Although my formal
+                  education lies in a different field, my insatiable curiosity
+                  and relentless pursuit of knowledge have driven me to explore
+                  and master the world of software engineering.
+                </span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <ListTick />
+                <span className="text-gray-300">
+                  I have a genuine passion for software development and enjoy
+                  creating innovative solutions using various tech stacks,
+                  languages, and technologies. If you&apos;re looking for a
+                  passionate Front-End Software Developer who thrives in
+                  challenging environments, loves JavaScript, React, Next.js,
+                  and is dedicated to continuous learning and innovation, I
+                  would love to connect with you.
+                </span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <ListTick />
+                <span className="text-gray-300">
+                  Let&apos;s create something amazing together! ✉️😊
+                </span>
+              </li>
+            </ul>
           </div>
 
-          {/* Skills Portion (Right) */}
-          <div className=" p-4 card-ui ml-3 max-[950px]:ml-0 bg-[#030018]  ">
-            <p className="text-2xl max-[500px]:text-xl  font-bold mb-0 text-center">
+          {/* Skills Card */}
+          <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+            <h3 className="font-bold text-2xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               Skills
-            </p>
-            <hr className="hr-ui " />
+            </h3>
 
-            <p className="text-xl font-bold mb-0 text-center  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-              Programming Languages
-            </p>
-            <hr className="hr-small-ui" />
-
-            <div className="flex flex-wrap px-4 max-[500px]:px-2 ">
-              {programmingLanguages.map((skill, index) => (
-                <div
-                  key={index}
-                  className="skill-div-ui bg-[#030018] hover:bg-blue-500"
-                >
-                  <p className="-mt-1 font-sans max-[500px]:text-sm  ">
+            <div className="mb-6">
+              <h4 className="text-xl font-semibold mb-2 text-cyan-300">
+                Programming Languages
+              </h4>
+              <div className="flex flex-wrap gap-2">
+                {programmingLanguages.map((skill, index) => (
+                  <span
+                    key={index}
+                    className="bg-blue-500 bg-opacity-20 text-cyan-200 rounded-md px-3 py-1"
+                  >
                     {skill}
-                  </p>
-                </div>
-              ))}
+                  </span>
+                ))}
+              </div>
             </div>
 
-            <p className="text-xl font-bold mb-0 text-center  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-              Topics
-            </p>
-            <hr className="hr-small-ui" />
-
-            <div className="flex flex-wrap px-4 max-[500px]:px-2">
-              {topics.map((skill, index) => (
-                <div
-                  key={index}
-                  className="skill-div-ui bg-[#030018] hover:bg-blue-500"
-                >
-                  <p className="-mt-1 font-sans max-[500px]:text-sm ">
-                    {skill}
-                  </p>
-                </div>
-              ))}
+            <div className="mb-6">
+              <h4 className="text-xl font-semibold mb-2 text-cyan-300">
+                Topics
+              </h4>
+              <div className="flex flex-wrap gap-2">
+                {topics.map((topic, index) => (
+                  <span
+                    key={index}
+                    className="bg-blue-500 bg-opacity-20 text-cyan-200 rounded-md px-3 py-1"
+                  >
+                    {topic}
+                  </span>
+                ))}
+              </div>
             </div>
 
-            <p className="text-xl font-bold mb-0 text-center  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-              Softwares and Libraries
-            </p>
-            <hr className="hr-small-ui" />
-
-            <div className="flex flex-wrap px-4 max-[500px]:px-2">
-              {softwares.map((skill, index) => (
-                <div
-                  key={index}
-                  className="skill-div-ui bg-[#030018] hover:bg-blue-500"
-                >
-                  <p className="-mt-1 font-sans max-[500px]:text-sm">{skill}</p>
-                </div>
-              ))}
+            <div>
+              <h4 className="text-xl font-semibold mb-2 text-cyan-300">
+                Softwares and Libraries
+              </h4>
+              <div className="flex flex-wrap gap-2">
+                {softwares.map((software, index) => (
+                  <span
+                    key={index}
+                    className="bg-blue-500 bg-opacity-20 text-cyan-200 rounded-md px-3 py-1"
+                  >
+                    {software}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         </div>
