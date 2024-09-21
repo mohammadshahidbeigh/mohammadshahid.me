@@ -5,7 +5,7 @@ import {SiGithub, SiLinkedin} from "react-icons/si";
 import {Dancing_Script} from "next/font/google";
 import ParticlesBg from "./backgroundEffects/ParticlesBg";
 import {GITHUB_URL, LINKEDIN_URL} from "../constants";
-import Image from "next/image"; // Import the Image component from Next.js
+import Image from "next/image";
 
 const dancing = Dancing_Script({
   weight: "400",
@@ -90,14 +90,19 @@ export default function HomePage(): JSX.Element {
       <div className="relative">
         <div className="flex justify-center">
           <div className="w-60 h-60 rounded-full overflow-hidden border-4 border-white shadow-xl mb-12 relative">
-            <div className="border-2 border-black rounded-full w-full h-full absolute animate-spin-fast"></div>
+            <div className="absolute inset-0 border-4 border-transparent rounded-full animate-spin-slow">
+              <div className="absolute inset-0 border-4 border-blue-500 rounded-full animate-pulse"></div>
+            </div>
             <Image
               src="/Image.png"
               alt="My Profile Picture"
               width={260}
               height={260}
-              className="object-cover"
-              priority // Add the priority attribute
+              className="object-cover transition-transform duration-300 hover:scale-110"
+              priority
+              loading="eager"
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACklEQVR4nGMAAQAABQABDQottAAAAABJRU5ErkJggg=="
             />
           </div>
         </div>

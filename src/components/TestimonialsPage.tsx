@@ -1,4 +1,5 @@
 import Image from "next/image";
+import {FaQuoteLeft, FaQuoteRight} from "react-icons/fa";
 
 const testimonials = [
   {
@@ -7,49 +8,57 @@ const testimonials = [
     author: "Owais Yaqoob",
     position: "Professional MMA Fighter",
     image: "/owaisyaqoob.png",
-    link: "https://owaisyaqoob.com", // Add the link property
+    link: "https://owaisyaqoob.com",
   },
   // Add more testimonials here as needed
 ];
 
 export default function TestimonialsPage(): JSX.Element {
   return (
-    <div className="main-div-ui bg-[#030018]">
-      <div className="animate-fade-in max-w-screen-xl mx-auto p-4 md:p-8">
-        <h2 className="title-ui md:text-2xl font-bold text-white mb-8">
-          Testimonials
+    <div
+      id="testimonials"
+      className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-[#030018] to-[#0a0032] py-16"
+    >
+      <div className="container mx-auto animate-fade-in px-4">
+        <h2 className="title-ui mb-12 text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">
+          What People Say
         </h2>
         <div className="flex flex-col items-center p-4 sm:p-6">
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="bg-gradient-to-r from-purple-500 to-cyan-500 hover:from-purple-700 hover:to-cyan-700 shadow-md rounded-lg p-2 sm:p-4 mb-6 sm:mb-8 w-full max-w-3xl"
+              className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 mb-10 w-full max-w-3xl"
             >
-              <div className="flex flex-col sm:flex-row items-center mb-4">
-                <Image
-                  src={testimonial.image}
-                  alt={testimonial.author}
-                  width={100}
-                  height={100}
-                  className="rounded-full mb-4 sm:mb-0 sm:mr-4"
-                />
-                <div className="text-center sm:text-left">
-                  <p className="text-sm sm:text-xl font-bold">
+              <div className="flex flex-col sm:flex-row items-center">
+                <div className="sm:w-1/3 mb-6 sm:mb-0">
+                  <Image
+                    src={testimonial.image}
+                    alt={testimonial.author}
+                    width={120}
+                    height={120}
+                    className="rounded-full border-4 border-white shadow-md"
+                  />
+                </div>
+                <div className="sm:w-2/3 text-white">
+                  <FaQuoteLeft className="text-2xl mb-2 text-cyan-300" />
+                  <p className="text-lg sm:text-xl font-medium mb-4 italic">
                     {testimonial.text}
                   </p>
-                  <p className="text-black font-semibold mt-2">
-                    — {testimonial.author}, {testimonial.position}
-                  </p>
-                  {testimonial.link && (
-                    <a
-                      href={testimonial.link}
-                      className="text-blue-900 font-semibold mt-2 inline-block"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      www.owaisyaqoob.com
-                    </a>
-                  )}
+                  <FaQuoteRight className="text-2xl ml-auto text-cyan-300" />
+                  <div className="mt-4">
+                    <p className="font-bold text-xl">{testimonial.author}</p>
+                    <p className="text-cyan-200">{testimonial.position}</p>
+                    {testimonial.link && (
+                      <a
+                        href={testimonial.link}
+                        className="text-cyan-300 hover:text-cyan-100 transition-colors duration-200 mt-2 inline-block"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Visit Website
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
