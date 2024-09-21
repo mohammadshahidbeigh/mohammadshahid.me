@@ -1,95 +1,58 @@
-import Particles from "react-tsparticles";
+import {useEffect, useState} from "react";
+import {motion} from "framer-motion";
+import {FaReact, FaNodeJs, FaPython, FaDatabase, FaCloud} from "react-icons/fa";
 
-import { loadFull } from "tsparticles";
-interface ParticlesBgProps {
-  type: string;
-}
+const icons = [FaReact, FaNodeJs, FaPython, FaDatabase, FaCloud];
 
 export default function ParticlesBg(): JSX.Element {
-  const particlesInit = async (main: any) => {
-    await loadFull(main);
-  };
+  const [particles, setParticles] = useState<JSX.Element[]>([]);
 
-  const particlesLoaded: any = (container: any) => {};
+  useEffect(() => {
+    const newParticles = Array.from({length: 50}, (_, i) => {
+      const Icon = icons[Math.floor(Math.random() * icons.length)];
+      return (
+        <motion.div
+          key={i}
+          initial={{
+            x: Math.random() * window.innerWidth,
+            y: Math.random() * window.innerHeight,
+          }}
+          animate={{
+            x: Math.random() * window.innerWidth,
+            y: Math.random() * window.innerHeight,
+          }}
+          transition={{
+            duration: Math.random() * 10 + 20,
+            repeat: Infinity,
+            repeatType: "reverse",
+          }}
+          style={{
+            position: "absolute",
+            fontSize: `${Math.random() * 20 + 10}px`,
+            opacity: Math.random() * 0.5 + 0.1,
+          }}
+        >
+          <Icon />
+        </motion.div>
+      );
+    });
+    setParticles(newParticles);
+  }, []);
 
   return (
-    <Particles
-      id="tsparticles"
-      init={particlesInit}
-      loaded={particlesLoaded}
-      options={{
-        fullScreen: {
-          enable: true,
-          zIndex: -1,
-        },
-        background: {
-          color: {
-            value: "#030018",
-          },
-        },
-        fpsLimit: 120,
-        interactivity: {
-          events: {
-            onClick: {
-              enable: true,
-              mode: "push",
-            },
-            onHover: {
-              enable: true,
-              mode: "repulse",
-            },
-            resize: true,
-          },
-          modes: {
-            push: {
-              quantity: 4,
-            },
-            repulse: {
-              distance: 200,
-              duration: 0.4,
-            },
-          },
-        },
-        particles: {
-          color: {
-            value: "#ffffff",
-          },
-          links: {
-            color: "",
-            distance: 150, // for links
-            enable: true,
-            opacity: 0.5,
-            width: 1,
-          },
-          move: {
-            direction: "none",
-            enable: true,
-            outModes: {
-              default: "bounce",
-            },
-            random: false,
-            speed: 1,
-            straight: false,
-          },
-          number: {
-            density: {
-              enable: true,
-              area: 800,
-            },
-            value: 70,
-          },
-          opacity: {
-            value: 0.7,
-          },
-          shape: {
-            type: "star",
-          },
-          size: {
-            value: { min: 1, max: 2 },
-          },
-        },
-        detectRetina: true,
+    <div
+      style={{
+        position: "fixed",
+        top: 0,
+        left: 0,
+        width: "100%",
+        height: "100%",
+        overflow: "hidden",
+        zIndex: -1,
+        backgroundColor: "#030018",
       }}
-    />
+    >
+      {particles}
+    </div>
   );
 }
