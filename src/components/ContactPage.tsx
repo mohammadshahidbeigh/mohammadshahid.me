@@ -82,6 +82,13 @@ export default function ContactPage(): JSX.Element {
             </div>
           </div>
         </div>
+        <div className="w-full mt-8 flex justify-center">
+          <img
+            src="https://ghchart.rshah.org/0A66C2/mohammadshahidbeigh"
+            alt="Mohammad Shahid Beigh's Github chart"
+            className="w-full max-w-3xl rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+          />
+        </div>
         <p className="text-center mt-12 text-lg text-gray-300">
           Feel free to reach out for collaborations or just a friendly hello!
         </p>

@@ -100,7 +100,7 @@ export default function HomePage(): JSX.Element {
   return (
     <div
       id="home-section"
-      className="h-screen flex items-center justify-center relative"
+      className="h-screen flex flex-col items-center justify-center relative"
     >
       <ParticlesBg />
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
