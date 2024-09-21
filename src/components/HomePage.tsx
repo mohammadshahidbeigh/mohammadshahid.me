@@ -27,8 +27,7 @@ const dancing = Dancing_Script({
 
 export default function HomePage(): JSX.Element {
   const changingTexts = [
-    "I'm an Full Stack AI Software Engineer with a passion for innovation.",
-    "Bridging the gap between cutting-edge AI and robust full-stack development.",
+    "I'm an Full Stack AI Software Engineer with a passion for innovation.Bridging the gap between cutting-edge AI and robust full-stack development.",
   ];
 
   const typingDelay = 150;
