@@ -151,7 +151,7 @@ export default function AboutPage(): JSX.Element {
                 {topics.map((topic, index) => (
                   <span
                     key={index}
-                    className="skill-div-ui text-sm font-medium text-gray-200 bg-gradient-to-r from-green-500 to-teal-500 hover:from-teal-500 hover:to-green-500 transition-all duration-300 transform hover:scale-105"
+                    className="skill-div-ui text-sm font-medium text-gray-200 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 transition-all duration-300 transform hover:scale-105"
                   >
                     {topic}
                   </span>
@@ -167,7 +167,7 @@ export default function AboutPage(): JSX.Element {
                 {softwares.map((software, index) => (
                   <span
                     key={index}
-                    className="skill-div-ui text-sm font-medium text-gray-200 bg-gradient-to-r from-red-500 to-orange-500 hover:from-orange-500 hover:to-red-500 transition-all duration-300 transform hover:scale-105"
+                    className="skill-div-ui text-sm font-medium text-gray-200 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 transition-all duration-300 transform hover:scale-105"
                   >
                     {software}
                   </span>
