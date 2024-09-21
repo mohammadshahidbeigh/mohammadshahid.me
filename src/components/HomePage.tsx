@@ -1,10 +1,10 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import { SiGithub, SiLinkedin } from "react-icons/si";
-import { Dancing_Script } from "next/font/google";
+import {useEffect, useRef, useState} from "react";
+import {SiGithub, SiLinkedin} from "react-icons/si";
+import {Dancing_Script} from "next/font/google";
 import ParticlesBg from "./backgroundEffects/ParticlesBg";
-import { GITHUB_URL, LINKEDIN_URL } from "../constants";
+import {GITHUB_URL, LINKEDIN_URL} from "../constants";
 import Image from "next/image"; // Import the Image component from Next.js
 
 const dancing = Dancing_Script({
