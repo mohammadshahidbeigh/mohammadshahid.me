@@ -29,7 +29,7 @@ export const AUTOMOBILES_PRICE_URL: string =
   "https://github.com/mohammadshahidbeigh/automobiles-price-esstimation";
 
 export const INSTAGRAM_URL: string =
-  "https://www.instagram.com/m0hammadshahid_?igsh=dzVjMWozN3VheGQ2";
+  "https://www.instagram.com/m_shahid.me/?igsh=dzVjMWozN3VheGQ2";
 export const X_URL: string =
   "https://x.com/m0hammad_shahid?t=yHwKObUdCDXJX2NYeSJ4eA&s=08";
 export const STACKOVERFLOW_URL: string =
