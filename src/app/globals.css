@@ -138,3 +138,8 @@ body {
 * {
   scrollbar-width: none;
 }
+
+/* For Firefox */
+* {
+  scrollbar-width: none;
+}
