@@ -59,14 +59,13 @@ export default function AboutPage(): JSX.Element {
   return (
     <div
       id="about"
-      className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-[#030018] to-[#0a0032] py-16"
+      className="main-div-ui bg-gradient-to-b from-[#030018] to-[#0a0032] py-16"
     >
       <div className="container mx-auto animate-fade-in px-4">
         <h2 className="title-ui mb-12 text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">
           About
         </h2>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="sub-main-div-ui">
           {/* Education Card */}
           <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
             <h3 className="font-bold text-2xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
@@ -136,7 +135,7 @@ export default function AboutPage(): JSX.Element {
                 {programmingLanguages.map((skill, index) => (
                   <span
                     key={index}
-                    className="bg-blue-500 bg-opacity-20 text-cyan-200 rounded-md px-3 py-1"
+                    className="skill-div-ui text-sm font-medium text-gray-200 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 transition-all duration-300 transform hover:scale-105"
                   >
                     {skill}
                   </span>
@@ -152,7 +151,7 @@ export default function AboutPage(): JSX.Element {
                 {topics.map((topic, index) => (
                   <span
                     key={index}
-                    className="bg-blue-500 bg-opacity-20 text-cyan-200 rounded-md px-3 py-1"
+                    className="skill-div-ui text-sm font-medium text-gray-200 bg-gradient-to-r from-green-500 to-teal-500 hover:from-teal-500 hover:to-green-500 transition-all duration-300 transform hover:scale-105"
                   >
                     {topic}
                   </span>
@@ -168,7 +167,7 @@ export default function AboutPage(): JSX.Element {
                 {softwares.map((software, index) => (
                   <span
                     key={index}
-                    className="bg-blue-500 bg-opacity-20 text-cyan-200 rounded-md px-3 py-1"
+                    className="skill-div-ui text-sm font-medium text-gray-200 bg-gradient-to-r from-red-500 to-orange-500 hover:from-orange-500 hover:to-red-500 transition-all duration-300 transform hover:scale-105"
                   >
                     {software}
                   </span>

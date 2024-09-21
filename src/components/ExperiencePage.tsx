@@ -5,14 +5,13 @@ export default function ExperiencePage(): JSX.Element {
   return (
     <div
       id="experience"
-      className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-[#030018] to-[#0a0032] py-16"
+      className="main-div-ui bg-gradient-to-b from-[#030018] to-[#0a0032] py-16"
     >
       <div className="container mx-auto animate-fade-in px-4">
         <h2 className="title-ui mb-12 text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">
           Experience
         </h2>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="sub-main-div-ui">
           {/* card 1 */}
           <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
             <h3 className="font-bold text-2xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">

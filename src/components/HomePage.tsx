@@ -1,10 +1,22 @@
 "use client";
 
 import {useEffect, useRef, useState} from "react";
-import {SiGithub, SiLinkedin} from "react-icons/si";
+import {
+  SiGithub,
+  SiLinkedin,
+  SiInstagram,
+  SiTwitter,
+  SiStackoverflow,
+} from "react-icons/si";
 import {Dancing_Script} from "next/font/google";
 import ParticlesBg from "./backgroundEffects/ParticlesBg";
-import {GITHUB_URL, LINKEDIN_URL} from "../constants";
+import {
+  GITHUB_URL,
+  LINKEDIN_URL,
+  INSTAGRAM_URL,
+  X_URL,
+  STACKOVERFLOW_URL,
+} from "../constants";
 import Image from "next/image";
 
 const dancing = Dancing_Script({
@@ -14,7 +26,13 @@ const dancing = Dancing_Script({
 });
 
 export default function HomePage(): JSX.Element {
-  const changingTexts = ["Front End Software Engineer", "Problem Solver"];
+  const changingTexts = [
+    "Full Stack AI Software Engineer",
+    "Problem Solver",
+    "Full Stack AI Developer",
+    "Tech Enthusiast",
+  ];
+
   const typingDelay = 150;
   const delayAfterTyping = 2000;
 
@@ -42,7 +60,8 @@ export default function HomePage(): JSX.Element {
     } else {
       clearInterval(timerId);
       setTimeout(() => {
-        currentIndexRef.current = (currentIndexRef.current + 1) % 2;
+        currentIndexRef.current =
+          (currentIndexRef.current + 1) % changingTexts.length;
         currentTextIndexRef.current = 0;
         renderedTextRef.current = "";
         if (el && el.current) {
@@ -121,6 +140,7 @@ export default function HomePage(): JSX.Element {
         <a
           href={LINKEDIN_URL}
           target="_blank"
+          rel="noopener noreferrer"
           className="project-icons hover:bg-blue-500"
         >
           <SiLinkedin className="text-2xl text-white" />
@@ -128,30 +148,57 @@ export default function HomePage(): JSX.Element {
         <a
           href={GITHUB_URL}
           target="_blank"
+          rel="noopener noreferrer"
           className="project-icons hover:bg-black-500"
         >
           <SiGithub className="text-2xl text-white" />
+        </a>
+        <a
+          href={INSTAGRAM_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="project-icons hover:bg-pink-500"
+        >
+          <SiInstagram className="text-2xl text-white" />
+        </a>
+        <a
+          href={X_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="project-icons hover:bg-blue-400"
+        >
+          <SiTwitter className="text-2xl text-white" />
+        </a>
+        <a
+          href={STACKOVERFLOW_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="project-icons hover:bg-orange-500"
+        >
+          <SiStackoverflow className="text-2xl text-white" />
         </a>
       </div>
       <div className="flex justify-center space-x-4 mx-auto p-2">
         <button
           onClick={() => window.open("/resume.pdf", "_blank", "noopener")}
-          className="font-bold py-1 px-4 rounded mt-4 font-semibold bg-gradient-to-r from-purple-500 to-cyan-500 hover:from-purple-700 hover:to-cyan-700"
+          className="font-bold py-2 px-6 rounded-full mt-4 text-white bg-gradient-to-r from-purple-500 to-cyan-500 hover:from-purple-700 hover:to-cyan-700 transition duration-300 ease-in-out transform hover:scale-105"
         >
           View Resume
         </button>
         <a
           href="/resume.pdf"
-          download="resume.pdf"
-          className="font-bold py-1 px-4 rounded mt-4 font-semibold bg-gradient-to-r from-purple-500 to-cyan-500 hover:from-purple-700 hover:to-cyan-700"
+          download="Mohammad_Shahid_Beigh_Resume.pdf"
+          className="font-bold py-2 px-6 rounded-full mt-4 text-white bg-gradient-to-r from-purple-500 to-cyan-500 hover:from-purple-700 hover:to-cyan-700 transition duration-300 ease-in-out transform hover:scale-105"
         >
           Download Resume
         </a>
       </div>
       {profileViews !== null && (
-        <button className="font-bold py-1 px-4 space-x-4 mx-auto p-2 rounded mt-4 font-semibold bg-gradient-to-r from-purple-500 to-cyan-500 cursor-text hover:from-purple-700 hover:to-cyan-700">
-          Profile Views: {profileViews}
-        </button>
+        <div className="mt-4 animate-fade-in">
+          <span className="font-bold py-2 px-4 rounded-full bg-gradient-to-r from-purple-500 to-cyan-500 text-white">
+            Profile Views: {profileViews}
+          </span>
+        </div>
       )}
     </div>
   );
