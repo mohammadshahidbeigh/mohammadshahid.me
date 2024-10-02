@@ -1,6 +1,6 @@
 "use client";
 
-import {useEffect, useRef, useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import {
   SiGithub,
   SiLinkedin,
@@ -33,62 +33,47 @@ export default function HomePage(): JSX.Element {
   const typingDelay = 150;
   const delayAfterTyping = 2000;
 
-  const el: any = useRef("");
+  const el = useRef<HTMLSpanElement>(null);
   const currentIndexRef = useRef(0);
   const currentTextIndexRef = useRef(0);
   const renderedTextRef = useRef("");
-  let timerId: any = null;
-
   const [profileViews, setProfileViews] = useState<string | null>(null);
 
-  const changeText = () => {
-    let curText = renderedTextRef.current;
-    if (
-      changingTexts[currentIndexRef.current].length >
-      currentTextIndexRef.current
-    ) {
-      curText +=
-        changingTexts[currentIndexRef.current][currentTextIndexRef.current];
-      renderedTextRef.current = curText;
-      currentTextIndexRef.current++;
-      if (el && el.current) {
-        el.current.innerText = curText;
-      }
-    } else {
-      clearInterval(timerId);
-      setTimeout(() => {
-        currentIndexRef.current =
-          (currentIndexRef.current + 1) % changingTexts.length;
-        currentTextIndexRef.current = 0;
-        renderedTextRef.current = "";
-        if (el && el.current) {
-          el.current.innerText = "";
-        }
-        startTyping();
-      }, delayAfterTyping);
-    }
-  };
-
-  const startTyping = () => {
-    timerId = setInterval(changeText, typingDelay);
-  };
-
-  const fetchProfileViews = async () => {
-    try {
-      console.log("Fetching profile views...");
-      const response = await fetch("/api/profile-views");
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      const data = await response.json();
-      console.log("Profile views data:", data);
-      setProfileViews(data.message);
-    } catch (error) {
-      console.error("Error fetching profile views:", error);
-    }
-  };
-
   useEffect(() => {
+    let timerId: NodeJS.Timeout;
+
+    const changeText = () => {
+      let curText = renderedTextRef.current;
+      if (
+        changingTexts[currentIndexRef.current].length >
+        currentTextIndexRef.current
+      ) {
+        curText +=
+          changingTexts[currentIndexRef.current][currentTextIndexRef.current];
+        renderedTextRef.current = curText;
+        currentTextIndexRef.current++;
+        if (el.current) {
+          el.current.innerText = curText;
+        }
+      } else {
+        clearInterval(timerId);
+        setTimeout(() => {
+          currentIndexRef.current =
+            (currentIndexRef.current + 1) % changingTexts.length;
+          currentTextIndexRef.current = 0;
+          renderedTextRef.current = "";
+          if (el.current) {
+            el.current.innerText = "";
+          }
+          startTyping();
+        }, delayAfterTyping);
+      }
+    };
+
+    const startTyping = () => {
+      timerId = setInterval(changeText, typingDelay);
+    };
+
     startTyping();
     fetchProfileViews();
 
@@ -97,21 +82,33 @@ export default function HomePage(): JSX.Element {
     };
   }, []);
 
+  const fetchProfileViews = async () => {
+    try {
+      const response = await fetch("/api/profile-views");
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const data = await response.json();
+      setProfileViews(data.message);
+    } catch (error) {
+      console.error("Error fetching profile views:", error);
+    }
+  };
+
   return (
     <div
       id="home-section"
-      className="h-screen flex flex-col items-center justify-center relative"
+      className="min-h-screen flex flex-col items-center justify-center relative py-8"
     >
       <ParticlesBg />
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
-        <div className="md:hidden w-full flex justify-center mb-8"></div>
         <div className="md:w-1/2 text-left mb-8 md:mb-0 md:pr-8">
           <h1
-            className={`${dancing.className} name-title-ui text-white animate-fade-in mb-4`}
+            className={`${dancing.className} name-title-ui text-white animate-fade-in mb-4 text-4xl md:text-5xl lg:text-6xl`}
           >
             Mohammad Shahid Beigh
           </h1>
-          <div className="text-lg md:text-xl lg:text-2xl text-white animate-fade-in my-1">
+          <div className="text-lg md:text-xl lg:text-2xl text-white animate-fade-in my-4 h-24">
             👋 Hi there!{" "}
             <span
               className="changing-text text-blue-500 italic"
@@ -176,13 +173,6 @@ export default function HomePage(): JSX.Element {
               Download Resume
             </a>
           </div>
-          {/* {profileViews !== null && (
-            <div className="mt-4 animate-fade-in text-center md:text-left">
-              <span className="inline-block font-bold py-2 px-4 rounded-full bg-gradient-to-r from-purple-500 to-cyan-500 text-white">
-                Profile Views: {profileViews}
-              </span>
-            </div>
-          )} */}
         </div>
         <div className="md:flex md:w-1/2 justify-center md:justify-end hidden">
           <div className="w-72 h-72 rounded-full overflow-hidden border-4 border-white shadow-xl relative">
