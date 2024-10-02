@@ -27,7 +27,7 @@ const dancing = Dancing_Script({
 
 export default function HomePage(): JSX.Element {
   const changingTexts = [
-    "I'm an Full Stack AI Software Engineer with a passion for innovation. Bridging the gap between cutting-edge AI and robust full-stack development.",
+    "I'm a Full Stack AI Software Engineer with a passion for innovation. Bridging the gap between cutting-edge AI and robust full-stack development.",
   ];
 
   const typingDelay = 150;
@@ -193,13 +193,13 @@ export default function HomePage(): JSX.Element {
               Download Resume
             </a>
           </div>
-          {profileViews !== null && (
+          {/* {profileViews !== null && (
             <div className="mt-4 animate-fade-in text-center md:text-left">
               <span className="inline-block font-bold py-2 px-4 rounded-full bg-gradient-to-r from-purple-500 to-cyan-500 text-white">
                 Profile Views: {profileViews}
               </span>
             </div>
-          )}
+          )} */}
         </div>
         <div className="hidden md:flex md:w-1/2 justify-center md:justify-end">
           <div className="w-72 h-72 rounded-full overflow-hidden border-4 border-white shadow-xl relative">
@@ -211,7 +211,7 @@ export default function HomePage(): JSX.Element {
               alt="My Profile Picture"
               width={288}
               height={288}
-              className="object-cover transition-transform duration-300 hover:scale-110"
+              className="hidden md:block object-cover transition-transform duration-300 hover:scale-110"
               priority
               loading="eager"
               placeholder="blur"
