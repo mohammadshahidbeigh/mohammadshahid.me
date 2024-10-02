@@ -56,7 +56,7 @@ export default function ProjectsPage(): JSX.Element {
                 Live Demo
               </a>
               <span className="text-cyan-200 bg-blue-500 bg-opacity-20 rounded-md px-3 py-1">
-                Jan 2023 - Present
+                Jan 2024 - June 2024 
               </span>
             </div>
             <ul className="space-y-3">

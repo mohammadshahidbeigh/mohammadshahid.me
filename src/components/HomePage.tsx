@@ -104,7 +104,7 @@ export default function HomePage(): JSX.Element {
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
         <div className="md:w-1/2 text-left mb-8 md:mb-0 md:pr-8">
           <h1
-            className={`${dancing.className} name-title-ui text-white animate-fade-in mb-4 text-5xl md:text-5xl lg:text-6xl`}
+            className={`${dancing.className} name-title-ui text-white animate-fade-in mb-4 text-4xl md:text-5xl lg:text-6xl`}
           >
             Mohammad Shahid Beigh
           </h1>

@@ -81,7 +81,7 @@ export default function AboutPage(): JSX.Element {
                 Model Institute Of Engineering & Technology, Jammu
               </a>
               <span className="text-cyan-200 bg-blue-500 bg-opacity-20 rounded-md px-3 py-1">
-                July 20 - June 24
+                July 2020 - Augest 2024
               </span>
             </div>
             <p className="text-gray-300 mb-2">
