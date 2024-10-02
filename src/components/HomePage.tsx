@@ -104,24 +104,7 @@ export default function HomePage(): JSX.Element {
     >
       <ParticlesBg />
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
-        <div className="md:hidden w-full flex justify-center mb-8">
-          <div className="w-72 h-72 rounded-full overflow-hidden border-4 border-white shadow-xl relative">
-            <div className="absolute inset-0 border-4 border-transparent rounded-full animate-spin-slow">
-              <div className="absolute inset-0 border-4 border-blue-500 rounded-full animate-pulse"></div>
-            </div>
-            <Image
-              src="/Image.png"
-              alt="My Profile Picture"
-              width={288}
-              height={288}
-              className="object-cover transition-transform duration-300 hover:scale-110"
-              priority
-              loading="eager"
-              placeholder="blur"
-              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACklEQVR4nGMAAQAABQABDQottAAAAABJRU5ErkJggg=="
-            />
-          </div>
-        </div>
+        <div className="md:hidden w-full flex justify-center mb-8"></div>
         <div className="md:w-1/2 text-left mb-8 md:mb-0 md:pr-8">
           <h1
             className={`${dancing.className} name-title-ui text-white animate-fade-in mb-4`}
@@ -201,7 +184,7 @@ export default function HomePage(): JSX.Element {
             </div>
           )} */}
         </div>
-        <div className="hidden md:flex md:w-1/2 justify-center md:justify-end">
+        <div className="md:flex md:w-1/2 justify-center md:justify-end hidden">
           <div className="w-72 h-72 rounded-full overflow-hidden border-4 border-white shadow-xl relative">
             <div className="absolute inset-0 border-4 border-transparent rounded-full animate-spin-slow">
               <div className="absolute inset-0 border-4 border-blue-500 rounded-full animate-pulse"></div>
@@ -211,7 +194,7 @@ export default function HomePage(): JSX.Element {
               alt="My Profile Picture"
               width={288}
               height={288}
-              className="hidden md:block object-cover transition-transform duration-300 hover:scale-110"
+              className="object-cover transition-transform duration-300 hover:scale-110"
               priority
               loading="eager"
               placeholder="blur"
