@@ -101,16 +101,28 @@ export default function ProjectsPage(): JSX.Element {
                 </span>
               </li>
             </ul>
-            <div className="mt-4">
+            <div className="mt-4 bg-gradient-to-r from-purple-700 via-pink-500 to-red-500 p-4 rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:rotate-1">
               <a
                 href="https://www.researchgate.net/publication/381831628_AI-BASED_CHATBOT_FOR_EDUCATIONAL_INSTITUTES?channel=doi&linkId=66811d2c2aa57f3b8260ba91&showFulltext=true"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-cyan-300 hover:text-cyan-100 transition-colors duration-200"
+                className="flex items-center space-x-2 text-white hover:text-yellow-300 transition-colors duration-300"
               >
-                📄 Research Paper: AI-BASED CHATBOT FOR EDUCATIONAL INSTITUTES
+                <span className="text-3xl animate-bounce">📄</span>
+                <span className="font-bold text-lg underline italic tracking-wider">
+                  Research Paper: AI-BASED CHATBOT FOR EDUCATIONAL INSTITUTES
+                </span>
               </a>
+              <div className="flex items-center mt-3 text-sm text-white space-x-2">
+                <span className="text-yellow-200 bg-purple-800 bg-opacity-60 px-3 py-1 rounded-full shadow-md animate-pulse">
+                  🚀 Over 500 reads!
+                </span>
+                <span className="text-pink-200 bg-pink-500 px-2 py-1 rounded-md hover:animate-spin cursor-pointer">
+                  ⭐ Like it?
+                </span>
+              </div>
             </div>
+
             <div className="flex justify-between items-center mt-6">
               <div className="flex space-x-2">
                 <a
@@ -363,7 +375,7 @@ export default function ProjectsPage(): JSX.Element {
                 Live Demo
               </a>
               <span className="text-cyan-200 bg-blue-500 bg-opacity-20 rounded-md px-3 py-1">
-                Personal Project
+                Personal Portfolio
               </span>
             </div>
             <ul className="space-y-3">
