@@ -67,7 +67,7 @@ export default function ProjectsPage(): JSX.Element {
                 Jan 2024 - June 2024
               </span>
             </div>
-            <ul className="space-y-3">
+            <ul className="space-y-3 mb-20">
               <li className="flex items-start space-x-2">
                 <ListTick />
                 <span className="text-gray-300">
@@ -101,23 +101,23 @@ export default function ProjectsPage(): JSX.Element {
                 </span>
               </li>
             </ul>
-            <div className="mt-4 bg-gradient-to-r from-purple-700 via-pink-500 to-red-500 p-4 rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:rotate-1">
+            <div className="mt-2 bg-gradient-to-r from-purple-700 via-pink-500 to-red-500 p-2 rounded-md shadow-md transition-all duration-300 hover:scale-105 hover:rotate-1 sm:p-1 sm:mt-1">
               <a
                 href="https://www.researchgate.net/publication/381831628_AI-BASED_CHATBOT_FOR_EDUCATIONAL_INSTITUTES?channel=doi&linkId=66811d2c2aa57f3b8260ba91&showFulltext=true"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center space-x-2 text-white hover:text-yellow-300 transition-colors duration-300"
+                className="flex items-center space-x-1 text-white hover:text-yellow-300 transition-colors duration-200 sm:space-x-0.5"
               >
-                <span className="text-3xl animate-bounce">📄</span>
-                <span className="font-bold text-lg underline italic tracking-wider">
+                <span className="text-2xl sm:text-base animate-bounce">📄</span>
+                <span className="font-semibold text-md md:text-sm sm:text-xs underline italic tracking-tight">
                   Research Paper: AI-BASED CHATBOT FOR EDUCATIONAL INSTITUTES
                 </span>
               </a>
-              <div className="flex items-center mt-3 text-sm text-white space-x-2">
-                <span className="text-yellow-200 bg-purple-800 bg-opacity-60 px-3 py-1 rounded-full shadow-md animate-pulse">
+              <div className="flex items-center mt-2 text-xs text-white space-x-1 sm:space-x-0.5 sm:mt-1">
+                <span className="text-yellow-200 bg-purple-800 bg-opacity-60 px-2 py-0.5 rounded-md shadow-sm animate-pulse text-xs sm:text-xxs">
                   🚀 Over 500 reads!
                 </span>
-                <span className="text-pink-200 bg-pink-500 px-2 py-1 rounded-md hover:animate-spin cursor-pointer">
+                <span className="text-pink-200 bg-pink-500 px-1.5 py-0.5 rounded-md hover:animate-spin cursor-pointer text-xs sm:text-xxs">
                   ⭐ Like it?
                 </span>
               </div>
