@@ -1,4 +1,11 @@
-import {SiGithub, SiMongodb, SiMysql} from "react-icons/si";
+import {
+  SiAmazonaws,
+  SiDocker,
+  SiGithub,
+  SiMongodb,
+  SiMysql,
+  SiTypescript,
+} from "react-icons/si";
 import {BsGlobe} from "react-icons/bs";
 import {FaNodeJs} from "react-icons/fa";
 import {
@@ -16,11 +23,12 @@ import {
   BiLogoGithub,
   BiLogoGit,
   BiLogoGmail,
+  BiLogoNodejs,
 } from "react-icons/bi";
 import {
   MIET_BOT_URL,
   OWAIS_YAQOOB_URL,
-  TEXT_WIZARD_URL,
+  MindVault_URL,
   MOHAMMAD_SHAHID_URL,
   KNOWIT_ALL_URL,
   MIETBOT_FineTuned_URL,
@@ -56,7 +64,7 @@ export default function ProjectsPage(): JSX.Element {
                 Live Demo
               </a>
               <span className="text-cyan-200 bg-blue-500 bg-opacity-20 rounded-md px-3 py-1">
-                Jan 2024 - June 2024 
+                Jan 2024 - June 2024
               </span>
             </div>
             <ul className="space-y-3">
@@ -140,10 +148,118 @@ export default function ProjectsPage(): JSX.Element {
             </div>
           </div>
 
+          {/* Third project card */}
+          <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+            <h3 className="font-bold text-2xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+              MindVault
+            </h3>
+            <div className="flex justify-between items-center mb-4">
+              <a
+                href="http://43.205.10.7:3000/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-cyan-300 hover:text-cyan-100 transition-colors duration-200"
+              >
+                Live Demo
+              </a>
+              <span className="text-cyan-200 bg-blue-500 bg-opacity-20 rounded-md px-3 py-1">
+                Personal Knowledge Management System
+              </span>
+            </div>
+            <ul className="space-y-3">
+              <li className="flex items-start space-x-2">
+                <ListTick />
+                <span className="text-gray-300">
+                  Developed <strong>MindVault</strong>, a personal knowledge
+                  management system designed for researchers and academics to
+                  organize, manage, and collaborate on research papers,
+                  articles, books, and notes.
+                </span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <ListTick />
+                <span className="text-gray-300">
+                  Implemented <strong>user authentication</strong> and{" "}
+                  <strong>authorization</strong> using JWT, ensuring secure
+                  access and management of user data.
+                </span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <ListTick />
+                <span className="text-gray-300">
+                  Developed a feature for uploading, updating, and deleting
+                  research papers and notes, with support for tags and metadata
+                  for easy categorization.
+                </span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <ListTick />
+                <span className="text-gray-300">
+                  Implemented <strong>advanced search functionality</strong>{" "}
+                  using GraphQL, enabling users to efficiently retrieve and
+                  filter academic resources.
+                </span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <ListTick />
+                <span className="text-gray-300">
+                  Enabled multimedia support by integrating{" "}
+                  <strong>React-Player</strong>, allowing users to watch
+                  educational videos directly on the platform.
+                </span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <ListTick />
+                <span className="text-gray-300">
+                  Developed with a <strong>responsive design</strong>, ensuring
+                  seamless usage across desktop and mobile devices.
+                </span>
+              </li>
+            </ul>
+
+            <div className="flex justify-between items-center mt-6">
+              <div className="flex space-x-2">
+                <a
+                  href={MindVault_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-cyan-300 hover:text-cyan-100 transition-colors duration-200"
+                >
+                  <SiGithub className="text-xl" />
+                </a>
+                <a
+                  href="http://43.205.10.7:3000/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-cyan-300 hover:text-cyan-100 transition-colors duration-200"
+                >
+                  <BsGlobe className="text-xl" />
+                </a>
+              </div>
+              <div className="flex space-x-2">
+                <BiLogoReact className="text-cyan-200 text-xl" title="React" />
+                <BiLogoJavascript
+                  className="text-cyan-200 text-xl"
+                  title="JavaScript"
+                />
+                <SiTypescript
+                  className="text-cyan-200 text-xl"
+                  title="TypeScript"
+                />
+                <BiLogoNodejs
+                  className="text-cyan-200 text-xl"
+                  title="Node.js"
+                />
+                <SiMongodb className="text-cyan-200 text-xl" title="MongoDB" />
+                <SiDocker className="text-cyan-200 text-xl" title="Docker" />
+                <SiAmazonaws className="text-cyan-200 text-xl" title="AWS" />
+              </div>
+            </div>
+          </div>
           {/* Second project card */}
           <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
             <h3 className="font-bold text-2xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-              Owais Yaqoob -- Freelance Client
+              Owais Yaqoob
             </h3>
             <div className="flex justify-between items-center mb-4">
               <a
@@ -232,82 +348,6 @@ export default function ProjectsPage(): JSX.Element {
               </div>
             </div>
           </div>
-
-          {/* Third project card */}
-          <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
-            <h3 className="font-bold text-2xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-              Text-Wizard
-            </h3>
-            <div className="flex justify-between items-center mb-4">
-              <a
-                href="https://textwizard.netlify.app"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-cyan-300 hover:text-cyan-100 transition-colors duration-200"
-              >
-                Live Demo
-              </a>
-              <span className="text-cyan-200 bg-blue-500 bg-opacity-20 rounded-md px-3 py-1">
-                Text Manipulation App
-              </span>
-            </div>
-            <ul className="space-y-3">
-              <li className="flex items-start space-x-2">
-                <ListTick />
-                <span className="text-gray-300">
-                  Developed &ldquo;Text-Wizard,&rdquo; a Text Manipulation App
-                  that provides tools to enhance text quickly and efficiently.
-                  Implemented features like word count, character count, and
-                  space removal using React.js and React Hooks. Enabled swift
-                  text enhancement for users, improving productivity by 25%.
-                </span>
-              </li>
-              <li className="flex items-start space-x-2">
-                <ListTick />
-                <span className="text-gray-300">
-                  Designed to serve a diverse audience, including students,
-                  writers, and business professionals. Made it an essential tool
-                  for crafting high-quality written content.
-                </span>
-              </li>
-            </ul>
-            <div className="flex justify-between items-center mt-6">
-              <div className="flex space-x-2">
-                <a
-                  href={TEXT_WIZARD_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-cyan-300 hover:text-cyan-100 transition-colors duration-200"
-                >
-                  <SiGithub className="text-xl" />
-                </a>
-                <a
-                  href="https://textwizard.netlify.app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-cyan-300 hover:text-cyan-100 transition-colors duration-200"
-                >
-                  <BsGlobe className="text-xl" />
-                </a>
-              </div>
-              <div className="flex space-x-2">
-                <BiLogoBootstrap
-                  className="text-cyan-200 text-xl"
-                  title="Bootstrap"
-                />
-                <BiLogoReact className="text-cyan-200 text-xl" title="React" />
-                <BiLogoJavascript
-                  className="text-cyan-200 text-xl"
-                  title="JavaScript"
-                />
-                <BiLogoNetlify
-                  className="text-cyan-200 text-xl"
-                  title="Netlify"
-                />
-              </div>
-            </div>
-          </div>
-
           {/* Fourth project card */}
           <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
             <h3 className="font-bold text-2xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">

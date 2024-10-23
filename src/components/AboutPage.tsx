@@ -18,42 +18,96 @@ import ListTick from "./ListTick";
 export default function AboutPage(): JSX.Element {
   const programmingLanguages = [
     "HTML",
-    "CSS3",
+    "CSS",
     "SASS",
     "JavaScript",
     "TypeScript",
     "Python",
   ];
   const topics = [
+    "Full Stack Development",
     "Front End Development",
+    "Back End Development",
+    "Devops",
     "Data Structures",
     "Object Oriented Programming",
     "Test Driven Development",
-    "Machine Learning",
-    "Web Scraping",
-    "Prompt Engineering",
-    "Fine-Tuning",
-    "OpenAI API",
-    "OpenAI-Embeddings",
+    "Testing",
+    "Generative AI",
+    "Vector-Embeddings",
     "RAG-Retrieval Augmented Generation",
   ];
-  const softwares = [
-    "React.js",
-    "Next.js",
-    "React Redux",
+  const frontend = [
+    "HTML",
+    "CSS",
+    "SASS",
+    "JavaScript",
+    "TypeScript",
+    "React",
     "Redux Toolkit",
+    "React Router",
     "React Query",
-    "RxJS",
-    "RTX Query",
-    "Bootstrap",
+    "Next.js",
+    "Apollo Client",
     "Tailwind CSS",
-    "Git",
-    "Jupyter Notebook",
-    "Langchain.js",
+    "Material UI",
+  ];
+
+  const backend = [
+    "Node.js",
+    "Express.js",
+    "REST APIS",
+    "GraphQL",
+    "Apollo Server",
+    "NGINX",
+    "JWT",
+    "OAuth",
+    "Web Sockets",
+    "socket.io",
+    "WebRTC",
+  ];
+
+  const databases = [
+    "MySQL",
+    "PostgreSQL",
+    "MongoDB",
+    "Redis",
     "Supabase",
     "Firebase",
-    "Netlify",
+    "Mongoose",
+    "Prisma",
+  ];
+
+  const testing = [
+    "Jest",
+    "Mocha",
+    "Chai",
+    "Supertest",
+    "React Testing Library",
+    "Puppeteer",
+    "Cypress",
+  ];
+
+  const devOps = [
+    "Git",
+    "Linux",
+    "Docker",
+    "Kubernetes",
+    "CI/CD",
+    "Travis CI",
+    "AWS",
     "Vercel",
+  ];
+
+  const genAI = [
+    "Python",
+    "Langchain",
+    "LlamaIndex",
+    "Prompt Engineering",
+    "Fine-Tuning",
+    "Vector Embeddings",
+    "Vector Databases",
+    "RAG (Retrieval-Augmented Generation)",
   ];
 
   return (
@@ -81,7 +135,7 @@ export default function AboutPage(): JSX.Element {
                 Model Institute Of Engineering & Technology, Jammu
               </a>
               <span className="text-cyan-200 bg-blue-500 bg-opacity-20 rounded-md px-3 py-1">
-                July 2020 - Augest 2024
+                July 2020 - August 2024
               </span>
             </div>
             <p className="text-gray-300 mb-2">
@@ -92,12 +146,12 @@ export default function AboutPage(): JSX.Element {
               <li className="flex items-start space-x-2">
                 <ListTick />
                 <span className="text-gray-300">
-                  👋 Hi there! I&apos;m a self-taught Front-End Software
-                  Engineer currently pursuing my bachelor&apos;s degree in
-                  Electronics and Communication Engineering. Although my formal
-                  education lies in a different field, my insatiable curiosity
-                  and relentless pursuit of knowledge have driven me to explore
-                  and master the world of software engineering.
+                  👋 Hi there! I&apos;m a self-taught Full-Stack Software
+                  Engineer with a strong educational foundation in Electronics
+                  and Communication Engineering. Although my formal education
+                  lies in a different field, my insatiable curiosity and
+                  relentless pursuit of knowledge have driven me to explore and
+                  master the world of software engineering.
                 </span>
               </li>
               <li className="flex items-start space-x-2">
@@ -106,10 +160,11 @@ export default function AboutPage(): JSX.Element {
                   I have a genuine passion for software development and enjoy
                   creating innovative solutions using various tech stacks,
                   languages, and technologies. If you&apos;re looking for a
-                  passionate Front-End Software Developer who thrives in
-                  challenging environments, loves JavaScript, React, Next.js,
-                  and is dedicated to continuous learning and innovation, I
-                  would love to connect with you.
+                  passionate Full-Stack Software Developer who thrives in
+                  challenging environments, loves JavaScript and React, GraphQL,
+                  Next.js, or Full-Stack with GenAI, and is dedicated to
+                  continuous learning and innovation, I would love to connect
+                  with you.
                 </span>
               </li>
               <li className="flex items-start space-x-2">
@@ -145,7 +200,7 @@ export default function AboutPage(): JSX.Element {
 
             <div className="mb-6">
               <h4 className="text-xl font-semibold mb-2 text-cyan-300">
-                Topics
+                Development Topics
               </h4>
               <div className="flex flex-wrap gap-2">
                 {topics.map((topic, index) => (
@@ -159,17 +214,97 @@ export default function AboutPage(): JSX.Element {
               </div>
             </div>
 
-            <div>
+            <div className="mb-6">
               <h4 className="text-xl font-semibold mb-2 text-cyan-300">
-                Softwares and Libraries
+                Frontend
               </h4>
               <div className="flex flex-wrap gap-2">
-                {softwares.map((software, index) => (
+                {frontend.map((item, index) => (
                   <span
                     key={index}
                     className="skill-div-ui text-sm font-medium text-gray-200 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 transition-all duration-300 transform hover:scale-105"
                   >
-                    {software}
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="mb-6">
+              <h4 className="text-xl font-semibold mb-2 text-cyan-300">
+                Backend
+              </h4>
+              <div className="flex flex-wrap gap-2">
+                {backend.map((item, index) => (
+                  <span
+                    key={index}
+                    className="skill-div-ui text-sm font-medium text-gray-200 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 transition-all duration-300 transform hover:scale-105"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="mb-6">
+              <h4 className="text-xl font-semibold mb-2 text-cyan-300">
+                Databases
+              </h4>
+              <div className="flex flex-wrap gap-2">
+                {databases.map((db, index) => (
+                  <span
+                    key={index}
+                    className="skill-div-ui text-sm font-medium text-gray-200 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 transition-all duration-300 transform hover:scale-105"
+                  >
+                    {db}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="mb-6">
+              <h4 className="text-xl font-semibold mb-2 text-cyan-300">
+                Testing
+              </h4>
+              <div className="flex flex-wrap gap-2">
+                {testing.map((test, index) => (
+                  <span
+                    key={index}
+                    className="skill-div-ui text-sm font-medium text-gray-200 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 transition-all duration-300 transform hover:scale-105"
+                  >
+                    {test}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="mb-6">
+              <h4 className="text-xl font-semibold mb-2 text-cyan-300">
+                DevOps
+              </h4>
+              <div className="flex flex-wrap gap-2">
+                {devOps.map((tool, index) => (
+                  <span
+                    key={index}
+                    className="skill-div-ui text-sm font-medium text-gray-200 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 transition-all duration-300 transform hover:scale-105"
+                  >
+                    {tool}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <h4 className="text-xl font-semibold mb-2 text-cyan-300">
+                Gen-AI
+              </h4>
+              <div className="flex flex-wrap gap-2">
+                {genAI.map((aiTool, index) => (
+                  <span
+                    key={index}
+                    className="skill-div-ui text-sm font-medium text-gray-200 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 transition-all duration-300 transform hover:scale-105"
+                  >
+                    {aiTool}
                   </span>
                 ))}
               </div>

@@ -15,8 +15,8 @@ export const MIET_BOT_URL: string =
   "https://github.com/mohammadshahidbeigh/Campus360";
 export const OWAIS_YAQOOB_URL: string =
   "https://github.com/mohammadshahidbeigh/owaisyaqoob--client";
-export const TEXT_WIZARD_URL: string =
-  "https://github.com/mohammadshahidbeigh/textwizard--bootstrap";
+export const MindVault_URL: string =
+  "https://github.com/mohammadshahidbeigh/mindVault";
 export const MOHAMMAD_SHAHID_URL: string =
   "https://github.com/mohammadshahidbeigh/mohammadshahid.me";
 export const KNOWIT_ALL_URL: string =
@@ -53,7 +53,7 @@ export const NavList = [
     href: "/experience",
   },
   {
-    name: "Testimonials",
+    name: "Blogs & Testimonials",
     href: "/testimonials",
   },
   {

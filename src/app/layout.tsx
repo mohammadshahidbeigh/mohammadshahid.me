@@ -1,6 +1,6 @@
 import "./globals.css";
-import type { Metadata } from "next";
-import { Raleway } from "next/font/google";
+import type {Metadata} from "next";
+import {Raleway} from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Script from "next/script";
 
@@ -13,11 +13,11 @@ const raleway = Raleway({
 export const metadata: Metadata = {
   title: {
     template: "%s | Mohammad Shahid Beigh",
-    default: "Mohammad Shahid Beigh | Front End Software Engineer",
+    default: "Mohammad Shahid Beigh | Full-Stack Software Engineer",
   },
   description:
-    "Mohammad Shahid Beigh - Front End Software Development Engineer - My personal portfolio website",
-  authors: [{ name: "Mohammad Shahid Beigh" }],
+    "Mohammad Shahid Beigh - Full-Stack Software Development Engineer - My personal portfolio website",
+  authors: [{name: "Mohammad Shahid Beigh"}],
   applicationName: "Mohammad Shahid Beigh - Portfolio",
   generator: "Next.js",
   keywords: [
@@ -30,7 +30,8 @@ export const metadata: Metadata = {
     "portfolio",
     "TypeScript",
     "developer",
-    "Front End Software Engineer",
+    "Full-Stack Software Engineer",
+    "GenAI",
     "Miet Jammu",
     "kashmir",
     "Srinagar",
@@ -39,9 +40,9 @@ export const metadata: Metadata = {
   creator: "Mohammad Shahid Beigh - mohammadshahidbeigh@gmail.com",
   publisher: "Mohammad Shahid Beigh",
   openGraph: {
-    title: "Mohammad Shahid Beigh | Front End Software Engineer | Portfolio",
+    title: "Mohammad Shahid Beigh | Full-Stack Software Engineer | Portfolio",
     description:
-      "Mohammad Shahid Beigh | Front End Software Development Engineer | My personal portfolio website",
+      "Mohammad Shahid Beigh |Full-Stack Software Development Engineer | My personal portfolio website",
     url: "https://shahid-cc-portfolio.vercel.app",
     siteName: "Mohammad Shahid Beigh - Portfolio",
     // images: "/opengraph-image.png",
@@ -50,11 +51,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang="en">
       <head>
