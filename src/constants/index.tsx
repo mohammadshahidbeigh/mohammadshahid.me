@@ -29,6 +29,8 @@ export const AUTOMOBILES_PRICE_URL: string =
   "https://github.com/mohammadshahidbeigh/automobiles-price-esstimation";
 export const TALKROOM_URL: string =
   "https://github.com/mohammadshahidbeigh/talkRoom?tab=readme-ov-file#talkroom---real-time-chat-application";
+export const AI_INTERVIEW_PRACTICE_URL: string =
+  "https://github.com/mohammadshahidbeigh/interviewer";
 
 export const INSTAGRAM_URL: string =
   "https://www.instagram.com/m_shahid.me/?igsh=dzVjMWozN3VheGQ2";

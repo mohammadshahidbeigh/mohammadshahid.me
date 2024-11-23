@@ -12,6 +12,11 @@ import {
   SiPrisma,
   SiExpress,
   SiMui,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiOpenai,
+  SiRazorpay,
+  SiFramer,
 } from "react-icons/si";
 import {BsGlobe} from "react-icons/bs";
 import {FaNodeJs} from "react-icons/fa";
@@ -42,6 +47,7 @@ import {
   Web_Scraper_URL,
   AUTOMOBILES_PRICE_URL,
   TALKROOM_URL,
+  AI_INTERVIEW_PRACTICE_URL,
 } from "@/constants";
 import ListTick from "./ListTick";
 
@@ -266,6 +272,7 @@ export default function ProjectsPage(): JSX.Element {
                   className="text-cyan-200 text-xl"
                   title="Firebase"
                 />
+                <SiOpenai className="text-cyan-200 text-xl" title="OpenAI" />
               </div>
             </div>
           </div>
@@ -360,11 +367,11 @@ export default function ProjectsPage(): JSX.Element {
               </div>
               <div className="flex space-x-2">
                 <BiLogoReact className="text-cyan-200 text-xl" title="React" />
-                <BiLogoJavascript
+                <SiExpress
                   className="text-cyan-200 text-xl"
-                  title="JavaScript"
+                  title="Express.js"
                 />
-                <SiTypescript
+                <BiLogoTypescript
                   className="text-cyan-200 text-xl"
                   title="TypeScript"
                 />
@@ -378,7 +385,101 @@ export default function ProjectsPage(): JSX.Element {
               </div>
             </div>
           </div>
-          {/* Second project card */}
+
+          <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+            <h3 className="font-bold text-2xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+              Interviewer
+            </h3>
+            <div className="flex justify-between items-center mb-4">
+              <a
+                href="https://interviewer-sable.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-cyan-300 hover:text-cyan-100 transition-colors duration-200"
+              >
+                Live Demo
+              </a>
+              <span className="text-cyan-200 bg-blue-500 bg-opacity-20 rounded-md px-3 py-1">
+                🎙️ Voice-Based AI Project
+              </span>
+            </div>
+            <ul className="space-y-3">
+              <li className="flex items-start space-x-2">
+                <ListTick />
+                <span className="text-gray-300">
+                  Developed an interactive web application that simulates job
+                  interviews using AI-powered voice conversations, providing a
+                  realistic interview experience with real-time voice
+                  interaction and feedback.
+                </span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <ListTick />
+                <span className="text-gray-300">
+                  Implemented comprehensive accessibility features following
+                  WCAG guidelines, including keyboard navigation, screen reader
+                  support, and visual accessibility enhancements.
+                </span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <ListTick />
+                <span className="text-gray-300">
+                  Integrated OpenAI GPT-3.5 for interview logic and Deepgram for
+                  Speech-to-Text and Text-to-Speech capabilities, enabling
+                  natural conversations and dynamic responses.
+                </span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <ListTick />
+                <span className="text-gray-300">
+                  Built with Next.js 14, React, and TailwindCSS, featuring state
+                  management through React Context and API protection with
+                  in-memory rate limiting.
+                </span>
+              </li>
+            </ul>
+
+            <div className="flex justify-between items-center mt-6">
+              <div className="flex space-x-2">
+                <a
+                  href={AI_INTERVIEW_PRACTICE_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-cyan-300 hover:text-cyan-100 transition-colors duration-200"
+                >
+                  <SiGithub className="text-xl" />
+                </a>
+                <a
+                  href="https://interviewer-sable.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-cyan-300 hover:text-cyan-100 transition-colors duration-200"
+                >
+                  <BsGlobe className="text-xl" />
+                </a>
+              </div>
+              <div className="flex space-x-2">
+                <BiLogoReact className="text-cyan-200 text-xl" title="React" />
+                <SiNextdotjs
+                  className="text-cyan-200 text-xl"
+                  title="Next.js"
+                />
+                <BiLogoTypescript
+                  className="text-cyan-200 text-xl"
+                  title="TypeScript"
+                />
+                <SiTailwindcss
+                  className="text-cyan-200 text-xl"
+                  title="TailwindCSS"
+                />
+                <SiOpenai className="text-cyan-200 text-xl" title="OpenAI" />
+                <BiLogoNodejs
+                  className="text-cyan-200 text-xl"
+                  title="Node.js"
+                />
+              </div>
+            </div>
+          </div>
           <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
             <h3 className="font-bold text-2xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               Owais Yaqoob
@@ -467,6 +568,14 @@ export default function ProjectsPage(): JSX.Element {
                   className="text-cyan-200 text-xl"
                   title="Email.js"
                 />
+                <BiLogoFirebase
+                  className="text-cyan-200 text-xl"
+                  title="Firebase"
+                />
+                <SiRazorpay
+                  className="text-cyan-200 text-xl"
+                  title="Razorpay"
+                />
               </div>
             </div>
           </div>
@@ -554,6 +663,10 @@ export default function ProjectsPage(): JSX.Element {
                 <BiLogoTailwindCss
                   className="text-cyan-200 text-xl"
                   title="Tailwind CSS"
+                />
+                <SiFramer
+                  className="text-cyan-200 text-xl"
+                  title="Framer Motion"
                 />
               </div>
             </div>
@@ -646,6 +759,7 @@ export default function ProjectsPage(): JSX.Element {
                   className="text-cyan-200 text-xl"
                   title="Firebase"
                 />
+                <SiOpenai className="text-cyan-200 text-xl" title="OpenAI" />
               </div>
             </div>
           </div>
@@ -757,6 +871,7 @@ export default function ProjectsPage(): JSX.Element {
                   className="text-cyan-200 text-xl"
                   title="Firebase"
                 />
+                <SiOpenai className="text-cyan-200 text-xl" title="OpenAI" />
               </div>
             </div>
           </div>
