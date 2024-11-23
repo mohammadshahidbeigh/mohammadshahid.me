@@ -144,10 +144,6 @@ export default function ProjectsPage(): JSX.Element {
                   className="text-cyan-200 text-xl"
                   title="Node.js"
                 />
-                <SiExpress
-                  className="text-cyan-200 text-xl"
-                  title="Express.js"
-                />
                 <SiSocketdotio
                   className="text-cyan-200 text-xl"
                   title="Socket.IO"
@@ -158,8 +154,6 @@ export default function ProjectsPage(): JSX.Element {
                   title="PostgreSQL"
                 />
                 <SiRedis className="text-cyan-200 text-xl" title="Redis" />
-                <SiPrisma className="text-cyan-200 text-xl" title="Prisma" />
-                <SiMui className="text-cyan-200 text-xl" title="Material UI" />
               </div>
             </div>
           </div>
