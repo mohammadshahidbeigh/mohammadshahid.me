@@ -160,6 +160,7 @@ export default function ProjectsPage(): JSX.Element {
                   title="PostgreSQL"
                 />
                 <SiRedis className="text-cyan-200 text-xl" title="Redis" />
+                <SiDocker className="text-cyan-200 text-xl" title="Docker" />
               </div>
             </div>
           </div>
