@@ -5,6 +5,13 @@ import {
   SiMongodb,
   SiMysql,
   SiTypescript,
+  SiPostgresql,
+  SiRedis,
+  SiSocketdotio,
+  SiWebrtc,
+  SiPrisma,
+  SiExpress,
+  SiMui,
 } from "react-icons/si";
 import {BsGlobe} from "react-icons/bs";
 import {FaNodeJs} from "react-icons/fa";
@@ -34,6 +41,7 @@ import {
   MIETBOT_FineTuned_URL,
   Web_Scraper_URL,
   AUTOMOBILES_PRICE_URL,
+  TALKROOM_URL,
 } from "@/constants";
 import ListTick from "./ListTick";
 
@@ -49,6 +57,114 @@ export default function ProjectsPage(): JSX.Element {
         </h2>
 
         <div className="sub-main-div-ui">
+          {/* TalkRoom project card */}
+          <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+            <h3 className="font-bold text-2xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+              TalkRoom - Real-Time Chat Application
+            </h3>
+            <div className="flex justify-between items-center mb-4">
+              <a
+                href="https://talkroom.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-cyan-300 hover:text-cyan-100 transition-colors duration-200"
+              >
+                Live Demo
+              </a>
+              <span className="text-cyan-200 bg-blue-500 bg-opacity-20 rounded-md px-3 py-1">
+                Full-Stack Project
+              </span>
+            </div>
+            <ul className="space-y-3">
+              <li className="flex items-start space-x-2">
+                <ListTick />
+                <span className="text-gray-300">
+                  Built a modern and secure real-time chat application with
+                  end-to-end encryption using React, TypeScript, Node.js, and
+                  WebSocket technology.
+                </span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <ListTick />
+                <span className="text-gray-300">
+                  Implemented comprehensive security features including brute
+                  force protection, XSS prevention, CSRF validation, and SQL
+                  injection protection.
+                </span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <ListTick />
+                <span className="text-gray-300">
+                  Integrated WebRTC for encrypted video/audio calls and secure
+                  file sharing with validation.
+                </span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <ListTick />
+                <span className="text-gray-300">
+                  Utilized Redis for secure session management and PostgreSQL
+                  with Prisma ORM for encrypted data storage.
+                </span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <ListTick />
+                <span className="text-gray-300">
+                  Developed a responsive UI with Material UI, featuring
+                  protected routes and secure state management with Redux
+                  Toolkit.
+                </span>
+              </li>
+            </ul>
+            <div className="flex justify-between items-center mt-6">
+              <div className="flex space-x-2">
+                <a
+                  href={TALKROOM_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-cyan-300 hover:text-cyan-100 transition-colors duration-200"
+                >
+                  <SiGithub className="text-xl" />
+                </a>
+                <a
+                  href="https://talkroom.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-cyan-300 hover:text-cyan-100 transition-colors duration-200"
+                >
+                  <BsGlobe className="text-xl" />
+                </a>
+              </div>
+              <div className="flex space-x-2">
+                <BiLogoReact className="text-cyan-200 text-xl" title="React" />
+                <BiLogoTypescript
+                  className="text-cyan-200 text-xl"
+                  title="TypeScript"
+                />
+                <BiLogoNodejs
+                  className="text-cyan-200 text-xl"
+                  title="Node.js"
+                />
+                <SiExpress
+                  className="text-cyan-200 text-xl"
+                  title="Express.js"
+                />
+                <SiSocketdotio
+                  className="text-cyan-200 text-xl"
+                  title="Socket.IO"
+                />
+                <SiWebrtc className="text-cyan-200 text-xl" title="WebRTC" />
+                <SiPostgresql
+                  className="text-cyan-200 text-xl"
+                  title="PostgreSQL"
+                />
+                <SiRedis className="text-cyan-200 text-xl" title="Redis" />
+                <SiPrisma className="text-cyan-200 text-xl" title="Prisma" />
+                <SiMui className="text-cyan-200 text-xl" title="Material UI" />
+              </div>
+            </div>
+          </div>
+
+          {/* Rest of the existing project cards... */}
           {/* First project card */}
           <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
             <h3 className="font-bold text-2xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
@@ -64,7 +180,7 @@ export default function ProjectsPage(): JSX.Element {
                 Live Demo
               </a>
               <span className="text-cyan-200 bg-blue-500 bg-opacity-20 rounded-md px-3 py-1">
-                Jan 2024 - June 2024
+                🤖 AI-RAG Project
               </span>
             </div>
             <ul className="space-y-3 mb-20">
@@ -454,6 +570,11 @@ export default function ProjectsPage(): JSX.Element {
             <h3 className="font-bold text-2xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               KnowItAll - ChatBot
             </h3>
+            <div className="flex justify-between items-center mb-4">
+              <span className="text-cyan-200 bg-blue-500 bg-opacity-20 rounded-md px-3 py-1">
+                🤖 AI Project
+              </span>
+            </div>
             <ul className="space-y-3">
               <li className="flex items-start space-x-2">
                 <ListTick />
@@ -540,6 +661,11 @@ export default function ProjectsPage(): JSX.Element {
             <h3 className="font-bold text-2xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               Mietbot - A Fine-tuned Version of Campus360
             </h3>
+            <div className="flex justify-between items-center mb-4">
+              <span className="text-cyan-200 bg-blue-500 bg-opacity-20 rounded-md px-3 py-1">
+                🤖 AI Project
+              </span>
+            </div>
             <ul className="space-y-3">
               <li className="flex items-start space-x-2">
                 <ListTick />
@@ -646,6 +772,11 @@ export default function ProjectsPage(): JSX.Element {
             <h3 className="font-bold text-2xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               Web Scraper
             </h3>
+            <div className="flex justify-between items-center mb-4">
+              <span className="text-cyan-200 bg-blue-500 bg-opacity-20 rounded-md px-3 py-1">
+                Python Web Scraping Project
+              </span>
+            </div>
             <ul className="space-y-3">
               <li className="flex items-start space-x-2">
                 <ListTick />
@@ -701,6 +832,11 @@ export default function ProjectsPage(): JSX.Element {
             <h3 className="font-bold text-2xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               Automobiles-Price-Estimation
             </h3>
+            <div className="flex justify-between items-center mb-4">
+              <span className="text-cyan-200 bg-blue-500 bg-opacity-20 rounded-md px-3 py-1">
+                Python Machine Learning Project
+              </span>
+            </div>
             <ul className="space-y-3">
               <li className="flex items-start space-x-2">
                 <ListTick />

@@ -86,6 +86,7 @@ const BlogPost: React.FC<BlogPostProps> = ({post}) => (
             src={post.image}
             alt={post.title}
             fill
+            sizes="(max-width: 640px) 100vw, 33vw"
             className="rounded-lg shadow-md object-cover"
           />
         </div>
@@ -158,6 +159,7 @@ const TestimonialsPage: React.FC = () => {
                         src={testimonial.image}
                         alt={testimonial.author}
                         fill
+                        sizes="(max-width: 640px) 100vw, 33vw"
                         className="rounded-full border-4 border-white shadow-md object-cover"
                       />
                     </div>
