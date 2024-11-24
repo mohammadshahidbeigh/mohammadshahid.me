@@ -70,7 +70,7 @@ export default function ProjectsPage(): JSX.Element {
             </h3>
             <div className="flex justify-between items-center mb-4">
               <a
-                href="https://talkroom.vercel.app"
+                href="https://talkroom-client.onrender.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-cyan-300 hover:text-cyan-100 transition-colors duration-200"
