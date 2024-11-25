@@ -78,36 +78,36 @@ interface BlogPostProps {
 }
 
 const BlogPost: React.FC<BlogPostProps> = ({post}) => (
-  <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 mb-10 w-full max-w-3xl">
-    <div className="flex flex-col sm:flex-row items-center">
-      <div className="sm:w-1/3 mb-6 sm:mb-0">
-        <div className="relative w-full h-48 sm:h-32 sm:w-32">
+  <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 mb-10 w-full">
+    <div className="flex flex-col sm:flex-row items-center w-full">
+      <div className="sm:w-1/3 mb-6 sm:mb-0 w-full">
+        <div className="relative w-full h-48 sm:h-32 sm:w-32 w-full">
           <Image
             src={post.image}
             alt={post.title}
             fill
             sizes="(max-width: 640px) 100vw, 33vw"
-            className="rounded-lg shadow-md object-cover"
+            className="rounded-lg shadow-md object-cover w-full"
           />
         </div>
       </div>
-      <div className="sm:w-2/3 text-white">
+      <div className="sm:w-2/3 text-white w-full">
         <a
           href={post.link}
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-cyan-300 transition-colors duration-200"
+          className="hover:text-cyan-300 transition-colors duration-200 w-full"
         >
-          <h3 className="text-xl font-bold mb-2">{post.title}</h3>
+          <h3 className="text-xl font-bold mb-2 w-full">{post.title}</h3>
         </a>
-        <div className="text-cyan-200 mb-2">
+        <div className="text-cyan-200 mb-2 w-full">
           <span>{post.date}</span>
           {post.updateDate && <span> | Updated: {post.updateDate}</span>}
         </div>
-        <p className="text-gray-300 mb-4">{post.description}</p>
+        <p className="text-gray-300 mb-4 w-full">{post.description}</p>
         <a
           href={post.link}
-          className="text-cyan-300 hover:text-cyan-100 transition-colors duration-200 inline-block"
+          className="text-cyan-300 hover:text-cyan-100 transition-colors duration-200 inline-block w-full"
           target="_blank"
           rel="noopener noreferrer"
         >
