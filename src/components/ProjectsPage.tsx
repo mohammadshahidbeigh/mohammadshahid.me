@@ -93,9 +93,9 @@ export default function ProjectsPage(): JSX.Element {
               <li className="flex items-start space-x-2">
                 <ListTick />
                 <span className="text-gray-300">
-                  Implemented comprehensive security features including brute
-                  force protection, XSS prevention, CSRF validation, and SQL
-                  injection protection.
+                  Developed a responsive UI with Material UI, featuring
+                  protected routes and secure state management with Redux
+                  Toolkit.
                 </span>
               </li>
               <li className="flex items-start space-x-2">
@@ -115,9 +115,9 @@ export default function ProjectsPage(): JSX.Element {
               <li className="flex items-start space-x-2">
                 <ListTick />
                 <span className="text-gray-300">
-                  Developed a responsive UI with Material UI, featuring
-                  protected routes and secure state management with Redux
-                  Toolkit.
+                  Implemented comprehensive security features including brute
+                  force protection, XSS prevention, CSRF validation, and SQL
+                  injection protection.
                 </span>
               </li>
             </ul>
@@ -188,25 +188,35 @@ export default function ProjectsPage(): JSX.Element {
               <li className="flex items-start space-x-2">
                 <ListTick />
                 <span className="text-gray-300">
-                  Engineered an AI-driven virtual assistant using OpenAI GPT-4
-                  model, providing real-time support and personalized assistance
-                  to users.
+                  An AI-powered chatbot designed to assist students, faculty,
+                  and visitors at the Model Institute of Engineering Technology
+                  (MIET).
                 </span>
               </li>
               <li className="flex items-start space-x-2">
                 <ListTick />
                 <span className="text-gray-300">
-                  Implemented a cutting-edge tech stack: ReactJs, TypeScript,
-                  Tailwind CSS for frontend; OpenAI API, Firebase, Supabase
-                  Vector Database for backend.
+                  Implemented a cutting-edge tech stack: React.js, TypeScript,
+                  Tailwind CSS for frontend; OpenAI API, Langchain.js, Firebase,
+                  Supabase Vector Database as a BaaS.
                 </span>
               </li>
               <li className="flex items-start space-x-2">
                 <ListTick />
                 <span className="text-gray-300">
-                  Optimized AI performance using RAG (Retrieval Augmented
-                  Generation), Prompt Engineering, and Langchain.js, enhancing
-                  response accuracy and relevance.
+                  Initiated the project by aggregating approximately 16,000
+                  lines of institutional data from the official MIET website.
+                  This data was then extracted, cleaned, and prepared for
+                  integration with a Vector database, facilitating vector
+                  embeddings operations.
+                </span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <ListTick />
+                <span className="text-gray-300">
+                  Optimized response generation and language modeling using RAG
+                  (Retrieval-Augmented Generation), Prompt Engineering,
+                  enhancing response accuracy by 90% for common queries
                 </span>
               </li>
               <li className="flex items-start space-x-2">
@@ -325,14 +335,6 @@ export default function ProjectsPage(): JSX.Element {
               <li className="flex items-start space-x-2">
                 <ListTick />
                 <span className="text-gray-300">
-                  Implemented <strong>advanced search functionality</strong>{" "}
-                  using GraphQL, enabling users to efficiently retrieve and
-                  filter academic resources.
-                </span>
-              </li>
-              <li className="flex items-start space-x-2">
-                <ListTick />
-                <span className="text-gray-300">
                   Enabled multimedia support by integrating{" "}
                   <strong>React-Player</strong>, allowing users to watch
                   educational videos directly on the platform.
@@ -417,15 +419,15 @@ export default function ProjectsPage(): JSX.Element {
               <li className="flex items-start space-x-2">
                 <ListTick />
                 <span className="text-gray-300">
-                  Implemented comprehensive accessibility features following
-                  WCAG guidelines, including keyboard navigation, screen reader
-                  support, and visual accessibility enhancements.
+                  Built with Next.js 14, React, and TailwindCSS, featuring state
+                  management through React Context and API protection with
+                  in-memory rate limiting.
                 </span>
               </li>
               <li className="flex items-start space-x-2">
                 <ListTick />
                 <span className="text-gray-300">
-                  Integrated OpenAI GPT-3.5 for interview logic and Deepgram for
+                  Integrated OpenAI GPT-4 for interview logic and Deepgram for
                   Speech-to-Text and Text-to-Speech capabilities, enabling
                   natural conversations and dynamic responses.
                 </span>
@@ -433,9 +435,9 @@ export default function ProjectsPage(): JSX.Element {
               <li className="flex items-start space-x-2">
                 <ListTick />
                 <span className="text-gray-300">
-                  Built with Next.js 14, React, and TailwindCSS, featuring state
-                  management through React Context and API protection with
-                  in-memory rate limiting.
+                  Implemented comprehensive accessibility features following
+                  WCAG guidelines, including keyboard navigation, screen reader
+                  support, and visual accessibility enhancements.
                 </span>
               </li>
             </ul>
@@ -507,20 +509,17 @@ export default function ProjectsPage(): JSX.Element {
                   <br />
                   - Enhanced online presence and user engagement by 65%.
                   <br />
-                  - Engineered a responsive and aesthetically pleasing
-                  front-end, emphasizing usability and modern design principles.
-                  <br />
-                  - Implemented advanced animations and interactive elements to
-                  create a captivating user experience.
+                  - Collaborated closely with the client to define project
+                  requirements, achieving a 100% alignment with personal
+                  branding goals, and led the end-to-end deployment process,
+                  integrating Firebase for seamless user authentication and
+                  Razorpay for secure payment processing.
                   <br />
                   - Optimized website performance through efficient code and
                   best practices, achieving fast load times and smooth
                   navigation.
-                  <br />
-                  - Integrated email.js for a robust contact section,
+                  <br />- Integrated email.js for a robust contact section,
                   facilitating easy and reliable communication.
-                  <br />- Conducted thorough testing and debugging to ensure a
-                  bug-free and high-quality final product.
                 </span>
               </li>
               <li className="flex items-start space-x-2">
@@ -717,13 +716,6 @@ export default function ProjectsPage(): JSX.Element {
               <li className="flex items-start space-x-2">
                 <ListTick />
                 <span className="text-gray-300">
-                  Demonstrated advanced capabilities in natural language
-                  processing.
-                </span>
-              </li>
-              <li className="flex items-start space-x-2">
-                <ListTick />
-                <span className="text-gray-300">
                   Leveraged Firebase and GPT-3.5-Turbo to respond effectively to
                   user queries, making it a valuable tool for real-time
                   communication.
@@ -787,17 +779,9 @@ export default function ProjectsPage(): JSX.Element {
               <li className="flex items-start space-x-2">
                 <ListTick />
                 <span className="text-gray-300">
-                  Implemented advanced natural language processing techniques to
-                  enhance the chatbot&apos;s understanding and response
-                  generation capabilities.
-                </span>
-              </li>
-              <li className="flex items-start space-x-2">
-                <ListTick />
-                <span className="text-gray-300">
-                  Integrated machine learning algorithms to continuously improve
-                  the chatbot&apos;s performance based on user interactions and
-                  feedback.
+                  Leveraged a robust tech stack including Python, HTML5, CSS3,
+                  JavaScript, Firebase and Jupyter Notebook for development and
+                  fine-tuning processes.
                 </span>
               </li>
               <li className="flex items-start space-x-2">
@@ -806,14 +790,6 @@ export default function ProjectsPage(): JSX.Element {
                   Utilized JavaScript and OpenAI API to enhance the
                   chatbot&apos;s ability to comprehend user inputs and deliver
                   precise, human-like responses.
-                </span>
-              </li>
-              <li className="flex items-start space-x-2">
-                <ListTick />
-                <span className="text-gray-300">
-                  Leveraged a robust tech stack including Python, HTML5, CSS3,
-                  JavaScript, Firebase and Jupyter Notebook for development and
-                  fine-tuning processes.
                 </span>
               </li>
               <li className="flex items-start space-x-2">
@@ -953,11 +929,17 @@ export default function ProjectsPage(): JSX.Element {
                 <span className="text-gray-300">
                   Developed a predictive model using advanced machine learning
                   algorithms to estimate automobile prices based on multiple
-                  factors. Trained and fine-tuned a Linear Regression model
-                  utilizing sci-kit-learn, achieving a nuanced understanding of
+                  factors such as engine size, brand, model year, mileage, and
+                  condition.
+                </span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <ListTick />
+                <span className="text-gray-300">
+                  Trained a Linear Regression model and leverage feature
+                  engineering techniques and popular libraries like NumPy,
+                  Pandas, and Matplotlib, achieving a nuanced understanding of
                   how different vehicle attributes impact their market price.
-                  Improved prediction accuracy by 20% through rigorous testing
-                  using RMSE and MAE metrics.
                 </span>
               </li>
               <li className="flex items-start space-x-2">

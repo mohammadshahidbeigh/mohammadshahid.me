@@ -92,9 +92,10 @@ export default function ExperiencePage(): JSX.Element {
               <li className="flex items-start space-x-2">
                 <ListTick />
                 <span className="text-gray-300">
-                  Trained a robust Linear Regression model using scikit-learn,
-                  capturing intricate relationships between engine size and
-                  price.
+                  Trained a Linear Regression model and leverage feature feature
+                  engineering techniques and popular libraries like NumPy,
+                  Pandas, and Matplotlib, achieving a nuanced understanding of
+                  how different vehicle attributes impact their market price.
                 </span>
               </li>
               <li className="flex items-start space-x-2">

@@ -35,7 +35,7 @@ export default function AboutPage(): JSX.Element {
     "Testing",
     "Generative AI",
     "Vector-Embeddings",
-    "RAG-Retrieval Augmented Generation",
+    "RAG (Retrieval-Augmented Generation)",
   ];
   const frontend = [
     "HTML",
@@ -43,7 +43,7 @@ export default function AboutPage(): JSX.Element {
     "SASS",
     "JavaScript",
     "TypeScript",
-    "React",
+    "React.js",
     "Redux Toolkit",
     "React Router",
     "React Query",
@@ -78,24 +78,15 @@ export default function AboutPage(): JSX.Element {
     "Prisma",
   ];
 
-  const testing = [
-    "Jest",
-    "Mocha",
-    "Chai",
-    "Supertest",
-    "React Testing Library",
-    "Puppeteer",
-    "Cypress",
-  ];
+  const testing = ["Jest", "React Testing Library", "Puppeteer", "Cypress"];
 
   const devOps = [
     "Git",
     "Linux",
     "Docker",
-    "Kubernetes",
     "CI/CD",
-    "Travis CI",
-    "AWS",
+    "GitHub Actions",
+    "AWS (EC2)",
     "Vercel",
   ];
 
