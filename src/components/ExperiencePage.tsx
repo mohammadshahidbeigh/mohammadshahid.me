@@ -15,7 +15,7 @@ export default function ExperiencePage(): JSX.Element {
           {/* card 1 */}
           <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
             <h3 className="font-bold text-2xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-              Web Developer - Freelance
+              Full Stack Developer - Freelance
             </h3>
             <div className="flex justify-between items-center mb-4">
               <a
