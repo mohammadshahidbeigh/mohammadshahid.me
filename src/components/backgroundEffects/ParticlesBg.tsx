@@ -10,13 +10,7 @@ import {
   FaRobot,
   FaCode,
 } from "react-icons/fa";
-import {
-  SiTensorflow,
-  SiOpenai,
-  SiSupabase,
-  SiDocker,
-  SiGraphql,
-} from "react-icons/si";
+import {SiOpenai, SiSupabase, SiDocker, SiGraphql} from "react-icons/si";
 
 const icons = [
   FaReact,
@@ -27,7 +21,6 @@ const icons = [
   FaBrain,
   FaRobot,
   FaCode,
-  SiTensorflow,
   SiOpenai,
   SiSupabase,
   SiDocker,
@@ -46,7 +39,7 @@ const colors = [
   "#FF6F00", // TensorFlow orange
   "#412991", // OpenAI purple
   "#008080", // Docker teal
-  "#333333", // GraphQL gray 
+  "#333333", // GraphQL gray
 ];
 
 export default function ParticlesBg(): JSX.Element {

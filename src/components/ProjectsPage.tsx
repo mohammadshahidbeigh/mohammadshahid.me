@@ -59,7 +59,7 @@ export default function ProjectsPage(): JSX.Element {
     >
       <div className="container mx-auto animate-fade-in px-4">
         <h2 className="title-ui mb-12 text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">
-          Projects
+          OpenSource
         </h2>
 
         <div className="sub-main-div-ui">

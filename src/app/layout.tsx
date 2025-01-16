@@ -25,7 +25,6 @@ export const metadata: Metadata = {
     "Shahid",
     "Mohammad Shahid Beigh",
     "mohammadshahidbeigh",
-    "shahid.cc",
     "nextjs",
     "portfolio",
     "TypeScript",

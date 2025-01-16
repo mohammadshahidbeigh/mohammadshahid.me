@@ -98,15 +98,15 @@ export default function HomePage(): JSX.Element {
   return (
     <div
       id="home-section"
-      className="min-h-screen flex flex-col items-center justify-center relative py-8"
+      className="min-h-screen flex flex-col items-center justify-center relative py-8 mt-10"
     >
       <ParticlesBg />
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
         <div className="md:w-1/2 text-left mb-8 md:mb-0 md:pr-8">
           <h1
-            className={`${dancing.className} name-title-ui text-white animate-fade-in mb-4 text-4xl md:text-5xl lg:text-6xl`}
+            className={`${dancing.className} name-title-ui text-white animate-fade-in mb-4 text-4xl md:text-6xl lg:text-6xl`}
           >
-            Mohammad Shahid Beigh
+            I&apos;m Shahid
           </h1>
           <div className="text-lg md:text-xl lg:text-2xl text-white animate-fade-in my-4 h-24">
             👋 Hi there!{" "}
@@ -174,23 +174,28 @@ export default function HomePage(): JSX.Element {
             </a>
           </div>
         </div>
-        <div className="md:flex md:w-1/2 justify-center md:justify-end hidden">
-          <div className="w-72 h-72 rounded-full overflow-hidden border-4 border-white shadow-xl relative">
-            <div className="absolute inset-0 border-4 border-transparent rounded-full animate-spin-slow">
-              <div className="absolute inset-0 border-4 border-blue-500 rounded-full animate-pulse"></div>
+      </div>
+      <div className="mt-12 px-4 max-w-4xl mx-auto text-center">
+        <div className="space-y-6 text-white">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-white bg-opacity-5 backdrop-blur-sm p-6 rounded-lg shadow-xl">
+            <div className="space-y-2">
+              <h2 className="text-xl font-semibold text-blue-400">Who I Am</h2>
+              <p className="text-sm md:text-base">
+                Software Engineer, open-source enthusiast, and perpetual learner
+              </p>
             </div>
-            <Image
-              src="/Image.png"
-              alt="My Profile Picture"
-              width={288}
-              height={288}
-              className="object-cover transition-transform duration-300 hover:scale-110"
-              priority
-              loading="eager"
-              placeholder="blur"
-              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACklEQVR4nGMAAQAABQABDQottAAAAABJRU5ErkJggg=="
-            />
+            <div className="space-y-2">
+              <h2 className="text-xl font-semibold text-blue-400">
+                What Drives Me
+              </h2>
+              <p className="text-sm md:text-base">
+                Musicophile, poetry & art seeker, day dreamer
+              </p>
+            </div>
           </div>
+          <p className="text-sm md:text-base animate-fade-in opacity-75">
+            Peripatetic • Introverted • Empathetic • Melancholic • Emotive
+          </p>
         </div>
       </div>
     </div>
