@@ -242,7 +242,7 @@ export default function ProjectsPage(): JSX.Element {
               </a>
               <div className="flex items-center mt-2 text-xs text-white space-x-1 sm:space-x-0.5 sm:mt-1">
                 <span className="text-yellow-200 bg-purple-800 bg-opacity-60 px-2 py-0.5 rounded-md shadow-sm animate-pulse text-xs sm:text-xxs">
-                  🚀 Over 500 reads!
+                  🚀 Over 600 reads!
                 </span>
                 <span className="text-pink-200 bg-pink-500 px-1.5 py-0.5 rounded-md hover:animate-spin cursor-pointer text-xs sm:text-xxs">
                   ⭐ Like it?
