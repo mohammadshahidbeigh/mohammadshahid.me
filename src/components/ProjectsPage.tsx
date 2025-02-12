@@ -242,7 +242,7 @@ export default function ProjectsPage(): JSX.Element {
               </a>
               <div className="flex items-center mt-2 text-xs text-white space-x-1 sm:space-x-0.5 sm:mt-1">
                 <span className="text-yellow-200 bg-purple-800 bg-opacity-60 px-2 py-0.5 rounded-md shadow-sm animate-pulse text-xs sm:text-xxs">
-                  🚀 Over 600 reads!
+                  🚀 Over 1000 reads!
                 </span>
                 <span className="text-pink-200 bg-pink-500 px-1.5 py-0.5 rounded-md hover:animate-spin cursor-pointer text-xs sm:text-xxs">
                   ⭐ Like it?
@@ -289,7 +289,7 @@ export default function ProjectsPage(): JSX.Element {
           </div>
 
           {/* Third project card */}
-          <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+          <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-6 shadow-lg hover:shadow-xl tvransition-all duration-300">
             <h3 className="font-bold text-2xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               MindVault
             </h3>

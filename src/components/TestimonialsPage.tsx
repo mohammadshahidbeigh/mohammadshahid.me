@@ -20,6 +20,15 @@ interface BlogPost {
 
 const testimonials: Testimonial[] = [
   {
+    id: 2,
+    text: "Built 4 step workflow for realtime conversation (Audio/Video).",
+    author: "NextJS Developer",
+    position:
+      "Rating: 5.0 out of 5 (5.00) | Dec 20, 2024 - Jan 25, 2025 from Upwork",
+    image: "/upwork.png", // update this path if needed
+    link: "https://www.upwork.com/freelancers/~01667608f00cd4224b?viewMode=1",
+  },
+  {
     id: 1,
     text: "Shahid made my portfolio the best I could expect. The color, font, and background are professional and exactly what I wanted. I appreciate his consistency and patience throughout the project, as he worked on it for a long time to ensure it was perfect. Thank you!",
     author: "Owais Yaqoob",
@@ -49,6 +58,27 @@ const blogPosts: BlogPost[] = [
     link: "https://mohammadshahidbeigh.hashnode.dev/mastering-fine-tuning-a-journey-through-model-optimization",
     description:
       "Understanding how Fine-tuning is key for optimizing small LLMs, and why mastering prompt engineering is equally vital for driving AI model behavior.",
+  },
+  {
+    title: "Generative AI and Agentic AI for Software Development",
+    date: "Jan 5, 2025",
+    updateDate: "Jan 8, 2025",
+    image:
+      "https://cdn.hashnode.com/res/hashnode/image/upload/v1736086288820/e42142eb-e1a2-4ed9-aede-940b6bdc4ead.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+    link: "https://mohammadshahidbeigh.hashnode.dev/generative-ai-and-agentic-ai-for-software-development",
+    description:
+      "This blog explores why now is the golden time to dive into these transformative AI technologies, how software engineers can leverage them, and the cutting-edge frameworks and tools shaping the future of AI-powered software development.",
+  },
+  {
+    title:
+      "Introduction to Prompt Injection Vulnerabilities: What They Are and How to Protect Your LLM Applications Against Them",
+    date: "Feb 11, 2025", // Update with the actual date if available.
+    updateDate: "Feb 12, 2025", // Update with the actual date if available.
+    image:
+      "https://cdn.hashnode.com/res/hashnode/image/upload/v1739285150939/9627d4f3-0c7a-4ee8-90ba-cc60aa391a81.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+    link: "https://mohammadshahidbeigh.hashnode.dev/introduction-to-prompt-injection-vulnerabilities-what-they-are-and-how-to-protect-against-them",
+    description:
+      "A detailed introduction to prompt injection vulnerabilities, discussing what they are and strategies for protection.",
   },
 ];
 
@@ -144,7 +174,7 @@ const TestimonialsPage: React.FC = () => {
       >
         <div className="container mx-auto animate-fade-in px-4">
           <h2 className="title-ui mb-12 text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">
-            What People Say
+            What People Say on Upwork
           </h2>
           <div className="flex flex-col items-center p-4 sm:p-6">
             {testimonials.map((testimonial) => (

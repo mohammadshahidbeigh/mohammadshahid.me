@@ -5,6 +5,7 @@ import {
   SiInstagram,
   SiTwitter,
   SiStackoverflow,
+  SiUpwork,
 } from "react-icons/si";
 import {
   EMAIL,
@@ -13,6 +14,7 @@ import {
   INSTAGRAM_URL,
   X_URL,
   STACKOVERFLOW_URL,
+  UPWORK_URL,
 } from "@/constants";
 
 export default function ContactPage(): JSX.Element {
@@ -49,6 +51,14 @@ export default function ContactPage(): JSX.Element {
                 className="contact-icon-link"
               >
                 <SiGithub className="text-4xl text-gray-800 hover:text-gray-900 transition-colors duration-300" />
+              </a>
+              <a
+                href={UPWORK_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="contact-icon-link"
+              >
+                <SiUpwork className="text-4xl text-green-500 hover:text-green-600 transition-colors duration-300" />
               </a>
             </div>
           </div>
@@ -89,13 +99,13 @@ export default function ContactPage(): JSX.Element {
             className="w-full max-w-3xl rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
           />
         </div>
-       <div className="w-full mt-8 flex justify-center">
-       <img
-    src="https://github-readme-activity-graph.vercel.app/graph?username=mohammadshahidbeigh&bg_color=06042f&color=e70db8&line=0b12da&point=eee2eb&area=true&hide_border=true"
-    alt="Mohammad Shahid Beigh's Github Graph"
-    className="w-full max-w-3xl rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
-      />
-    </div>
+        <div className="w-full mt-8 flex justify-center">
+          <img
+            src="https://github-readme-activity-graph.vercel.app/graph?username=mohammadshahidbeigh&bg_color=06042f&color=e70db8&line=0b12da&point=eee2eb&area=true&hide_border=true"
+            alt="Mohammad Shahid Beigh's Github Graph"
+            className="w-full max-w-3xl rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+          />
+        </div>
 
         <p className="text-center mt-12 text-lg text-gray-300">
           Feel free to reach out for collaborations or just a friendly hello!

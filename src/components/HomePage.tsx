@@ -6,7 +6,7 @@ import {
   SiLinkedin,
   SiInstagram,
   SiTwitter,
-  SiStackoverflow,
+  SiUpwork,
 } from "react-icons/si";
 import {Dancing_Script} from "next/font/google";
 import ParticlesBg from "./backgroundEffects/ParticlesBg";
@@ -15,7 +15,7 @@ import {
   LINKEDIN_URL,
   INSTAGRAM_URL,
   X_URL,
-  STACKOVERFLOW_URL,
+  UPWORK_URL,
 } from "../constants";
 import Image from "next/image";
 
@@ -150,12 +150,12 @@ export default function HomePage(): JSX.Element {
               <SiTwitter className="text-2xl text-white" />
             </a>
             <a
-              href={STACKOVERFLOW_URL}
+              href={UPWORK_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="project-icons hover:bg-orange-500"
+              className="project-icons hover:bg-green-500"
             >
-              <SiStackoverflow className="text-2xl text-white" />
+              <SiUpwork className="text-2xl text-white" />
             </a>
           </div>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-4">
