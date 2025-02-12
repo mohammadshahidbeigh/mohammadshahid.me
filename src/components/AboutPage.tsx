@@ -144,7 +144,7 @@ export default function AboutPage(): JSX.Element {
               <li className="flex items-start space-x-2">
                 <ListTick />
                 <span className="text-gray-300">
-                  👋 Hi there everyone! I&apos;m Mohammad Shahid, a versatile
+                  👋 Hey there everyone! I&apos;m Mohammad Shahid, a versatile
                   full-stack software developer with a deep passion for crafting
                   intuitive, high-performing web applications. I thrive on
                   building innovative solutions using modern tech like React and

@@ -109,7 +109,7 @@ export default function HomePage(): JSX.Element {
             I&apos;m Shahid
           </h1>
           <div className="text-lg md:text-xl lg:text-2xl text-white animate-fade-in my-4 h-24">
-            👋 Hi there!{" "}
+            👋 Hey there!{" "}
             <span
               className="changing-text text-blue-500 italic"
               ref={el}
