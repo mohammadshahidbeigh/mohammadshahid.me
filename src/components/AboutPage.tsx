@@ -138,9 +138,7 @@ export default function AboutPage(): JSX.Element {
                 July 2020 - August 2024
               </span>
             </div>
-            <p className="text-gray-300 mb-2">
-              B.E - Electronics and Communication Engineering
-            </p>
+            <p className="text-gray-300 mb-2">Bachelor of Engineering</p>
             <p className="text-gray-300 mb-4">CGPA: 7.50 / 10</p>
             <ul className="space-y-3">
               <li className="flex items-start space-x-2">
