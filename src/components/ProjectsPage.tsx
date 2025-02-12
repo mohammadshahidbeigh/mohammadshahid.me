@@ -673,7 +673,7 @@ export default function ProjectsPage(): JSX.Element {
           </div>
 
           {/* Fifth project card */}
-          <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+          {/* <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
             <h3 className="font-bold text-2xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               KnowItAll - ChatBot
             </h3>
@@ -755,10 +755,10 @@ export default function ProjectsPage(): JSX.Element {
                 <SiOpenai className="text-cyan-200 text-xl" title="OpenAI" />
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Fifth project card */}
-          <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+          {/* <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
             <h3 className="font-bold text-2xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               Mietbot - A Fine-tuned Version of Campus360
             </h3>
@@ -851,10 +851,10 @@ export default function ProjectsPage(): JSX.Element {
                 <SiOpenai className="text-cyan-200 text-xl" title="OpenAI" />
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Fifth project card */}
-          <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+          {/* <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
             <h3 className="font-bold text-2xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               Web Scraper
             </h3>
@@ -911,10 +911,10 @@ export default function ProjectsPage(): JSX.Element {
                 <BiLogoGit className="text-cyan-200 text-xl" title="Git" />
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Sixth project card */}
-          <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+          {/* <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
             <h3 className="font-bold text-2xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               Automobiles-Price-Estimation
             </h3>
@@ -986,7 +986,7 @@ export default function ProjectsPage(): JSX.Element {
                 <BiLogoFlask className="text-cyan-200 text-xl" title="Flask" />
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
