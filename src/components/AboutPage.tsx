@@ -134,7 +134,7 @@ export default function AboutPage(): JSX.Element {
               >
                 Model Institute Of Engineering & Technology, Jammu
               </a>
-              <span className="text-cyan-200 bg-blue-500 bg-opacity-20 rounded-md px-3 py-1">
+              <span className="text-xs sm:text-sm text-cyan-200 bg-blue-500 bg-opacity-20 rounded-md px-3 py-1 mr-2">
                 2020 - 2024
               </span>
             </div>
