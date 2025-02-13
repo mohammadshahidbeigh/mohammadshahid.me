@@ -165,12 +165,12 @@ export default function AboutPage(): JSX.Element {
                 <ListTick />
                 <span className="text-gray-300">
                   I&apos;m actively working with cutting-edge frameworks like
-                  LangChain, LangGraph, and agentic AI technologies including
-                  CrewAI and AWS Bedrock, to deliver full-stack solutions
-                  powered by GenAI. If you&apos;re looking for a passionate
-                  developer who thrives in challenging environments and is
-                  dedicated to continuous learning and innovation, I would love
-                  to connect with you.
+                  LangChain, LlamaIndex, and agentic AI technologies including
+                  LangGraph and AWS Bedrock with React and Next.js, to deliver
+                  full-stack solutions powered by GenAI. If you are looking for
+                  a passionate Software developer who thrives in challenging
+                  environments and is dedicated to continuous learning and
+                  innovation, I would love to connect with you.
                 </span>
               </li>
               <li className="flex items-start space-x-2">
