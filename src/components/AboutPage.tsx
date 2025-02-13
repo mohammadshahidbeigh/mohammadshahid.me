@@ -99,7 +99,6 @@ export default function AboutPage(): JSX.Element {
     "OpenAI",
     "Anthropic",
     "Google Gemini",
-    "DeepSeek",
     "AI Agents",
     "LangGraph",
     "CrewAI",
