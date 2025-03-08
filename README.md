@@ -1,4 +1,5 @@
-My personal portfolio built with Next.js, TypeScript, Tailwindcss & Vercel 🚀. Showcasing my projects, blogs, and skills in software development.
+My personal portfolio built with Next.js, TypeScript, Tailwindcss & Vercel 🚀. 
+Showcasing my projects, blogs, and skills in software development.
 
 ## Getting Started!
 
