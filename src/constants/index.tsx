@@ -9,6 +9,8 @@ export const EMAIL: string = "mailto:mohammadshahidbeigh@gmail.com";
 export const MIET_Jammu: string = "https://www.mietjmu.in/";
 export const UPWORK_URL: string =
   "https://www.upwork.com/freelancers/~01667608f00cd4224b";
+export const WEYA_AI_URL: string = "https://www.weya.ai/";
+export const HEYMILO_URL: string = "https://www.heymilo.ai/";
 export const ThinkNext_UTL: string =
   "https://www.thinknexttraining.com/free-industrial-training-in-chandigarh.aspx";
 export const MIET_BOT_URL: string =
@@ -31,6 +33,8 @@ export const TALKROOM_URL: string =
   "https://github.com/mohammadshahidbeigh/talkRoom?tab=readme-ov-file#talkroom---real-time-chat-application";
 export const AI_INTERVIEW_PRACTICE_URL: string =
   "https://github.com/mohammadshahidbeigh/interviewer";
+export const AGENTIC_AI_URL: string =
+  "https://github.com/mohammadshahidbeigh/agentic-ai";
 
 export const INSTAGRAM_URL: string =
   "https://www.instagram.com/m_shahid.me/?igsh=dzVjMWozN3VheGQ2";

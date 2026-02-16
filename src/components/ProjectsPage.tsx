@@ -48,6 +48,7 @@ import {
   AUTOMOBILES_PRICE_URL,
   TALKROOM_URL,
   AI_INTERVIEW_PRACTICE_URL,
+  AGENTIC_AI_URL,
 } from "@/constants";
 import ListTick from "./ListTick";
 
@@ -668,6 +669,81 @@ export default function ProjectsPage(): JSX.Element {
                   className="text-cyan-200 text-xl"
                   title="Framer Motion"
                 />
+              </div>
+            </div>
+          </div>
+
+          {/* Agentic AI project card */}
+          <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+            <h3 className="font-bold text-2xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+              Agentic AI
+            </h3>
+            <div className="flex justify-between items-center mb-4">
+              <a
+                href={AGENTIC_AI_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-cyan-300 hover:text-cyan-100 transition-colors duration-200"
+              >
+                Open-Source Repository
+              </a>
+              <span className="text-cyan-200 bg-blue-500 bg-opacity-20 rounded-md px-3 py-1">
+                🤖 AI Agents
+              </span>
+            </div>
+            <ul className="space-y-3">
+              <li className="flex items-start space-x-2">
+                <ListTick />
+                <span className="text-gray-300">
+                  Curated an open-source repository with hands-on agentic AI projects, garnering 37 stars and 18 forks from the developer community.
+                </span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <ListTick />
+                <span className="text-gray-300">
+                  Implemented autonomous agent examples demonstrating agent-centric workflows, multi-agent collaboration, and tool-use patterns.
+                </span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <ListTick />
+                <span className="text-gray-300">
+                  Leveraged industry-leading frameworks including OpenAI, Phidata, LlamaIndex, Claude, CrewAI, LangGraph, Google Gemini, and Groq API.
+                </span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <ListTick />
+                <span className="text-gray-300">
+                  Showcased expertise in building intelligent agents with advanced reasoning capabilities, multi-tool integration, and scalable deployment patterns.
+                </span>
+              </li>
+            </ul>
+
+            <div className="flex justify-between items-center mt-6">
+              <div className="flex space-x-2">
+                <a
+                  href={AGENTIC_AI_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-cyan-300 hover:text-cyan-100 transition-colors duration-200"
+                >
+                  <SiGithub className="text-xl" />
+                </a>
+              </div>
+              <div className="flex space-x-2 flex-wrap gap-2">
+                <BiLogoPython
+                  className="text-cyan-200 text-xl"
+                  title="Python"
+                />
+                <SiOpenai className="text-cyan-200 text-xl" title="OpenAI" />
+                <span className="text-cyan-200 text-xs" title="LlamaIndex">
+                  LlamaIndex
+                </span>
+                <span className="text-cyan-200 text-xs" title="LangGraph">
+                  LangGraph
+                </span>
+                <span className="text-cyan-200 text-xs" title="CrewAI">
+                  CrewAI
+                </span>
               </div>
             </div>
           </div>

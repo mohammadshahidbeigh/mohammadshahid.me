@@ -1,4 +1,4 @@
-import {UPWORK_URL, ThinkNext_UTL} from "@/constants";
+import {UPWORK_URL, ThinkNext_UTL, WEYA_AI_URL, HEYMILO_URL} from "@/constants";
 import ListTick from "./ListTick";
 
 export default function ExperiencePage(): JSX.Element {
@@ -15,49 +15,68 @@ export default function ExperiencePage(): JSX.Element {
           {/* card 1 */}
           <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
             <h3 className="font-bold text-2xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-              Full Stack Developer - Freelance
+              Fullstack Engineer · Remote
             </h3>
             <div className="flex justify-between items-center mb-4">
               <a
-                href={UPWORK_URL}
+                href={WEYA_AI_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-cyan-300 hover:text-cyan-100 transition-colors duration-200"
               >
-                Upwork
+                Weya.ai | AI Workflow Automation for BFSI
               </a>
               <span className="text-cyan-200 bg-blue-500 bg-opacity-20 rounded-md px-3 py-1">
-                Oct 23 - Present
+                Apr 2025 - Aug 2025
               </span>
             </div>
             <ul className="space-y-3">
               <li className="flex items-start space-x-2">
                 <ListTick />
                 <span className="text-gray-300">
-                  Led the end-to-end development of a full portfolio website
-                  using Next.js, Tailwind CSS, and TypeScript.
+                  Engineered a multi-prompt calling agent builder using a node-based visual editor, enabling conditional conversational flows with branching logic (call pickup, hang-up paths), multilingual support, and real-time state synchronization.
                 </span>
               </li>
               <li className="flex items-start space-x-2">
                 <ListTick />
                 <span className="text-gray-300">
-                  Enhanced frontend design and user experience, resulting in a
-                  more engaging interface and improved usability.
+                  Designed and implemented a visual workflow orchestration system using React Flow, enabling users to design, edit, and manage multi-agent workflows (Phone, WhatsApp, Email) via drag-and-drop UI, third-party tool integration and cross-agent coordination.
                 </span>
               </li>
               <li className="flex items-start space-x-2">
                 <ListTick />
                 <span className="text-gray-300">
-                  Collaborated closely with the client to understand
-                  requirements, ensuring the final product aligned with their
-                  vision.
+                  Built real-time analytics dashboards with D3.js visualizing call volume, success rates, and latency through interactive filtering and time-series aggregation for live agent performance monitoring.
                 </span>
               </li>
               <li className="flex items-start space-x-2">
                 <ListTick />
                 <span className="text-gray-300">
-                  Demonstrated proficiency in modern web development
-                  technologies, delivering a high-quality, responsive website.
+                  Optimized Next.js performance using React Query caching, route-based code splitting, React.lazy() with Suspense, and ISR, reducing Time to Interactive (TTI) by 40%.
+                </span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <ListTick />
+                <span className="text-gray-300">
+                  Architected multi-factor authentication with OAuth 2.0 (@react-oauth/google), TOTP verification, JWT access/refresh token rotation with HttpOnly cookies, and role-based access control (RBAC) middleware.
+                </span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <ListTick />
+                <span className="text-gray-300">
+                  Resolved Next.js crashes caused by client-side pagination when processing 100k+ agent call records by implementing server-side pagination using MongoDB aggregation pipelines, reducing client-side memory footprint by 75%.
+                </span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <ListTick />
+                <span className="text-gray-300">
+                  Automated voice pipeline using Python and ElevenLabs API for TTS generation across multilingual agents, integrated AWS S3 with SSE-S3 encryption, and developed Node.js API with AWS SDK for pre-signed URL generation.
+                </span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <ListTick />
+                <span className="text-gray-300">
+                  Played a key role in developing distributed microservices in Go, using Azure Queue Service for message brokering and Redis for state management, implementing a weighted round-robin scheduling algorithm for real-time multi-agent calls.
                 </span>
               </li>
             </ul>
