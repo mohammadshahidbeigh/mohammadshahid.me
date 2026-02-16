@@ -89,7 +89,6 @@ export default function AboutPage(): JSX.Element {
     "LangGraph",
     "CrewAI",
     "Prompt Engineering",
-    "Vector Embeddings",
     "Knowledge Graphs",
   ];
 
